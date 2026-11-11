@@ -1,0 +1,401 @@
+{
+  "description": "Recomputation audit of elicited specifications. terse = no inventory; complete = disclosed 12-role inventory + thresholds. All ratios re-derived from published hex.",
+  "specimens": [
+    {
+      "model": "beam",
+      "variant": "terse",
+      "roles": 8,
+      "declared": 4,
+      "wrong_over_01": 4,
+      "conservative": 4,
+      "anti": 0,
+      "max_anti_delta": 0,
+      "uncovered": 4,
+      "coverage_gap_pct": 50,
+      "focus_vs_fill_CR": 1.3,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 4,
+      "conformance": null
+    },
+    {
+      "model": "beam",
+      "variant": "complete",
+      "roles": 12,
+      "declared": 10,
+      "wrong_over_01": 10,
+      "conservative": 10,
+      "anti": 0,
+      "max_anti_delta": 0,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": 1.3,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 2,
+      "conformance": {
+        "checks": [
+          {
+            "name": "body>=7",
+            "ok": true
+          },
+          {
+            "name": "secondary>=4.5",
+            "ok": true
+          },
+          {
+            "name": "nontext>=3",
+            "ok": true
+          },
+          {
+            "name": "focus>=3",
+            "ok": true
+          }
+        ],
+        "failures": 0
+      }
+    },
+    {
+      "model": "deepseek",
+      "variant": "terse",
+      "roles": 12,
+      "declared": 12,
+      "wrong_over_01": 8,
+      "conservative": 4,
+      "anti": 4,
+      "max_anti_delta": 0.88,
+      "uncovered": 7,
+      "coverage_gap_pct": 58.33,
+      "focus_vs_fill_CR": 1.31,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 4,
+      "conformance": null
+    },
+    {
+      "model": "deepseek",
+      "variant": "complete",
+      "roles": 12,
+      "declared": 14,
+      "wrong_over_01": 12,
+      "conservative": 7,
+      "anti": 5,
+      "max_anti_delta": 0.78,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": 1.21,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 5,
+      "conformance": {
+        "checks": [
+          {
+            "name": "body>=7",
+            "ok": true
+          },
+          {
+            "name": "secondary>=4.5",
+            "ok": true
+          },
+          {
+            "name": "nontext>=3",
+            "ok": true
+          },
+          {
+            "name": "focus>=3",
+            "ok": true
+          }
+        ],
+        "failures": 0
+      }
+    },
+    {
+      "model": "glm",
+      "variant": "terse",
+      "roles": 16,
+      "declared": 13,
+      "wrong_over_01": 9,
+      "conservative": 6,
+      "anti": 3,
+      "max_anti_delta": 0.93,
+      "uncovered": 10,
+      "coverage_gap_pct": 62.5,
+      "focus_vs_fill_CR": null,
+      "focus_invisible": false,
+      "focus_below3": false,
+      "undefined_functions": 5,
+      "conformance": null
+    },
+    {
+      "model": "glm",
+      "variant": "complete",
+      "roles": 12,
+      "declared": 17,
+      "wrong_over_01": 16,
+      "conservative": 9,
+      "anti": 7,
+      "max_anti_delta": 0.59,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": 1.13,
+      "focus_invisible": true,
+      "focus_below3": true,
+      "undefined_functions": 6,
+      "conformance": {
+        "checks": [
+          {
+            "name": "body>=7",
+            "ok": true
+          },
+          {
+            "name": "secondary>=4.5",
+            "ok": true
+          },
+          {
+            "name": "nontext>=3",
+            "ok": true
+          },
+          {
+            "name": "focus>=3",
+            "ok": true
+          }
+        ],
+        "failures": 0
+      }
+    },
+    {
+      "model": "lfm25",
+      "variant": "terse",
+      "roles": 12,
+      "declared": 10,
+      "wrong_over_01": 9,
+      "conservative": 9,
+      "anti": 0,
+      "max_anti_delta": 0,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": null,
+      "focus_invisible": false,
+      "focus_below3": false,
+      "undefined_functions": 4,
+      "conformance": null
+    },
+    {
+      "model": "lfm25",
+      "variant": "complete",
+      "roles": 12,
+      "declared": 10,
+      "wrong_over_01": 9,
+      "conservative": 9,
+      "anti": 0,
+      "max_anti_delta": 0,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": 2.93,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 4,
+      "conformance": {
+        "checks": [
+          {
+            "name": "body>=7",
+            "ok": true
+          },
+          {
+            "name": "secondary>=4.5",
+            "ok": true
+          },
+          {
+            "name": "nontext>=3",
+            "ok": true
+          },
+          {
+            "name": "focus>=3",
+            "ok": true
+          }
+        ],
+        "failures": 0
+      }
+    },
+    {
+      "model": "longcat",
+      "variant": "terse",
+      "roles": 21,
+      "declared": 8,
+      "wrong_over_01": 6,
+      "conservative": 2,
+      "anti": 4,
+      "max_anti_delta": 1.21,
+      "uncovered": 13,
+      "coverage_gap_pct": 61.9,
+      "focus_vs_fill_CR": 1,
+      "focus_invisible": true,
+      "focus_below3": true,
+      "undefined_functions": 6,
+      "conformance": null
+    },
+    {
+      "model": "longcat",
+      "variant": "complete",
+      "roles": 12,
+      "declared": 13,
+      "wrong_over_01": 12,
+      "conservative": 5,
+      "anti": 7,
+      "max_anti_delta": 0.87,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": 1,
+      "focus_invisible": true,
+      "focus_below3": true,
+      "undefined_functions": 6,
+      "conformance": {
+        "checks": [
+          {
+            "name": "body>=7",
+            "ok": true
+          },
+          {
+            "name": "secondary>=4.5",
+            "ok": true
+          },
+          {
+            "name": "nontext>=3",
+            "ok": true
+          },
+          {
+            "name": "focus>=3",
+            "ok": true
+          }
+        ],
+        "failures": 0
+      }
+    },
+    {
+      "model": "minimax",
+      "variant": "terse",
+      "roles": 19,
+      "declared": 10,
+      "wrong_over_01": 8,
+      "conservative": 5,
+      "anti": 3,
+      "max_anti_delta": 0.96,
+      "uncovered": 8,
+      "coverage_gap_pct": 42.11,
+      "focus_vs_fill_CR": 1.23,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 4,
+      "conformance": null
+    },
+    {
+      "model": "minimax",
+      "variant": "complete",
+      "roles": 12,
+      "declared": 14,
+      "wrong_over_01": 10,
+      "conservative": 10,
+      "anti": 0,
+      "max_anti_delta": 0,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": 1.49,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 0,
+      "conformance": {
+        "checks": [
+          {
+            "name": "body>=7",
+            "ok": true
+          },
+          {
+            "name": "secondary>=4.5",
+            "ok": true
+          },
+          {
+            "name": "nontext>=3",
+            "ok": true
+          },
+          {
+            "name": "focus>=3",
+            "ok": true
+          }
+        ],
+        "failures": 0
+      }
+    },
+    {
+      "model": "qwen",
+      "variant": "terse",
+      "roles": 11,
+      "declared": 7,
+      "wrong_over_01": 3,
+      "conservative": 3,
+      "anti": 0,
+      "max_anti_delta": 0,
+      "uncovered": 4,
+      "coverage_gap_pct": 36.36,
+      "focus_vs_fill_CR": 1.74,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 4,
+      "conformance": null
+    },
+    {
+      "model": "qwen",
+      "variant": "complete",
+      "roles": 12,
+      "declared": 12,
+      "wrong_over_01": 4,
+      "conservative": 4,
+      "anti": 0,
+      "max_anti_delta": 0,
+      "uncovered": 0,
+      "coverage_gap_pct": 0,
+      "focus_vs_fill_CR": 1.74,
+      "focus_invisible": false,
+      "focus_below3": true,
+      "undefined_functions": 4,
+      "conformance": {
+        "checks": [
+          {
+            "name": "body>=7",
+            "ok": true
+          },
+          {
+            "name": "secondary>=4.5",
+            "ok": true
+          },
+          {
+            "name": "nontext>=3",
+            "ok": true
+          },
+          {
+            "name": "focus>=3",
+            "ok": true
+          }
+        ],
+        "failures": 0
+      }
+    }
+  ],
+  "aggregate": {
+    "terse": {
+      "n": 7,
+      "mean_wrong_over_01": 6.71,
+      "mean_coverage_gap_pct": 44.46,
+      "focus_invisible_count": 1,
+      "focus_below3_count": 5,
+      "mean_undefined_functions": 4.43
+    },
+    "complete": {
+      "n": 7,
+      "mean_wrong_over_01": 10.43,
+      "mean_coverage_gap_pct": 0,
+      "focus_invisible_count": 2,
+      "focus_below3_count": 7,
+      "mean_undefined_functions": 3.86
+    }
+  }
+}

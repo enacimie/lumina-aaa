@@ -1,0 +1,158 @@
+{
+  "description": "Min pairwise DeltaE2000 (series + chart background) under four views for published CVD-safe palettes vs the LUMINA solver.",
+  "themes": {
+    "light": {
+      "background": "#FFFFFF",
+      "lumina": {
+        "series": [
+          "#9E246B",
+          "#798F00",
+          "#5671E0",
+          "#206735",
+          "#D35081",
+          "#009690"
+        ],
+        "minDeltaE2000": {
+          "normal": 16.09,
+          "deuteranopia": 13.64,
+          "protanopia": 13.79,
+          "tritanopia": 11.13
+        }
+      },
+      "okabeIto": {
+        "series": [
+          "#E69F00",
+          "#56B4E9",
+          "#009E73",
+          "#F0E442",
+          "#0072B2",
+          "#D55E00"
+        ],
+        "minDeltaE2000": {
+          "normal": 21.72,
+          "deuteranopia": 11.52,
+          "protanopia": 15.27,
+          "tritanopia": 12.07
+        }
+      },
+      "colorBrewerDark2": {
+        "series": [
+          "#1b9e77",
+          "#d95f02",
+          "#7570b3",
+          "#e7298a",
+          "#66a61e",
+          "#e6ab02"
+        ],
+        "minDeltaE2000": {
+          "normal": 19.33,
+          "deuteranopia": 3.36,
+          "protanopia": 6.06,
+          "tritanopia": 5.84
+        }
+      }
+    },
+    "dark": {
+      "background": "#151821",
+      "lumina": {
+        "series": [
+          "#D7DA82",
+          "#5B97D4",
+          "#BE8686",
+          "#69E4DC",
+          "#92943C",
+          "#AFDCB7"
+        ],
+        "minDeltaE2000": {
+          "normal": 15.07,
+          "deuteranopia": 13.73,
+          "protanopia": 12.26,
+          "tritanopia": 12.78
+        }
+      },
+      "okabeIto": {
+        "series": [
+          "#E69F00",
+          "#56B4E9",
+          "#009E73",
+          "#F0E442",
+          "#0072B2",
+          "#D55E00"
+        ],
+        "minDeltaE2000": {
+          "normal": 21.72,
+          "deuteranopia": 11.52,
+          "protanopia": 15.27,
+          "tritanopia": 12.07
+        }
+      },
+      "colorBrewerDark2": {
+        "series": [
+          "#1b9e77",
+          "#d95f02",
+          "#7570b3",
+          "#e7298a",
+          "#66a61e",
+          "#e6ab02"
+        ],
+        "minDeltaE2000": {
+          "normal": 19.33,
+          "deuteranopia": 3.36,
+          "protanopia": 6.06,
+          "tritanopia": 5.84
+        }
+      }
+    },
+    "contrast": {
+      "background": "#FFFFFF",
+      "lumina": {
+        "series": [
+          "#5026A8",
+          "#D34900",
+          "#008680",
+          "#7D272E",
+          "#7A5BDE",
+          "#005A5E"
+        ],
+        "minDeltaE2000": {
+          "normal": 15.79,
+          "deuteranopia": 14,
+          "protanopia": 15.42,
+          "tritanopia": 15.41
+        }
+      },
+      "okabeIto": {
+        "series": [
+          "#E69F00",
+          "#56B4E9",
+          "#009E73",
+          "#F0E442",
+          "#0072B2",
+          "#D55E00"
+        ],
+        "minDeltaE2000": {
+          "normal": 21.72,
+          "deuteranopia": 11.52,
+          "protanopia": 15.27,
+          "tritanopia": 12.07
+        }
+      },
+      "colorBrewerDark2": {
+        "series": [
+          "#1b9e77",
+          "#d95f02",
+          "#7570b3",
+          "#e7298a",
+          "#66a61e",
+          "#e6ab02"
+        ],
+        "minDeltaE2000": {
+          "normal": 19.33,
+          "deuteranopia": 3.36,
+          "protanopia": 6.06,
+          "tritanopia": 5.84
+        }
+      }
+    }
+  }
+}

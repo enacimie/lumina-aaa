@@ -1,0 +1,73 @@
+/* Static study runner. Neutral colours: the stimulus colours come from the
+ * data file, not from the page styles. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  background: #f6f8ff;
+  color: #151821;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+h1 { font-size: 1.4rem; margin: 0 0 .5rem; }
+h2 { font-size: 1.1rem; margin: 0 0 .75rem; }
+.lead { color: #475569; margin-top: 0; }
+.meta { color: #475569; font-size: .85rem; display: flex; gap: 1rem; }
+
+.field { display: block; margin: 1rem 0; }
+.field span { display: block; font-weight: 600; margin-bottom: .25rem; }
+.field input, .field select {
+  width: 100%;
+  padding: .5rem .6rem;
+  font-size: 1rem;
+  border: 1px solid #94a3b8;
+  border-radius: .35rem;
+  background: #fff;
+  color: #151821;
+}
+
+button {
+  font-size: 1rem;
+  padding: .55rem 1rem;
+  border-radius: .35rem;
+  border: 1px solid #1e40af;
+  background: #1e40af;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover { background: #1b3896; }
+kbd {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: .78rem;
+  background: rgba(255, 255, 255, .25);
+  border-radius: .2rem;
+  padding: .05rem .3rem;
+}
+
+.patches {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.patch {
+  width: 240px;
+  height: 160px;
+  border-radius: .5rem;
+  border: 1px solid #94a3b8;
+}
+
+.answers { display: flex; gap: 1rem; justify-content: center; }
+.answers button { min-width: 9rem; }
+
+.feedback { min-height: 1.5rem; margin: 1rem 0 0; text-align: center; font-weight: 600; }
+.feedback.ok { color: #065f46; }
+.feedback.ko { color: #991b1b; }

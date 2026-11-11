@@ -1,0 +1,348 @@
+{
+  "identity": "LUMINA Sapphire",
+  "profile": "integral",
+  "brand": "#1E40AF",
+  "seed": 20260908,
+  "spec_version": "0.3.0",
+  "algorithm_version": "1.0.0",
+  "hash": "8310c587049be4baeddb9c3b5ff84618670b8cfb6bceae45ac5aa0e6262fdcfe",
+  "roles": 59,
+  "tokens": 177,
+  "pairs": 348,
+  "pair_kinds": 116,
+  "pair_status_counts": {
+    "pass": 328,
+    "not_applicable": 12,
+    "warning": 5,
+    "exception": 3
+  },
+  "certification": {
+    "profile": "integral",
+    "certifiable": true,
+    "level": "LUMINA Integral Certified",
+    "blocking_failures": 0,
+    "warnings": 5,
+    "pending": 0,
+    "themes_audited": [
+      "light",
+      "dark",
+      "contrast"
+    ],
+    "failure_ids": [],
+    "warning_ids": [
+      "light::067",
+      "light::111",
+      "light::113",
+      "dark::111",
+      "dark::113"
+    ]
+  },
+  "thresholds": {
+    "text": 7.5,
+    "text-large": 7.5,
+    "non-text": 3.2,
+    "focus": 3.2,
+    "advisory-text": 3
+  },
+  "disabled_pairs": [
+    {
+      "pair_id": "light::035",
+      "fg": "text.disabled",
+      "bg": "background.default",
+      "cr": 6.14,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::036",
+      "fg": "text.disabled",
+      "bg": "background.surface",
+      "cr": 6.48,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::037",
+      "fg": "text.disabled",
+      "bg": "background.disabled",
+      "cr": 4.8,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::038",
+      "fg": "text.disabled",
+      "bg": "interactive.disabled",
+      "cr": 3.54,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::035",
+      "fg": "text.disabled",
+      "bg": "background.default",
+      "cr": 5,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::036",
+      "fg": "text.disabled",
+      "bg": "background.surface",
+      "cr": 4.48,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::037",
+      "fg": "text.disabled",
+      "bg": "background.disabled",
+      "cr": 5.74,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::038",
+      "fg": "text.disabled",
+      "bg": "interactive.disabled",
+      "cr": 3.36,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::035",
+      "fg": "text.disabled",
+      "bg": "background.default",
+      "cr": 9.44,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::036",
+      "fg": "text.disabled",
+      "bg": "background.surface",
+      "cr": 9.44,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::037",
+      "fg": "text.disabled",
+      "bg": "background.disabled",
+      "cr": 7.02,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::038",
+      "fg": "text.disabled",
+      "bg": "interactive.disabled",
+      "cr": 4.5,
+      "status": "pass"
+    }
+  ],
+  "focus_pairs": [
+    {
+      "pair_id": "light::075",
+      "fg": "focus.ring",
+      "bg": "background.default",
+      "fg_value": "#272A32",
+      "bg_value": "#F5F7FD",
+      "cr": 13.4,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::076",
+      "fg": "focus.ring",
+      "bg": "background.surface",
+      "fg_value": "#272A32",
+      "bg_value": "#FDFDFF",
+      "cr": 14.12,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::077",
+      "fg": "focus.ring",
+      "bg": "focus.inner",
+      "fg_value": "#272A32",
+      "bg_value": "#F6F8FF",
+      "cr": 13.52,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::078",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.default",
+      "fg_value": "#F6F8FF",
+      "bg_value": "#2548AF",
+      "cr": 7.54,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::079",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.hover",
+      "fg_value": "#F6F8FF",
+      "bg_value": "#17359B",
+      "cr": 9.8,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::080",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.active",
+      "fg_value": "#F6F8FF",
+      "bg_value": "#0A2188",
+      "cr": 12.48,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::081",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.focus",
+      "fg_value": "#F6F8FF",
+      "bg_value": "#2548AF",
+      "cr": 7.54,
+      "status": "pass"
+    },
+    {
+      "pair_id": "light::084",
+      "fg": "focus.ring",
+      "bg": "interactive.primary.default",
+      "fg_value": "#272A32",
+      "bg_value": "#2548AF",
+      "status": "not_applicable"
+    },
+    {
+      "pair_id": "dark::075",
+      "fg": "focus.ring",
+      "bg": "background.default",
+      "fg_value": "#D8DCE8",
+      "bg_value": "#151821",
+      "cr": 12.94,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::076",
+      "fg": "focus.ring",
+      "bg": "background.surface",
+      "fg_value": "#D8DCE8",
+      "bg_value": "#1F222B",
+      "cr": 11.59,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::077",
+      "fg": "focus.ring",
+      "bg": "focus.inner",
+      "fg_value": "#D8DCE8",
+      "bg_value": "#06080E",
+      "cr": 14.61,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::078",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.default",
+      "fg_value": "#06080E",
+      "bg_value": "#9BBAFF",
+      "cr": 10.36,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::079",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.hover",
+      "fg_value": "#06080E",
+      "bg_value": "#B8CEFF",
+      "cr": 12.69,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::080",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.active",
+      "fg_value": "#06080E",
+      "bg_value": "#87A7EE",
+      "cr": 8.38,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::081",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.focus",
+      "fg_value": "#06080E",
+      "bg_value": "#9BBAFF",
+      "cr": 10.36,
+      "status": "pass"
+    },
+    {
+      "pair_id": "dark::084",
+      "fg": "focus.ring",
+      "bg": "interactive.primary.default",
+      "fg_value": "#D8DCE8",
+      "bg_value": "#9BBAFF",
+      "status": "not_applicable"
+    },
+    {
+      "pair_id": "contrast::075",
+      "fg": "focus.ring",
+      "bg": "background.default",
+      "fg_value": "#000000",
+      "bg_value": "#FFFFFF",
+      "cr": 21,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::076",
+      "fg": "focus.ring",
+      "bg": "background.surface",
+      "fg_value": "#000000",
+      "bg_value": "#FFFFFF",
+      "cr": 21,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::077",
+      "fg": "focus.ring",
+      "bg": "focus.inner",
+      "fg_value": "#000000",
+      "bg_value": "#FFFFFF",
+      "cr": 21,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::078",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.default",
+      "fg_value": "#FFFFFF",
+      "bg_value": "#1534AA",
+      "cr": 9.98,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::079",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.hover",
+      "fg_value": "#FFFFFF",
+      "bg_value": "#07158F",
+      "cr": 13.88,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::080",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.active",
+      "fg_value": "#FFFFFF",
+      "bg_value": "#030067",
+      "cr": 17.5,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::081",
+      "fg": "focus.inner",
+      "bg": "interactive.primary.focus",
+      "fg_value": "#FFFFFF",
+      "bg_value": "#1534AA",
+      "cr": 9.98,
+      "status": "pass"
+    },
+    {
+      "pair_id": "contrast::084",
+      "fg": "focus.ring",
+      "bg": "interactive.primary.default",
+      "fg_value": "#000000",
+      "bg_value": "#1534AA",
+      "status": "not_applicable"
+    }
+  ]
+}

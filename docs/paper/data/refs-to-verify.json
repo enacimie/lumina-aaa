@@ -1,0 +1,256 @@
+[
+  {
+    "id": 1,
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "authors": [
+      "W3C"
+    ],
+    "year": 2023,
+    "type": "standard"
+  },
+  {
+    "id": 2,
+    "title": "Design Tokens Format Module",
+    "authors": [
+      "Design Tokens Community Group"
+    ],
+    "year": 2024,
+    "type": "standard"
+  },
+  {
+    "id": 3,
+    "title": "A perceptual color space for digital imaging",
+    "authors": [
+      "Bjorn Ottosson"
+    ],
+    "year": 2020,
+    "type": "blog"
+  },
+  {
+    "id": 4,
+    "title": "The CIEDE2000 color-difference formula: Implementation notes, supplementary test data, and mathematical observations",
+    "authors": [
+      "Gaurav Sharma",
+      "Wencheng Wu",
+      "Edul N. Dalal"
+    ],
+    "year": 2005,
+    "doi": "10.1002/col.20070",
+    "source": "Color Research & Application",
+    "type": "article"
+  },
+  {
+    "id": 5,
+    "title": "A physiologically-based model for simulation of color vision deficiency",
+    "authors": [
+      "Gustavo M. Machado",
+      "Manuel M. Oliveira",
+      "Leandro A. F. Fernandes"
+    ],
+    "year": 2009,
+    "doi": "10.1109/TVCG.2009.113",
+    "source": "IEEE Transactions on Visualization and Computer Graphics",
+    "type": "article"
+  },
+  {
+    "id": 6,
+    "title": "chroma.js",
+    "authors": [
+      "Gregor Aisch"
+    ],
+    "year": 2024,
+    "type": "software"
+  },
+  {
+    "id": 7,
+    "title": "Secure Hash Standard (SHS)",
+    "authors": [
+      "NIST"
+    ],
+    "year": 2015,
+    "type": "standard"
+  },
+  {
+    "id": 8,
+    "title": "Key words for use in RFCs to Indicate Requirement Levels",
+    "authors": [
+      "Scott Bradner"
+    ],
+    "year": 1997,
+    "doi": "10.17487/RFC2119",
+    "type": "article"
+  },
+  {
+    "id": 9,
+    "title": "Benchmarking web accessibility evaluation tools",
+    "authors": [
+      "Markel Vigo",
+      "Justin Brown",
+      "Vivienne Conway"
+    ],
+    "year": 2013,
+    "doi": "10.1145/2461121.2461124",
+    "type": "article"
+  },
+  {
+    "id": 10,
+    "title": "Computerized simulation of color appearance for dichromats",
+    "authors": [
+      "Hans Brettel",
+      "Francoise Vienot",
+      "John D. Mollon"
+    ],
+    "year": 1997,
+    "doi": "10.1364/JOSAA.14.002647",
+    "type": "article"
+  },
+  {
+    "id": 11,
+    "title": "The end of the rainbow? Color schemes for improved data graphics",
+    "authors": [
+      "Adam Light",
+      "Patrick J. Bartlein"
+    ],
+    "year": 2004,
+    "type": "article"
+  },
+  {
+    "id": 12,
+    "title": "ColorBrewer.org: An Online Tool for Selecting Colour Schemes for Maps",
+    "authors": [
+      "Mark Harrower",
+      "Cynthia A. Brewer"
+    ],
+    "year": 2003,
+    "type": "article"
+  },
+  {
+    "id": 13,
+    "title": "Reproducible Builds: Increasing the Integrity of Software Supply Chains",
+    "authors": [
+      "Chris Lamb",
+      "Stefano Zacchiroli"
+    ],
+    "year": 2022,
+    "doi": "10.1109/MS.2021.3073045",
+    "type": "article"
+  },
+  {
+    "id": 14,
+    "title": "Colour vision deficiency",
+    "authors": [
+      "Mate P. Simunovic"
+    ],
+    "year": 2010,
+    "doi": "10.1038/eye.2009.251",
+    "type": "article"
+  },
+  {
+    "id": 15,
+    "title": "Survey of hallucination in natural language generation",
+    "authors": [
+      "Ziwei Ji",
+      "Nayeon Lee",
+      "Rita Frieske"
+    ],
+    "year": 2023,
+    "doi": "10.1145/3571730",
+    "type": "article"
+  },
+  {
+    "id": 16,
+    "title": "Interactive color palette tools",
+    "authors": [
+      "Bernice Jennifer Meier",
+      "Anne Morgan Spalter",
+      "Dare B. Karelitz"
+    ],
+    "year": 2004,
+    "doi": "10.1109/MCG.2004.1297012",
+    "type": "article"
+  },
+  {
+    "id": 17,
+    "title": "Colorgorical: Creating discriminable and preferable color palettes for information visualization",
+    "authors": [
+      "Connor C. Gramazio",
+      "David H. Laidlaw",
+      "Karen B. Schloss"
+    ],
+    "year": 2017,
+    "doi": "10.1109/TVCG.2016.2598918",
+    "source": "IEEE Transactions on Visualization and Computer Graphics",
+    "type": "article"
+  },
+  {
+    "id": 18,
+    "title": "Palettailor: Discriminable colorization for categorical data",
+    "authors": [
+      "Kecheng Lu",
+      "Mi Feng",
+      "Xin Chen",
+      "Michael Sedlmair",
+      "Oliver Deussen",
+      "Dani Lischinski",
+      "Zhanglin Cheng",
+      "Yunhai Wang"
+    ],
+    "year": 2021,
+    "doi": "10.1109/TVCG.2020.3030406",
+    "source": "IEEE Transactions on Visualization and Computer Graphics",
+    "type": "article"
+  },
+  {
+    "id": 19,
+    "title": "Color compatibility from large datasets",
+    "authors": [
+      "Peter O'Donovan",
+      "Aseem Agarwala",
+      "Aaron Hertzmann"
+    ],
+    "year": 2011,
+    "doi": "10.1145/1964921.1964958",
+    "source": "ACM SIGGRAPH 2011 Papers",
+    "type": "inproceedings"
+  },
+  {
+    "id": 20,
+    "title": "Material Design 3: Color system",
+    "authors": [
+      "Google"
+    ],
+    "year": 2024,
+    "source": "Material Design 3 documentation",
+    "type": "web"
+  },
+  {
+    "id": 21,
+    "title": "Color design tokens",
+    "authors": [
+      "U.S. Web Design System"
+    ],
+    "year": 2024,
+    "source": "U.S. Web Design System documentation",
+    "type": "web"
+  },
+  {
+    "id": 22,
+    "title": "axe-core",
+    "authors": [
+      "Deque Systems"
+    ],
+    "year": 2024,
+    "source": "axe-core software repository",
+    "type": "software"
+  },
+  {
+    "id": 23,
+    "title": "Lighthouse",
+    "authors": [
+      "Google"
+    ],
+    "year": 2024,
+    "source": "Lighthouse documentation",
+    "type": "web"
+  }
+]

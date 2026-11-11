@@ -1,0 +1,276 @@
+/* LUMINA-AAA generated design tokens - DO NOT EDIT BY HAND
+ * system      lumina
+ * identity    LUMINA Sapphire
+ * brand       #1E40AF
+ * spec        v0.3.0 / algorithm v1.0.0 / WCAG 2.2
+ * profile     integral (LUMINA Integral)
+ * seed        20260908
+ * audit hash  8310c587049be4baeddb9c3b5ff84618670b8cfb6bceae45ac5aa0e6262fdcfe
+ * Regenerate with: npm run build
+ */
+
+ * Light theme is the default.
+:root {
+  color-scheme: light;
+  --lum-background-default: #F5F7FD;
+  --lum-background-disabled: #DADCE2;
+  --lum-background-inverse: #1B1E25;
+  --lum-background-overlay: #62656B;
+  --lum-background-raised: #FFFFFF;
+  --lum-background-subtle: #E2E4EA;
+  --lum-background-surface: #FDFDFF;
+  --lum-border-default: #5E6169;
+  --lum-border-error: #A71E38;
+  --lum-border-focus: #18379D;
+  --lum-border-strong: #3E4149;
+  --lum-border-subtle: #979BA4;
+  --lum-chart-axis: #747881;
+  --lum-chart-background: #FFFFFF;
+  --lum-chart-grid: #BEC2CC;
+  --lum-chart-label: #20232A;
+  --lum-chart-series-1: #9E246B;
+  --lum-chart-series-2: #798F00;
+  --lum-chart-series-3: #5671E0;
+  --lum-chart-series-4: #206735;
+  --lum-chart-series-5: #D35081;
+  --lum-chart-series-6: #009690;
+  --lum-chart-surface: #F7F9FF;
+  --lum-feedback-error-background: #FFE8E8;
+  --lum-feedback-error-border: #D34B5B;
+  --lum-feedback-error-icon: #D34B5B;
+  --lum-feedback-error-text: #8C0027;
+  --lum-feedback-info-background: #E7EEFF;
+  --lum-feedback-info-border: #517AE7;
+  --lum-feedback-info-icon: #517AE7;
+  --lum-feedback-info-text: #1A3AA1;
+  --lum-feedback-success-background: #D0FAE2;
+  --lum-feedback-success-border: #009460;
+  --lum-feedback-success-icon: #009460;
+  --lum-feedback-success-text: #005032;
+  --lum-feedback-warning-background: #FFEBD4;
+  --lum-feedback-warning-border: #B37100;
+  --lum-feedback-warning-icon: #B37100;
+  --lum-feedback-warning-text: #623C00;
+  --lum-focus-inner: #F6F8FF;
+  --lum-focus-ring: #272A32;
+  --lum-interactive-disabled: #BCBEC4;
+  --lum-interactive-ghost-default: #FFFFFF;
+  --lum-interactive-ghost-hover: #E4E6EC;
+  --lum-interactive-primary-active: #0A2188;
+  --lum-interactive-primary-default: #2548AF;
+  --lum-interactive-primary-focus: #2548AF;
+  --lum-interactive-primary-hover: #17359B;
+  --lum-interactive-secondary-active: #CACCD1;
+  --lum-interactive-secondary-default: #FDFDFF;
+  --lum-interactive-secondary-hover: #E2E4EA;
+  --lum-interactive-selected: #AEBEE3;
+  --lum-text-disabled: #5A5D66;
+  --lum-text-inverse: #E2E6F0;
+  --lum-text-link: #081D84;
+  --lum-text-on-primary: #FFFFFF;
+  --lum-text-on-surface: #1E2028;
+  --lum-text-primary: #010104;
+  --lum-text-secondary: #272A32;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --lum-background-default: #151821;
+  --lum-background-disabled: #04050C;
+  --lum-background-inverse: #E7EBF6;
+  --lum-background-overlay: #07080B;
+  --lum-background-raised: #292D36;
+  --lum-background-subtle: #0E1119;
+  --lum-background-surface: #1F222B;
+  --lum-border-default: #868A94;
+  --lum-border-error: #D37A7F;
+  --lum-border-focus: #ABC5FF;
+  --lum-border-strong: #BBBFCA;
+  --lum-border-subtle: #565A64;
+  --lum-chart-axis: #797C87;
+  --lum-chart-background: #151821;
+  --lum-chart-grid: #434650;
+  --lum-chart-label: #F6F8FF;
+  --lum-chart-series-1: #D7DA82;
+  --lum-chart-series-2: #5B97D4;
+  --lum-chart-series-3: #BE8686;
+  --lum-chart-series-4: #69E4DC;
+  --lum-chart-series-5: #92943C;
+  --lum-chart-series-6: #AFDCB7;
+  --lum-chart-surface: #2A2E37;
+  --lum-feedback-error-background: #2F040B;
+  --lum-feedback-error-border: #B55F65;
+  --lum-feedback-error-icon: #B55F65;
+  --lum-feedback-error-text: #F3989C;
+  --lum-feedback-info-background: #071336;
+  --lum-feedback-info-border: #5672B6;
+  --lum-feedback-info-icon: #5672B6;
+  --lum-feedback-info-text: #92B2FA;
+  --lum-feedback-success-background: #001D0F;
+  --lum-feedback-success-border: #2B8A5F;
+  --lum-feedback-success-icon: #2B8A5F;
+  --lum-feedback-success-text: #6CC698;
+  --lum-feedback-warning-background: #231200;
+  --lum-feedback-warning-border: #996316;
+  --lum-feedback-warning-icon: #996316;
+  --lum-feedback-warning-text: #E1A862;
+  --lum-focus-inner: #06080E;
+  --lum-focus-ring: #D8DCE8;
+  --lum-interactive-disabled: #333741;
+  --lum-interactive-ghost-default: #151821;
+  --lum-interactive-ghost-hover: #060810;
+  --lum-interactive-primary-active: #87A7EE;
+  --lum-interactive-primary-default: #9BBAFF;
+  --lum-interactive-primary-focus: #9BBAFF;
+  --lum-interactive-primary-hover: #B8CEFF;
+  --lum-interactive-secondary-active: #020308;
+  --lum-interactive-secondary-default: #1F222B;
+  --lum-interactive-secondary-hover: #0E1119;
+  --lum-interactive-selected: #2C3C62;
+  --lum-text-disabled: #848893;
+  --lum-text-inverse: #1D2029;
+  --lum-text-link: #B5CCFF;
+  --lum-text-on-primary: #0D0F17;
+  --lum-text-on-surface: #E8ECF8;
+  --lum-text-primary: #E8ECF8;
+  --lum-text-secondary: #CBCFDB;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="contrast"]) {
+  color-scheme: dark;
+  --lum-background-default: #151821;
+  --lum-background-disabled: #04050C;
+  --lum-background-inverse: #E7EBF6;
+  --lum-background-overlay: #07080B;
+  --lum-background-raised: #292D36;
+  --lum-background-subtle: #0E1119;
+  --lum-background-surface: #1F222B;
+  --lum-border-default: #868A94;
+  --lum-border-error: #D37A7F;
+  --lum-border-focus: #ABC5FF;
+  --lum-border-strong: #BBBFCA;
+  --lum-border-subtle: #565A64;
+  --lum-chart-axis: #797C87;
+  --lum-chart-background: #151821;
+  --lum-chart-grid: #434650;
+  --lum-chart-label: #F6F8FF;
+  --lum-chart-series-1: #D7DA82;
+  --lum-chart-series-2: #5B97D4;
+  --lum-chart-series-3: #BE8686;
+  --lum-chart-series-4: #69E4DC;
+  --lum-chart-series-5: #92943C;
+  --lum-chart-series-6: #AFDCB7;
+  --lum-chart-surface: #2A2E37;
+  --lum-feedback-error-background: #2F040B;
+  --lum-feedback-error-border: #B55F65;
+  --lum-feedback-error-icon: #B55F65;
+  --lum-feedback-error-text: #F3989C;
+  --lum-feedback-info-background: #071336;
+  --lum-feedback-info-border: #5672B6;
+  --lum-feedback-info-icon: #5672B6;
+  --lum-feedback-info-text: #92B2FA;
+  --lum-feedback-success-background: #001D0F;
+  --lum-feedback-success-border: #2B8A5F;
+  --lum-feedback-success-icon: #2B8A5F;
+  --lum-feedback-success-text: #6CC698;
+  --lum-feedback-warning-background: #231200;
+  --lum-feedback-warning-border: #996316;
+  --lum-feedback-warning-icon: #996316;
+  --lum-feedback-warning-text: #E1A862;
+  --lum-focus-inner: #06080E;
+  --lum-focus-ring: #D8DCE8;
+  --lum-interactive-disabled: #333741;
+  --lum-interactive-ghost-default: #151821;
+  --lum-interactive-ghost-hover: #060810;
+  --lum-interactive-primary-active: #87A7EE;
+  --lum-interactive-primary-default: #9BBAFF;
+  --lum-interactive-primary-focus: #9BBAFF;
+  --lum-interactive-primary-hover: #B8CEFF;
+  --lum-interactive-secondary-active: #020308;
+  --lum-interactive-secondary-default: #1F222B;
+  --lum-interactive-secondary-hover: #0E1119;
+  --lum-interactive-selected: #2C3C62;
+  --lum-text-disabled: #848893;
+  --lum-text-inverse: #1D2029;
+  --lum-text-link: #B5CCFF;
+  --lum-text-on-primary: #0D0F17;
+  --lum-text-on-surface: #E8ECF8;
+  --lum-text-primary: #E8ECF8;
+  --lum-text-secondary: #CBCFDB;
+  }
+}
+
+ * High-contrast theme expresses surface hierarchy with borders, not fills,
+ * so the background distinctness pairs are not applicable here.
+[data-theme="contrast"] {
+  color-scheme: light;
+  --lum-background-default: #FFFFFF;
+  --lum-background-disabled: #DEDEDE;
+  --lum-background-inverse: #000000;
+  --lum-background-overlay: #333333;
+  --lum-background-raised: #FFFFFF;
+  --lum-background-subtle: #DEDEDE;
+  --lum-background-surface: #FFFFFF;
+  --lum-border-default: #3E3E3E;
+  --lum-border-error: #8F0028;
+  --lum-border-focus: #2A51C8;
+  --lum-border-strong: #000000;
+  --lum-border-subtle: #626262;
+  --lum-chart-axis: #515151;
+  --lum-chart-background: #FFFFFF;
+  --lum-chart-grid: #959595;
+  --lum-chart-label: #000000;
+  --lum-chart-series-1: #5026A8;
+  --lum-chart-series-2: #D34900;
+  --lum-chart-series-3: #008680;
+  --lum-chart-series-4: #7D272E;
+  --lum-chart-series-5: #7A5BDE;
+  --lum-chart-series-6: #005A5E;
+  --lum-chart-surface: #FFFFFF;
+  --lum-feedback-error-background: #FFE8E8;
+  --lum-feedback-error-border: #C42744;
+  --lum-feedback-error-icon: #C42744;
+  --lum-feedback-error-text: #70001E;
+  --lum-feedback-info-background: #E7EFFF;
+  --lum-feedback-info-border: #3159D1;
+  --lum-feedback-info-icon: #3159D1;
+  --lum-feedback-info-text: #0C249B;
+  --lum-feedback-success-background: #D3F9E3;
+  --lum-feedback-success-border: #007F52;
+  --lum-feedback-success-icon: #007F52;
+  --lum-feedback-success-text: #004027;
+  --lum-feedback-warning-background: #FFEBD5;
+  --lum-feedback-warning-border: #9A6100;
+  --lum-feedback-warning-icon: #9A6100;
+  --lum-feedback-warning-text: #4E2F00;
+  --lum-focus-inner: #FFFFFF;
+  --lum-focus-ring: #000000;
+  --lum-interactive-disabled: #B3B3B3;
+  --lum-interactive-ghost-default: #FFFFFF;
+  --lum-interactive-ghost-hover: #E6E6E6;
+  --lum-interactive-primary-active: #030067;
+  --lum-interactive-primary-default: #1534AA;
+  --lum-interactive-primary-focus: #1534AA;
+  --lum-interactive-primary-hover: #07158F;
+  --lum-interactive-secondary-active: #CACACA;
+  --lum-interactive-secondary-default: #FFFFFF;
+  --lum-interactive-secondary-hover: #E4E4E4;
+  --lum-interactive-selected: #AFBEE0;
+  --lum-text-disabled: #464646;
+  --lum-text-inverse: #FFFFFF;
+  --lum-text-link: #04006C;
+  --lum-text-on-primary: #FFFFFF;
+  --lum-text-on-surface: #000000;
+  --lum-text-primary: #000000;
+  --lum-text-secondary: #000000;
+}
+
+/* Focus indicator: the section 8 double ring.
+ * focus.ring contrasts with the page, focus.inner with the component fill.
+ * SC 2.4.13 measures the indicator, not the component fill. */
+:where(:focus-visible) {
+  outline: 3px solid var(--lum-focus-ring);
+  outline-offset: 2px;
+  box-shadow: inset 0 0 0 2px var(--lum-focus-inner);
+}

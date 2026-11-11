@@ -1,0 +1,1147 @@
+{
+  "$schema": "lumina/schemas/pairs/v1.json",
+  "system": "lumina",
+  "specVersion": "0.3.0",
+  "profile": "integral",
+  "pairCount": 116,
+  "themes": 3,
+  "pairs": [
+    {
+      "foreground": "text.primary",
+      "background": "background.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.primary",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.primary",
+      "background": "background.subtle",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.primary",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.secondary",
+      "background": "background.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.secondary",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.secondary",
+      "background": "background.subtle",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.secondary",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.on-surface",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.on-surface",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.hover",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.active",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.focus",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "background.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "background.subtle",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "interactive.secondary.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "interactive.secondary.hover",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "interactive.secondary.active",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "interactive.ghost.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.link",
+      "background": "interactive.ghost.hover",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.primary",
+      "background": "interactive.selected",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.inverse",
+      "background": "background.inverse",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "feedback.success.text",
+      "background": "feedback.success.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "feedback.warning.text",
+      "background": "feedback.warning.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "feedback.error.text",
+      "background": "feedback.error.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "feedback.info.text",
+      "background": "feedback.info.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "chart.label",
+      "background": "chart.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001"
+    },
+    {
+      "foreground": "text.primary",
+      "background": "background.surface",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "usage": "display headings"
+    },
+    {
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.default",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "usage": "large button labels"
+    },
+    {
+      "foreground": "feedback.error.text",
+      "background": "feedback.error.background",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "usage": "alert titles"
+    },
+    {
+      "foreground": "chart.label",
+      "background": "chart.background",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "usage": "chart titles"
+    },
+    {
+      "foreground": "text.disabled",
+      "background": "background.default",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "text.disabled",
+      "background": "background.surface",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "text.disabled",
+      "background": "background.disabled",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "text.disabled",
+      "background": "interactive.disabled",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "border.default",
+      "background": "background.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "border.default",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "border.default",
+      "background": "background.subtle",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "border.default",
+      "background": "background.raised",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "border.default",
+      "background": "interactive.secondary.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "note": "functional border of a secondary button"
+    },
+    {
+      "foreground": "border.strong",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "border.strong",
+      "background": "background.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "border.subtle",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-003",
+      "exempt": true,
+      "note": "decorative separator, exempt under section 1"
+    },
+    {
+      "foreground": "border.error",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "border.error",
+      "background": "background.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "interactive.primary.default",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "note": "filled button boundary, SC 1.4.11"
+    },
+    {
+      "foreground": "interactive.selected",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-NTX-004",
+      "policy": "recommendation",
+      "note": "selection region; section 9.4 mandates a non-chromatic indicator as well"
+    },
+    {
+      "foreground": "interactive.secondary.default",
+      "background": "background.surface",
+      "class": "alias",
+      "requirement": "LUM-STA-003",
+      "note": "unfilled control: the fill is intentionally the surface, and the control is identified by border.default"
+    },
+    {
+      "foreground": "interactive.disabled",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-NTX-005",
+      "policy": "recommendation",
+      "note": "WCAG exempts inactive controls"
+    },
+    {
+      "foreground": "background.overlay",
+      "background": "background.default",
+      "class": "distinct",
+      "requirement": "LUM-NTX-006",
+      "policy": "recommendation",
+      "composed": true,
+      "note": "modal scrim boundary"
+    },
+    {
+      "foreground": "feedback.success.border",
+      "background": "feedback.success.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "feedback.success.icon",
+      "background": "feedback.success.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "feedback.success.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "feedback.warning.border",
+      "background": "feedback.warning.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "feedback.warning.icon",
+      "background": "feedback.warning.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "feedback.warning.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "feedback.error.border",
+      "background": "feedback.error.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "feedback.error.icon",
+      "background": "feedback.error.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "feedback.error.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "feedback.info.border",
+      "background": "feedback.info.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001"
+    },
+    {
+      "foreground": "feedback.info.icon",
+      "background": "feedback.info.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "feedback.info.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "chart.axis",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "chart.surface",
+      "background": "chart.background",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "policy": "recommendation",
+      "exceptThemes": [
+        "contrast"
+      ]
+    },
+    {
+      "foreground": "chart.grid",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-003",
+      "exempt": true,
+      "note": "gridlines are not essential graphics, exempt under section 1"
+    },
+    {
+      "foreground": "chart.series.1",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "chart.series.2",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "chart.series.3",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "chart.series.4",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "chart.series.5",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "chart.series.6",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002"
+    },
+    {
+      "foreground": "focus.ring",
+      "background": "background.default",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "focus.ring",
+      "background": "background.surface",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "focus.ring",
+      "background": "focus.inner",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "focus.inner",
+      "background": "interactive.primary.default",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "focus.inner",
+      "background": "interactive.primary.hover",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "focus.inner",
+      "background": "interactive.primary.active",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "focus.inner",
+      "background": "interactive.primary.focus",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "border.focus",
+      "background": "background.surface",
+      "class": "focus",
+      "requirement": "LUM-FOC-002"
+    },
+    {
+      "foreground": "border.focus",
+      "background": "border.default",
+      "class": "non-text",
+      "requirement": "LUM-FOC-004",
+      "note": "measured for information only: SC 2.4.13 asks for 3:1 between the same pixels focused and unfocused, and on an input that area is provided by the focus ring rather than by a border colour swap"
+    },
+    {
+      "foreground": "focus.ring",
+      "background": "interactive.primary.default",
+      "class": "non-adjacent",
+      "requirement": "LUM-FOC-005",
+      "policy": "option",
+      "adjacent": false,
+      "note": "separated by focus.inner; recorded to document the adjacency model"
+    },
+    {
+      "foreground": "interactive.primary.hover",
+      "background": "interactive.primary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002"
+    },
+    {
+      "foreground": "interactive.primary.active",
+      "background": "interactive.primary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002"
+    },
+    {
+      "foreground": "interactive.primary.focus",
+      "background": "interactive.primary.default",
+      "class": "alias",
+      "requirement": "LUM-STA-002",
+      "note": "the fill does not change on keyboard focus; discriminability is carried by focus.ring and focus.inner, which is what SC 2.4.13 measures"
+    },
+    {
+      "foreground": "interactive.primary.active",
+      "background": "interactive.primary.hover",
+      "class": "state-change",
+      "requirement": "LUM-STA-002"
+    },
+    {
+      "foreground": "interactive.secondary.hover",
+      "background": "interactive.secondary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002"
+    },
+    {
+      "foreground": "interactive.secondary.active",
+      "background": "interactive.secondary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002"
+    },
+    {
+      "foreground": "interactive.ghost.hover",
+      "background": "interactive.ghost.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002"
+    },
+    {
+      "foreground": "chart.series.1",
+      "background": "chart.series.2",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.1",
+      "background": "chart.series.3",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.1",
+      "background": "chart.series.4",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.1",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.1",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.2",
+      "background": "chart.series.3",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.2",
+      "background": "chart.series.4",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.2",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.2",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.3",
+      "background": "chart.series.4",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.3",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.3",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.4",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.4",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "chart.series.5",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001"
+    },
+    {
+      "foreground": "feedback.error.icon",
+      "background": "feedback.success.icon",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "policy": "recommendation",
+      "reinforcedBy": "icon + text label + border (section 9.4)",
+      "note": "section 9.4 already mandates non-chromatic reinforcement"
+    },
+    {
+      "foreground": "feedback.warning.icon",
+      "background": "feedback.error.icon",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "policy": "recommendation",
+      "reinforcedBy": "icon + text label + border (section 9.4)"
+    },
+    {
+      "foreground": "feedback.info.icon",
+      "background": "feedback.success.icon",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "policy": "recommendation",
+      "reinforcedBy": "icon + text label + border (section 9.4)"
+    },
+    {
+      "foreground": "interactive.selected",
+      "background": "background.surface",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "policy": "recommendation",
+      "reinforcedBy": "check indicator + border (section 9.4)"
+    },
+    {
+      "foreground": "background.default",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "policy": "recommendation",
+      "exceptThemes": [
+        "contrast"
+      ]
+    },
+    {
+      "foreground": "background.surface",
+      "background": "background.subtle",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "background.surface",
+      "background": "background.raised",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "policy": "recommendation",
+      "exceptThemes": [
+        "contrast"
+      ]
+    },
+    {
+      "foreground": "background.default",
+      "background": "background.disabled",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "background.inverse",
+      "background": "background.default",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "policy": "recommendation"
+    },
+    {
+      "foreground": "background.overlay",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "policy": "recommendation"
+    }
+  ],
+  "mustBeDistinct": [
+    [
+      "focus.ring",
+      "interactive.primary.default"
+    ],
+    [
+      "focus.ring",
+      "interactive.primary.hover"
+    ],
+    [
+      "focus.ring",
+      "interactive.primary.active"
+    ],
+    [
+      "focus.ring",
+      "interactive.primary.focus"
+    ],
+    [
+      "focus.ring",
+      "focus.inner"
+    ],
+    [
+      "focus.inner",
+      "interactive.primary.default"
+    ],
+    [
+      "focus.inner",
+      "interactive.primary.hover"
+    ],
+    [
+      "focus.inner",
+      "interactive.primary.active"
+    ],
+    [
+      "focus.inner",
+      "interactive.primary.focus"
+    ],
+    [
+      "border.focus",
+      "border.default"
+    ],
+    [
+      "border.error",
+      "border.default"
+    ],
+    [
+      "border.strong",
+      "border.default"
+    ],
+    [
+      "interactive.primary.hover",
+      "interactive.primary.default"
+    ],
+    [
+      "interactive.primary.active",
+      "interactive.primary.default"
+    ],
+    [
+      "interactive.secondary.hover",
+      "interactive.secondary.default"
+    ],
+    [
+      "interactive.secondary.active",
+      "interactive.secondary.default"
+    ],
+    [
+      "interactive.ghost.hover",
+      "interactive.ghost.default"
+    ],
+    [
+      "interactive.disabled",
+      "background.disabled"
+    ],
+    [
+      "chart.series.1",
+      "chart.series.2"
+    ],
+    [
+      "chart.series.2",
+      "chart.series.3"
+    ],
+    [
+      "chart.series.3",
+      "chart.series.4"
+    ],
+    [
+      "chart.series.4",
+      "chart.series.5"
+    ],
+    [
+      "chart.series.5",
+      "chart.series.6"
+    ],
+    [
+      "chart.series.6",
+      "chart.series.1"
+    ],
+    [
+      "feedback.success.icon",
+      "feedback.error.icon"
+    ],
+    [
+      "feedback.success.icon",
+      "feedback.warning.icon"
+    ],
+    [
+      "feedback.error.icon",
+      "feedback.warning.icon"
+    ],
+    [
+      "feedback.info.icon",
+      "feedback.error.icon"
+    ],
+    [
+      "feedback.success.text",
+      "feedback.error.text"
+    ],
+    [
+      "feedback.success.background",
+      "feedback.error.background"
+    ]
+  ],
+  "requirements": [
+    {
+      "id": "LUM-TXT-001",
+      "area": "Normal text",
+      "requirement": "CR >= profile.text",
+      "profile": "AAA+ / Integral",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-TXT-002",
+      "area": "Large text",
+      "requirement": "CR >= profile.largeText",
+      "profile": "AAA+",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-TXT-004",
+      "area": "Disabled text",
+      "requirement": "CR >= 3.0 when informative",
+      "profile": "all",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-NTX-001",
+      "area": "UI components",
+      "requirement": "CR >= profile.nonText",
+      "profile": "AAA+ / Integral",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-NTX-002",
+      "area": "Essential graphics",
+      "requirement": "CR >= profile.nonText",
+      "profile": "AAA+ / Integral",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-NTX-003",
+      "area": "Decorative separators",
+      "requirement": "CR >= profile.nonText",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-NTX-004",
+      "area": "Selection region",
+      "requirement": "discernible + non-chromatic indicator",
+      "profile": "all",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-NTX-005",
+      "area": "Inactive controls",
+      "requirement": "CR >= 3.0 when informative",
+      "profile": "all",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-NTX-006",
+      "area": "Modal scrim",
+      "requirement": "discernible boundary",
+      "profile": "all",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-FOC-001",
+      "area": "Focus visible",
+      "requirement": "visible on keyboard focus",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-FOC-002",
+      "area": "Focus contrast",
+      "requirement": "CR >= profile.focus against adjacent colours",
+      "profile": "AAA+ / Integral",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-FOC-003",
+      "area": "Focus area",
+      "requirement": ">= 2 CSS px perimeter equivalent",
+      "profile": "Integral",
+      "strength": "requirement",
+      "scope": "integration",
+      "note": "measured on the consuming CSS (demo), not on token values"
+    },
+    {
+      "id": "LUM-FOC-004",
+      "area": "Focus state change",
+      "requirement": "SC 2.4.13: CR >= 3.0 between focused and unfocused pixels",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-FOC-005",
+      "area": "Focus adjacency",
+      "requirement": "non-adjacent pairs are reported not_applicable",
+      "profile": "all",
+      "strength": "option"
+    },
+    {
+      "id": "LUM-STA-002",
+      "area": "State discriminability",
+      "requirement": "DeltaE2000 >= 5 and |DeltaH| <= 5 deg between states of a component; the focus state is carried by the focus ring, as SC 2.4.13 measures the indicator rather than the fill",
+      "profile": "Integral",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-STA-003",
+      "area": "Unfilled controls",
+      "requirement": "discernible against the surface",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-STA-004",
+      "area": "Regions",
+      "requirement": "discernible against the surrounding surface",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-COL-001",
+      "area": "Colour-only signalling",
+      "requirement": "prohibited for critical states",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-COL-002",
+      "area": "Text on scrims",
+      "requirement": "essential text MUST NOT be placed on background.overlay; content sits on a solid panel",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-CVD-001",
+      "area": "Chart series",
+      "requirement": "DeltaE2000 >= 10 under protanopia, deuteranopia and tritanopia",
+      "profile": "AAA+",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-CVD-002",
+      "area": "Semantic colours",
+      "requirement": "DeltaE2000 >= 10 under dichromacy, or non-chromatic reinforcement",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-DIS-001",
+      "area": "Distinctness",
+      "requirement": "tokens declared MUST_BE_DISTINCT must not share an sRGB value",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-DIS-002",
+      "area": "Surface hierarchy",
+      "requirement": "tokens declared SHOULD_BE_DISTINCT must not share an sRGB value; theme-exempt pairs report not_applicable with the exemption reason",
+      "profile": "all",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-TOK-001",
+      "area": "Tokens",
+      "requirement": "all mandatory tokens present in every theme",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-TOK-002",
+      "area": "Metadata",
+      "requirement": "complete metadata, no pending fields",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-IDE-001",
+      "area": "Surface hierarchy",
+      "requirement": "surfaces discernible from each other",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-IDE-002",
+      "area": "Neutral chroma",
+      "requirement": "C <= profile.chroma.neutralMax",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-IDE-003",
+      "area": "Surface chroma",
+      "requirement": "C <= profile.chroma.surfaceMax",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-IDE-004",
+      "area": "Accent chroma",
+      "requirement": "profile.chroma.accentMin <= C <= profile.chroma.accentMax",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-IDE-005",
+      "area": "Hue coherence",
+      "requirement": "neutrals derive from the brand hue within +/- 5 deg",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-IDE-006",
+      "area": "Scale monotonicity",
+      "requirement": "primitive codes are monotonic in OKLCH lightness",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-IDE-007",
+      "area": "Soft tint chroma",
+      "requirement": "C <= profile.chroma.softMax for accent-soft tokens",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-IDE-008",
+      "area": "Ramp smoothness",
+      "requirement": "0.02 <= |DeltaL| <= profile lightness step max between consecutive primitive steps",
+      "profile": "AAA+",
+      "strength": "recommendation"
+    },
+    {
+      "id": "LUM-AUD-001",
+      "area": "Audit",
+      "requirement": "reproducible, hashed report",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-EXC-001",
+      "area": "Exceptions",
+      "requirement": "registered, justified, dated",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-THE-001",
+      "area": "Themes",
+      "requirement": "light and dark present",
+      "profile": "all",
+      "strength": "requirement"
+    },
+    {
+      "id": "LUM-THE-002",
+      "area": "High contrast theme",
+      "requirement": "present or forced-colors adaptation",
+      "profile": "Integral",
+      "strength": "requirement"
+    }
+  ]
+}

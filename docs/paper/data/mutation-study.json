@@ -1,0 +1,248 @@
+{
+  "description": "Fault-injection study on the integral reference palette. Each mutant injects one known defect into a named relation; detection = that relation reported non-pass (MUST-fail or SHOULD-warning). False-positive controls are clean palettes.",
+  "baseline": {
+    "blocking_failures": 0,
+    "warnings": 5
+  },
+  "mutants": [
+    {
+      "id": "MT-01",
+      "cls": "contrast-text",
+      "desc": "body text below 7:1 (light)",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 6,
+      "new_failures": 6,
+      "new_warnings": 0,
+      "sample_ids": [
+        "light::001",
+        "light::002",
+        "light::003"
+      ]
+    },
+    {
+      "id": "MT-02",
+      "cls": "contrast-text",
+      "desc": "body text below 7:1 (dark)",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 6,
+      "new_failures": 6,
+      "new_warnings": 0,
+      "sample_ids": [
+        "dark::001",
+        "dark::002",
+        "dark::003"
+      ]
+    },
+    {
+      "id": "MT-03",
+      "cls": "contrast-text-boundary",
+      "desc": "body text just under threshold",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 6,
+      "new_failures": 6,
+      "new_warnings": 0,
+      "sample_ids": [
+        "light::001",
+        "light::002",
+        "light::003"
+      ]
+    },
+    {
+      "id": "MT-04",
+      "cls": "contrast-nontext",
+      "desc": "interactive fill below 3:1 vs surface",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 8,
+      "new_failures": 7,
+      "new_warnings": 1,
+      "sample_ids": [
+        "light::011",
+        "light::032",
+        "light::049"
+      ]
+    },
+    {
+      "id": "MT-05",
+      "cls": "focus-alias",
+      "desc": "focus inner ring aliased to fill (CR 1.0)",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 8,
+      "new_failures": 7,
+      "new_warnings": 1,
+      "sample_ids": [
+        "light::077",
+        "light::078",
+        "light::079"
+      ]
+    },
+    {
+      "id": "MT-06",
+      "cls": "focus-alias",
+      "desc": "focus inner ring aliased to fill (dark)",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 8,
+      "new_failures": 7,
+      "new_warnings": 1,
+      "sample_ids": [
+        "dark::077",
+        "dark::078",
+        "dark::079"
+      ]
+    },
+    {
+      "id": "MT-07",
+      "cls": "missing-role",
+      "desc": "mandatory role removed (text.inverse)",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 1,
+      "new_failures": 2,
+      "new_warnings": 0,
+      "sample_ids": [
+        "light::text.inverse::presence"
+      ]
+    },
+    {
+      "id": "MT-08",
+      "cls": "state-discriminability",
+      "desc": "hover identical to default (dE 0)",
+      "expected": "warning",
+      "detected": true,
+      "targeted_nonpass": 2,
+      "new_failures": 2,
+      "new_warnings": 0,
+      "sample_ids": [
+        "light::085",
+        "light::interactive.primary.hover!=interactive.primary.default"
+      ]
+    },
+    {
+      "id": "MT-09",
+      "cls": "cvd-separability",
+      "desc": "two chart series identical",
+      "expected": "warning",
+      "detected": true,
+      "targeted_nonpass": 2,
+      "new_failures": 2,
+      "new_warnings": 0,
+      "sample_ids": [
+        "light::092",
+        "light::chart.series.1!=chart.series.2"
+      ]
+    },
+    {
+      "id": "MT-10",
+      "cls": "accent-chroma",
+      "desc": "accent desaturated below chroma band",
+      "expected": "warning",
+      "detected": true,
+      "targeted_nonpass": 4,
+      "new_failures": 3,
+      "new_warnings": 1,
+      "sample_ids": [
+        "light::011",
+        "light::032",
+        "light::087"
+      ]
+    },
+    {
+      "id": "MT-11",
+      "cls": "surface-distinctness",
+      "desc": "raised surface identical to default",
+      "expected": "warning",
+      "detected": true,
+      "targeted_nonpass": 2,
+      "new_failures": 0,
+      "new_warnings": 0,
+      "sample_ids": [
+        "light::113",
+        "dark::113"
+      ]
+    },
+    {
+      "id": "MT-12",
+      "cls": "contrast-text",
+      "desc": "body text below 7:1 (contrast theme)",
+      "expected": "fail",
+      "detected": true,
+      "targeted_nonpass": 6,
+      "new_failures": 6,
+      "new_warnings": 0,
+      "sample_ids": [
+        "contrast::001",
+        "contrast::002",
+        "contrast::003"
+      ]
+    }
+  ],
+  "per_class": {
+    "contrast-text": {
+      "total": 3,
+      "detected": 3
+    },
+    "contrast-text-boundary": {
+      "total": 1,
+      "detected": 1
+    },
+    "contrast-nontext": {
+      "total": 1,
+      "detected": 1
+    },
+    "focus-alias": {
+      "total": 2,
+      "detected": 2
+    },
+    "missing-role": {
+      "total": 1,
+      "detected": 1
+    },
+    "state-discriminability": {
+      "total": 1,
+      "detected": 1
+    },
+    "cvd-separability": {
+      "total": 1,
+      "detected": 1
+    },
+    "accent-chroma": {
+      "total": 1,
+      "detected": 1
+    },
+    "surface-distinctness": {
+      "total": 1,
+      "detected": 1
+    }
+  },
+  "recall": 1,
+  "false_positive_controls": [
+    {
+      "id": "FP-00",
+      "desc": "unmutated reference",
+      "blocking": 0
+    },
+    {
+      "id": "FP-seed-1",
+      "desc": "benign seed 1",
+      "blocking": 0,
+      "certifiable": true
+    },
+    {
+      "id": "FP-seed-42",
+      "desc": "benign seed 42",
+      "blocking": 0,
+      "certifiable": true
+    },
+    {
+      "id": "FP-seed-20260909",
+      "desc": "benign seed 20260909",
+      "blocking": 0,
+      "certifiable": true
+    }
+  ]
+}

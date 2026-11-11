@@ -1,0 +1,2649 @@
+[
+  {
+    "ref": {
+      "id": 1,
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "authors": [
+        "W3C"
+      ],
+      "year": 2023,
+      "type": "standard"
+    },
+    "findings": {
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "EVALUASI PADA WEBSITE SRAGENKAB.GO.ID MENGGUNAKAN METODE WEB USABILITY EVALUATION (WEBUSE) DAN WEB CONTENT ACCESSIBILITY GUIDELINES (WCAG) 2.1",
+          "year": 2023,
+          "doi": "10.30989/teknomatika.v16i1.1105",
+          "authors": [
+            "Siti Fatimah",
+            "Ahmad Hanafi",
+            "Kharisma",
+            "Alfun Roehatul Jannah"
+          ],
+          "venue": "Teknomatika: Jurnal Informatika dan Komputer",
+          "score": 41.47338
+        },
+        {
+          "source": "CrossRef",
+          "title": "Advancing Web Accessibility: A Guide to Transitioning Design Systems from WCAG 2.0 to WCAG 2.1",
+          "year": 2023,
+          "doi": "10.5121/csit.2023.132218",
+          "authors": [
+            "Hardik Shah"
+          ],
+          "venue": "Artificial Intelligence, Soft Computing and Applications",
+          "score": 35.506767
+        },
+        {
+          "source": "CrossRef",
+          "title": "Web Content Accessibility Guidelines 2.1 Compliance by Indian OERs: An Empirical Study of Swayam and E-PG Pathshala",
+          "year": null,
+          "doi": "10.2139/ssrn.4261329",
+          "authors": [
+            "Subhajit Panda",
+            "Prof. Rupak Chakravarty"
+          ],
+          "venue": "",
+          "score": 30.924353
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "AccGuideLiner: Towards a Modelling Approach of Web Accessibility Requirements following WCAG 2.2",
+          "year": 2023,
+          "doi": "10.1109/sist58284.2023.10223541",
+          "authors": [
+            "Jinat Ara",
+            "Cecília Sik‐Lányi"
+          ],
+          "venue": "IEEE International Conference on Smart Information Systems and Technologies (SIST)",
+          "citations": 6
+        },
+        {
+          "source": "OpenAlex",
+          "title": "User-centered web accessibility : recommendations for ensuring access to government information for older adults",
+          "year": 2023,
+          "doi": "10.16925/2357-6014.2023.03.02",
+          "authors": [
+            "Claudia Sofia Idrobo Cruz",
+            "Émber Ubéimar Martínez Flor",
+            "Maria Isabel Vidal Caicedo"
+          ],
+          "venue": "Ingenieria Solidaria",
+          "citations": 7
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 2,
+      "title": "Design Tokens Format Module",
+      "authors": [
+        "Design Tokens Community Group"
+      ],
+      "year": 2024,
+      "type": "standard"
+    },
+    "findings": {
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "The Design and Experimental Realization of a Laser-Based Heating System Using Recycled Laser Module",
+          "year": 2024,
+          "doi": "10.33383/2024-033",
+          "arxiv": "",
+          "authors": [
+            "Aaya Nabeel Radhe",
+            "F. Khaleel"
+          ],
+          "venue": "Light &amp; Engineering",
+          "citations": 0
+        },
+        {
+          "source": "S2",
+          "title": "Opto-mechanical design and realization of a far-infrared grating module for future space missions",
+          "year": 2024,
+          "doi": "10.1117/12.3021430",
+          "arxiv": "",
+          "authors": [
+            "G. Aitink-Kroes",
+            "M. Eggens",
+            "L. Génolet",
+            "Shiang-Yu Wang",
+            "Robert Huisman",
+            "Erik R. van der Meer",
+            "M. Audard",
+            "Bram Lap",
+            "W. Jellema"
+          ],
+          "venue": "Astronomical Telescopes + Instrumentation",
+          "citations": 0
+        },
+        {
+          "source": "S2",
+          "title": "Transformer RGBT Tracking With Spatio-Temporal Multimodal Tokens",
+          "year": 2024,
+          "doi": "10.1109/TCSVT.2024.3425455",
+          "arxiv": "2401.01674",
+          "authors": [
+            "Deng-Di Sun",
+            "Ya-Jie Pan",
+            "An-Dong Lu",
+            "Cheng-Long Li",
+            "Bin Luo"
+          ],
+          "venue": "IEEE transactions on circuits and systems for video technology (Print)",
+          "citations": 66
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "A Managed Tokens Service for Securely Keeping and Distributing Grid Tokens",
+          "year": 2024,
+          "doi": "10.2172/2477313",
+          "authors": [
+            "Shreyas Bhat",
+            "Dave Dykstra"
+          ],
+          "venue": "A Managed Tokens Service for Securely Keeping and Distributing Grid Tokens",
+          "score": 18.387007
+        },
+        {
+          "source": "CrossRef",
+          "title": "Tokens",
+          "year": 2024,
+          "doi": "10.2307/jj.34481663.21",
+          "authors": [],
+          "venue": "The Transatlantic Design Network",
+          "score": 18.308842
+        },
+        {
+          "source": "CrossRef",
+          "title": "Non-Fungible Tokens",
+          "year": 2024,
+          "doi": "10.4324/9781003435518-1",
+          "authors": [
+            "Usman W. Chohan"
+          ],
+          "venue": "Non-Fungible Tokens",
+          "score": 17.330172
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "LLM Based News Research Tool Using LangChain with Enhancing Similarity Search and Token Limit",
+          "year": 2024,
+          "doi": "10.55248/gengpi.5.0724.1943",
+          "authors": [
+            "Raushan Kumar",
+            "Subbulakshmi P",
+            "Khushi Habbu"
+          ],
+          "venue": "International Journal of Research Publication and Reviews",
+          "citations": 2
+        },
+        {
+          "source": "OpenAlex",
+          "title": "SpreadsheetLLM: Encoding Spreadsheets for Large Language Models",
+          "year": 2024,
+          "doi": "10.48550/arxiv.2407.09025",
+          "authors": [
+            "Haoyu Dong",
+            "Jianbo Zhao",
+            "Yuzhang Tian",
+            "Junyu Xiong",
+            "Xia, Shiyu",
+            "Mengyu Zhou",
+            "Yun Lin",
+            "José Cambronero",
+            "Yeye He",
+            "Han Shi",
+            "Dongmei Zhang"
+          ],
+          "venue": "arXiv (Cornell University)",
+          "citations": 42
+        },
+        {
+          "source": "OpenAlex",
+          "title": "3D-MolT5: Leveraging Discrete Structural Information for Molecule-Text Modeling",
+          "year": 2024,
+          "doi": "10.48550/arxiv.2406.05797",
+          "authors": [
+            "Qizhi Pei",
+            "Rui Yan",
+            "Kaiyuan Gao",
+            "Zhu, Jinhua",
+            "Wu, Lijun"
+          ],
+          "venue": "arXiv (Cornell University)",
+          "citations": 12
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 3,
+      "title": "A perceptual color space for digital imaging",
+      "authors": [
+        "Bjorn Ottosson"
+      ],
+      "year": 2020,
+      "type": "blog"
+    },
+    "findings": {
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Using Gaussian Spectra to Derive a Hue-linear Color Space",
+          "year": 2020,
+          "doi": "10.2352/j.percept.imaging.2020.3.2.020401",
+          "authors": [
+            "Luke Hellwig",
+            "Mark D. Fairchild"
+          ],
+          "venue": "Journal of Perceptual Imaging",
+          "score": 28.234146
+        },
+        {
+          "source": "CrossRef",
+          "title": "Effect of Peak Luminance on Perceptual Color Gamut Volume",
+          "year": 2020,
+          "doi": "10.2352/issn.2169-2629.2020.28.3",
+          "authors": [
+            "Fu Jiang",
+            "Mark D. Fairchild",
+            "Kenichiro Masaoka"
+          ],
+          "venue": "Color and Imaging Conference",
+          "score": 24.04108
+        },
+        {
+          "source": "CrossRef",
+          "title": "Spherical Non-Perceptual Color Space RTP: Identifying Computer Graphics",
+          "year": 2020,
+          "doi": "10.13053/cys-24-1-3045",
+          "authors": [
+            "Jean Pierre Díaz Paz",
+            "Humberto Loaiza Correa"
+          ],
+          "venue": "Computación y Sistemas",
+          "score": 21.98913
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Detecting similarity in color images based on perceptual image hash algorithm",
+          "year": 2020,
+          "doi": "10.1088/1757-899x/737/1/012244",
+          "authors": [
+            "Nada Hussein M. Ali",
+            "Marwa Emad Mahdi"
+          ],
+          "venue": "IOP Conference Series Materials Science and Engineering",
+          "citations": 9
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Seamless Virtual Whole Slide Image Synthesis and Validation Using Perceptual Embedding Consistency",
+          "year": 2020,
+          "doi": "10.1109/jbhi.2020.2975151",
+          "authors": [
+            "Amal Lahiani",
+            "Irina Klaman",
+            "Nassir Navab",
+            "Shadi Albarqouni",
+            "Eldad Klaiman"
+          ],
+          "venue": "IEEE Journal of Biomedical and Health Informatics",
+          "citations": 49
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Generating Digital Painting Lighting Effects via RGB-space Geometry",
+          "year": 2020,
+          "doi": "10.1145/3372176",
+          "authors": [
+            "Lvmin Zhang",
+            "Edgar Simo‐Serra",
+            "Yi Ji",
+            "Chunping Liu"
+          ],
+          "venue": "ACM Transactions on Graphics",
+          "citations": 20
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 4,
+      "title": "The CIEDE2000 color-difference formula: Implementation notes, supplementary test data, and mathematical observations",
+      "authors": [
+        "Gaurav Sharma",
+        "Wencheng Wu",
+        "Edul N. Dalal"
+      ],
+      "year": 2005,
+      "doi": "10.1002/col.20070",
+      "source": "Color Research & Application",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "The CIEDE2000 color-difference formula: Implementation notes, supplementary test data, and mathematical observations",
+        "year": 2005,
+        "doi": "10.1002/col.20070",
+        "authors": [
+          "Gaurav Sharma",
+          "Wencheng Wu",
+          "Edul N. Dalal"
+        ],
+        "venue": "Color Research &amp; Application",
+        "type": "journal-article"
+      },
+      "s2_doi": {
+        "source": "S2",
+        "title": "The CIEDE2000 color-difference formula: Implementation notes, supplementary test data, and mathematical observations",
+        "year": 2005,
+        "doi": "10.1002/COL.20070",
+        "authors": [
+          "Gaurav Sharma",
+          "Wencheng Wu",
+          "Edul N. Dalal"
+        ],
+        "venue": ""
+      },
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Euclidization of the first quadrant of the CIEDE2000 color difference system for the calculation of large color differences",
+          "year": 2006,
+          "doi": "10.1002/col.20168",
+          "authors": [
+            "Hans G. Völz"
+          ],
+          "venue": "Color Research &amp; Application",
+          "score": 30.45504
+        },
+        {
+          "source": "CrossRef",
+          "title": "Perceptually optimized JPEG2000 coder based on CIEDE2000 color difference equation",
+          "year": 2005,
+          "doi": "10.1109/icip.2005.1530609",
+          "authors": [
+            "Chun-Hsien Chou",
+            "Kuo-Cheng Liu",
+            "Chien-Sheng Lin"
+          ],
+          "venue": "IEEE International Conference on Image Processing 2005",
+          "score": 30.177082
+        },
+        {
+          "source": "CrossRef",
+          "title": "Comparison of CIELAB ΔE* and CIEDE2000 color-differences after polymerization and thermocycling of resin composites",
+          "year": 2005,
+          "doi": "10.1016/j.dental.2004.09.005",
+          "authors": [
+            "Yong-Keun Lee"
+          ],
+          "venue": "Dental Materials",
+          "score": 22.954115
+        }
+      ],
+      "openalex_search": []
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 5,
+      "title": "A physiologically-based model for simulation of color vision deficiency",
+      "authors": [
+        "Gustavo M. Machado",
+        "Manuel M. Oliveira",
+        "Leandro A. F. Fernandes"
+      ],
+      "year": 2009,
+      "doi": "10.1109/TVCG.2009.113",
+      "source": "IEEE Transactions on Visualization and Computer Graphics",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "A Physiologically-based Model for Simulation of Color Vision Deficiency",
+        "year": 2009,
+        "doi": "10.1109/tvcg.2009.113",
+        "authors": [
+          "G.M. Machado",
+          "M.M. Oliveira",
+          "L. Fernandes"
+        ],
+        "venue": "IEEE Transactions on Visualization and Computer Graphics",
+        "type": "journal-article"
+      },
+      "s2_doi": null,
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "A Physiologically-based Model for Simulation of Color Vision Deficiency",
+          "year": 2009,
+          "doi": "10.1109/TVCG.2009.113",
+          "arxiv": "",
+          "authors": [
+            "G. Machado",
+            "Manuel M. Oliveira",
+            "Leandro A. F. Fernandes"
+          ],
+          "venue": "IEEE Transactions on Visualization and Computer Graphics",
+          "citations": 206
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "A Physiologically-based Model for Simulation of Color Vision Deficiency",
+          "year": 2009,
+          "doi": "10.1109/tvcg.2009.113",
+          "authors": [
+            "G.M. Machado",
+            "M.M. Oliveira",
+            "L. Fernandes"
+          ],
+          "venue": "IEEE Transactions on Visualization and Computer Graphics",
+          "score": 42.515266
+        },
+        {
+          "source": "CrossRef",
+          "title": "Does computerized simulation of dichromatic color appearance predict VDT color identification error rate?",
+          "year": 2009,
+          "doi": "10.1167/9.14.74",
+          "authors": [
+            "S. Ramaswamy"
+          ],
+          "venue": "Journal of Vision",
+          "score": 23.991207
+        },
+        {
+          "source": "CrossRef",
+          "title": "Is there a best color space for color image characterization or representation based on Multivariate Gaussian Mixture Model?",
+          "year": 2009,
+          "doi": "10.1016/j.cviu.2009.03.001",
+          "authors": [
+            "Olivier Alata",
+            "Ludovic Quintard"
+          ],
+          "venue": "Computer Vision and Image Understanding",
+          "score": 23.769878
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "A Physiologically-based Model for Simulation of Color Vision Deficiency",
+          "year": 2009,
+          "doi": "10.1109/tvcg.2009.113",
+          "authors": [
+            "Gustavo Mello Machado",
+            "Manuel M. Oliveira",
+            "Leandro A. F. Fernandes"
+          ],
+          "venue": "IEEE Transactions on Visualization and Computer Graphics",
+          "citations": 222
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 6,
+      "title": "chroma.js",
+      "authors": [
+        "Gregor Aisch"
+      ],
+      "year": 2024,
+      "type": "software"
+    },
+    "findings": {
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "",
+          "year": 2024,
+          "doi": "10.24114/js.v9i1",
+          "authors": [],
+          "venue": "JS (JURNAL SEKOLAH)",
+          "score": 15.39551
+        },
+        {
+          "source": "CrossRef",
+          "title": "",
+          "year": 2024,
+          "doi": "10.24114/js.v8i2",
+          "authors": [],
+          "venue": "JS (JURNAL SEKOLAH)",
+          "score": 15.320392
+        },
+        {
+          "source": "CrossRef",
+          "title": "",
+          "year": 2024,
+          "doi": "10.24114/js.v8i3",
+          "authors": [],
+          "venue": "JS (JURNAL SEKOLAH)",
+          "score": 15.259966
+        }
+      ],
+      "openalex_search": []
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 7,
+      "title": "Secure Hash Standard (SHS)",
+      "authors": [
+        "NIST"
+      ],
+      "year": 2015,
+      "type": "standard"
+    },
+    "findings": {
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Secure hash standard",
+          "year": 2015,
+          "doi": "10.6028/nist.fips.180-4",
+          "authors": [],
+          "venue": "",
+          "score": 29.8411
+        },
+        {
+          "source": "CrossRef",
+          "title": "A Tool for Protecting Electronic Data in Centralized database using Improved Advance Encryption Standard (AES) and Secure Hash Algorithm (SHA)",
+          "year": 2015,
+          "doi": "10.5120/21200-3868",
+          "authors": [
+            "Amrita Malviya",
+            "Roopam Gupta",
+            "Sanjeev Sharma"
+          ],
+          "venue": "International Journal of Computer Applications",
+          "score": 22.687197
+        },
+        {
+          "source": "CrossRef",
+          "title": "Secure Digital Signature Schemes based on Hash Functions",
+          "year": 2015,
+          "doi": "10.26472/ijces.v1i1.18",
+          "authors": [
+            "PRACHI PRAVINKUMAR PATEL"
+          ],
+          "venue": "INTERNATIONAL JOURNAL OF COMPUTER ENGINEERING AND SCIENCES",
+          "score": 19.810848
+        }
+      ],
+      "openalex_search": []
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 8,
+      "title": "Key words for use in RFCs to Indicate Requirement Levels",
+      "authors": [
+        "Scott Bradner"
+      ],
+      "year": 1997,
+      "doi": "10.17487/RFC2119",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Key words for use in RFCs to Indicate Requirement Levels",
+        "year": 1997,
+        "doi": "10.17487/rfc2119",
+        "authors": [
+          "S. Bradner"
+        ],
+        "venue": "",
+        "type": "report"
+      },
+      "s2_doi": null,
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Key words for use in RFCs to Indicate Requirement Levels",
+          "year": 1997,
+          "doi": "10.17487/RFC2119",
+          "arxiv": "",
+          "authors": [
+            "S. Bradner"
+          ],
+          "venue": "Request for Comments",
+          "citations": 5387
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Key words for use in RFCs to Indicate Requirement Levels",
+          "year": 1997,
+          "doi": "10.17487/rfc2119",
+          "authors": [
+            "S. Bradner"
+          ],
+          "venue": "",
+          "score": 70.7624
+        },
+        {
+          "source": "CrossRef",
+          "title": "PC analysis of key words — And key key words",
+          "year": 1997,
+          "doi": "10.1016/s0346-251x(97)00011-0",
+          "authors": [
+            "Mike Scott"
+          ],
+          "venue": "System",
+          "score": 19.299355
+        },
+        {
+          "source": "CrossRef",
+          "title": "Serum Magnesium Levels May Not Indicate Low Tissue Magnesium Levels",
+          "year": 1997,
+          "doi": "10.1001/archinte.1997.00440250120014",
+          "authors": [
+            "Thomas J. Romano"
+          ],
+          "venue": "Archives of Internal Medicine",
+          "score": 18.390797
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Key words for use in RFCs to Indicate Requirement Levels",
+          "year": 1997,
+          "doi": "10.17487/rfc2119",
+          "authors": [
+            "Scott O. Bradner"
+          ],
+          "venue": "",
+          "citations": 3315
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 9,
+      "title": "Benchmarking web accessibility evaluation tools",
+      "authors": [
+        "Markel Vigo",
+        "Justin Brown",
+        "Vivienne Conway"
+      ],
+      "year": 2013,
+      "doi": "10.1145/2461121.2461124",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Benchmarking web accessibility evaluation tools",
+        "year": 2013,
+        "doi": "10.1145/2461121.2461124",
+        "authors": [
+          "Markel Vigo",
+          "Justin Brown",
+          "Vivienne Conway"
+        ],
+        "venue": "Proceedings of the 10th International Cross-Disciplinary Conference on Web Accessibility",
+        "type": "proceedings-article"
+      },
+      "s2_doi": {
+        "source": "S2",
+        "title": "Benchmarking web accessibility evaluation tools: measuring the harm of sole reliance on automated tests",
+        "year": 2013,
+        "doi": "10.1145/2461121.2461124",
+        "authors": [
+          "Markel Vigo",
+          "Justin Brown",
+          "Vivienne Conway"
+        ],
+        "venue": "International Cross-Disciplinary Conference on Web Accessibility"
+      },
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Benchmarking web accessibility evaluation tools",
+          "year": 2013,
+          "doi": "10.1145/2461121.2461124",
+          "authors": [
+            "Markel Vigo",
+            "Justin Brown",
+            "Vivienne Conway"
+          ],
+          "venue": "Proceedings of the 10th International Cross-Disciplinary Conference on Web Accessibility",
+          "score": 38.316925
+        },
+        {
+          "source": "CrossRef",
+          "title": "Pautas, métodos y herramientas de evaluación de accesibilidad web [Guidelines, methods and tools for web accessibility evaluation]",
+          "year": 2013,
+          "doi": "10.30554/ventanainform.28.185.2013",
+          "authors": [
+            "Cinthia De Oleo Moreta",
+            "Luis Rodríguez Baena"
+          ],
+          "venue": "Ventana Informatica",
+          "score": 28.735907
+        },
+        {
+          "source": "CrossRef",
+          "title": "Towards web accessibility repair",
+          "year": 2013,
+          "doi": "10.1145/2461121.2461155",
+          "authors": [
+            "Nádia Fernandes"
+          ],
+          "venue": "Proceedings of the 10th International Cross-Disciplinary Conference on Web Accessibility",
+          "score": 21.500118
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Benchmarking web accessibility evaluation tools",
+          "year": 2013,
+          "doi": "10.1145/2461121.2461124",
+          "authors": [
+            "Markel Vigo",
+            "Justin Brown",
+            "Vivienne Conway"
+          ],
+          "venue": "International Cross-Disciplinary Conference on Web Accessibility (W4A)",
+          "citations": 256
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Simulation of Enhanced Geothermal Systems: A Benchmarking and Code Intercomparison Study",
+          "year": 2013,
+          "doi": "",
+          "authors": [
+            "Tim Scheibe",
+            "Mark D. White",
+            "Signe K. White",
+            "Chandrika Sivaramakrishnan",
+            "Sumit Purohit",
+            "Gary D. Black",
+            "Robert K. Podgorney",
+            "Lauren Boyd",
+            "Benjamin Phillips"
+          ],
+          "venue": "OSTI OAI (U.S. Department of Energy Office of Scientific and Technical Information)",
+          "citations": 0
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Green Economy and Infrastructure Contributions of USDA Urban and Nonfarm Soil Projects in the U.S.",
+          "year": 2013,
+          "doi": "10.2136/sh2013-54-5-gc",
+          "authors": [
+            "Maxine J. Levin"
+          ],
+          "venue": "Soil Horizons",
+          "citations": 2
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 10,
+      "title": "Computerized simulation of color appearance for dichromats",
+      "authors": [
+        "Hans Brettel",
+        "Francoise Vienot",
+        "John D. Mollon"
+      ],
+      "year": 1997,
+      "doi": "10.1364/JOSAA.14.002647",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Computerized simulation of color appearance for dichromats",
+        "year": 1997,
+        "doi": "10.1364/josaa.14.002647",
+        "authors": [
+          "Hans Brettel",
+          "Françoise Viénot",
+          "John D. Mollon"
+        ],
+        "venue": "Journal of the Optical Society of America A",
+        "type": "journal-article"
+      },
+      "s2_doi": null,
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Computerized simulation of color appearance for dichromats.",
+          "year": 1997,
+          "doi": "10.1364/JOSAA.14.002647",
+          "arxiv": "",
+          "authors": [
+            "H. Brettel",
+            "F. Viénot",
+            "J. Mollon"
+          ],
+          "venue": "Journal of The Optical Society of America A-optics Image Science and Vision",
+          "citations": 434
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Computerized simulation of color appearance for dichromats",
+          "year": 1997,
+          "doi": "10.1364/josaa.14.002647",
+          "authors": [
+            "Hans Brettel",
+            "Françoise Viénot",
+            "John D. Mollon"
+          ],
+          "venue": "Journal of the Optical Society of America A",
+          "score": 42.441895
+        },
+        {
+          "source": "CrossRef",
+          "title": "Learning Color Appearance Models",
+          "year": 1997,
+          "doi": "10.2352/cic.1997.5.1.art00034",
+          "authors": [
+            "E. Boldrin",
+            "P. Campadelli",
+            "R. Schettini"
+          ],
+          "venue": "Color and Imaging Conference",
+          "score": 20.186974
+        },
+        {
+          "source": "CrossRef",
+          "title": "ASTM standards on color and appearance measurement, fifth edition",
+          "year": 1997,
+          "doi": "10.1002/(sici)1520-6378(199708)22:4<290::aid-col10>3.0.co;2-h",
+          "authors": [
+            "Harry K. Hammond"
+          ],
+          "venue": "Color Research &amp; Application",
+          "score": 19.991186
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Computerized simulation of color appearance for dichromats",
+          "year": 1997,
+          "doi": "10.1364/josaa.14.002647",
+          "authors": [
+            "Hans Brettel",
+            "Françoise Viénot",
+            "John Dixon Mollon"
+          ],
+          "venue": "Journal of the Optical Society of America A",
+          "citations": 462
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 11,
+      "title": "The end of the rainbow? Color schemes for improved data graphics",
+      "authors": [
+        "Adam Light",
+        "Patrick J. Bartlein"
+      ],
+      "year": 2004,
+      "type": "article"
+    },
+    "findings": {
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "The end of the rainbow? Color schemes for improved data graphics",
+          "year": 2004,
+          "doi": "10.1029/2004eo400002",
+          "authors": [
+            "Adam Light",
+            "Patrick J. Bartlein"
+          ],
+          "venue": "Eos, Transactions American Geophysical Union",
+          "score": 47.401722
+        },
+        {
+          "source": "CrossRef",
+          "title": "Integration of color and boundary information for improved region of interest identification in electron magnetic resonance images",
+          "year": 2004,
+          "doi": "10.1016/j.compmedimag.2004.07.006",
+          "authors": [
+            "D. Christopher Durairaj",
+            "Murali C. Krishna",
+            "R. Murugesan"
+          ],
+          "venue": "Computerized Medical Imaging and Graphics",
+          "score": 21.18639
+        },
+        {
+          "source": "CrossRef",
+          "title": "The structural color of rainbow ammonite",
+          "year": 2004,
+          "doi": "10.1364/oic.2004.tua3",
+          "authors": [
+            "Masashi Oyabu",
+            "Shigetaro Ogura"
+          ],
+          "venue": "Optical Interference Coatings",
+          "score": 20.102701
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "The end of the rainbow? Color schemes for improved data graphics",
+          "year": 2004,
+          "doi": "10.1029/2004eo400002",
+          "authors": [
+            "Adam Light",
+            "Patrick J. Bartlein"
+          ],
+          "venue": "Eos",
+          "citations": 195
+        },
+        {
+          "source": "OpenAlex",
+          "title": "End of the rainbow indeed",
+          "year": 2004,
+          "doi": "10.1029/2004eo470006",
+          "authors": [
+            "James I. Sammons"
+          ],
+          "venue": "Eos",
+          "citations": 1
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 12,
+      "title": "ColorBrewer.org: An Online Tool for Selecting Colour Schemes for Maps",
+      "authors": [
+        "Mark Harrower",
+        "Cynthia A. Brewer"
+      ],
+      "year": 2003,
+      "type": "article"
+    },
+    "findings": {
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "ColorBrewer.org: An Online Tool for Selecting Colour Schemes for Maps",
+          "year": 2003,
+          "doi": "10.1179/000870403235002042",
+          "authors": [
+            "Mark Harrower",
+            "Cynthia A. Brewer"
+          ],
+          "venue": "The Cartographic Journal",
+          "score": 43.73962
+        },
+        {
+          "source": "CrossRef",
+          "title": "ColorBrewer in Print: A Catalog of Color Schemes for Maps",
+          "year": 2003,
+          "doi": "10.1559/152304003100010929",
+          "authors": [
+            "Cynthia A. Brewer",
+            "Geoffrey W. Hatchard",
+            "Mark A. Harrower"
+          ],
+          "venue": "Cartography and Geographic Information Science",
+          "score": 28.043911
+        },
+        {
+          "source": "CrossRef",
+          "title": "A Transition in Improving Maps: The ColorBrewer Example",
+          "year": 2003,
+          "doi": "10.1559/152304003100011126",
+          "authors": [
+            "Cynthia A. Brewer"
+          ],
+          "venue": "Cartography and Geographic Information Science",
+          "score": 21.948845
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "ColorBrewer.org: An Online Tool for Selecting Colour Schemes for Maps",
+          "year": 2003,
+          "doi": "10.1179/000870403235002042",
+          "authors": [
+            "Mark Harrower",
+            "Cynthia A. Brewer"
+          ],
+          "venue": "The Cartographic Journal",
+          "citations": 1169
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 13,
+      "title": "Reproducible Builds: Increasing the Integrity of Software Supply Chains",
+      "authors": [
+        "Chris Lamb",
+        "Stefano Zacchiroli"
+      ],
+      "year": 2022,
+      "doi": "10.1109/MS.2021.3073045",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Reproducible Builds: Increasing the Integrity of Software Supply Chains",
+        "year": 2022,
+        "doi": "10.1109/ms.2021.3073045",
+        "authors": [
+          "Chris Lamb",
+          "Stefano Zacchiroli"
+        ],
+        "venue": "IEEE Software",
+        "type": "journal-article"
+      },
+      "s2_doi": null,
+      "s2_search": [],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Reproducible Builds: Increasing the Integrity of Software Supply Chains",
+          "year": 2022,
+          "doi": "10.1109/ms.2021.3073045",
+          "authors": [
+            "Chris Lamb",
+            "Stefano Zacchiroli"
+          ],
+          "venue": "IEEE Software",
+          "score": 63.473015
+        },
+        {
+          "source": "CrossRef",
+          "title": "Blockchain With Chinese Characteristics – Healthy China 2030, Supply Chains and Data Integrity",
+          "year": 2022,
+          "doi": "10.4324/9781003184614-3",
+          "authors": [
+            "Warwick Powell"
+          ],
+          "venue": "China, Trust and Digital Supply Chains",
+          "score": 27.702522
+        },
+        {
+          "source": "CrossRef",
+          "title": "Europe faces increasing problems with supply chains",
+          "year": 2022,
+          "doi": "10.1108/oxan-es267702",
+          "authors": [],
+          "venue": "Emerald Expert Briefings",
+          "score": 25.434217
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Focus on software, data acquisition, and instrumentation",
+          "year": 2022,
+          "doi": "10.1063/pt.3.5126",
+          "authors": [
+            "Andreas Mandelis"
+          ],
+          "venue": "Physics Today",
+          "citations": 0
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 14,
+      "title": "Colour vision deficiency",
+      "authors": [
+        "Mate P. Simunovic"
+      ],
+      "year": 2010,
+      "doi": "10.1038/eye.2009.251",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Colour vision deficiency",
+        "year": 2010,
+        "doi": "10.1038/eye.2009.251",
+        "authors": [
+          "M P Simunovic"
+        ],
+        "venue": "Eye",
+        "type": "journal-article"
+      },
+      "s2_doi": null,
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Colour vision deficiency",
+          "year": 2010,
+          "doi": "10.1038/eye.2009.251",
+          "arxiv": "",
+          "authors": [
+            "Matthew P. Simunovic"
+          ],
+          "venue": "Eye",
+          "citations": 220
+        },
+        {
+          "source": "S2",
+          "title": "Advice for medical students and practitioners with colour vision deficiency: a website resource",
+          "year": 2010,
+          "doi": "10.1111/j.1444-0938.2009.00434.x",
+          "arxiv": "",
+          "authors": [
+            "J. Spalding",
+            "B. Cole",
+            "Fraz Mir"
+          ],
+          "venue": "Clinical and experimental optometry",
+          "citations": 23
+        },
+        {
+          "source": "S2",
+          "title": "Chromatic VEP in children with congenital colour vision deficiency",
+          "year": 2010,
+          "doi": "10.1111/j.1475-1313.2010.00739.x",
+          "arxiv": "",
+          "authors": [
+            "Manca Tekavčič Pompe",
+            "Branka Stirn Kranjc",
+            "J. Brecelj"
+          ],
+          "venue": "Ophthalmic & physiological optics",
+          "citations": 14
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Factors that cause variability in chromatic sensitivity in normal colour vision and in congenital deficiency",
+          "year": 2010,
+          "doi": "10.1167/8.17.45",
+          "authors": [
+            "J. L. Barbur",
+            "M. Rodriguez-Carmona",
+            "J. A. Harlow"
+          ],
+          "venue": "Journal of Vision",
+          "score": 23.609901
+        },
+        {
+          "source": "CrossRef",
+          "title": "Afterimage colour affected by colour constancy",
+          "year": 2010,
+          "doi": "10.1167/3.12.64",
+          "authors": [
+            "K. Sakata"
+          ],
+          "venue": "Journal of Vision",
+          "score": 21.239254
+        },
+        {
+          "source": "CrossRef",
+          "title": "Basic colour foci and landmarks of the body colour solid",
+          "year": 2010,
+          "doi": "10.1167/6.13.47",
+          "authors": [
+            "L. D. Griffin"
+          ],
+          "venue": "Journal of Vision",
+          "score": 20.367733
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Chromatic VEP in children with congenital colour vision deficiency",
+          "year": 2010,
+          "doi": "10.1111/j.1475-1313.2010.00739.x",
+          "authors": [
+            "Manca Tekavčič Pompe",
+            "Branka Stirn Kranjc",
+            "Jelka Brecelj"
+          ],
+          "venue": "Ophthalmic and Physiological Optics",
+          "citations": 14
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Visual contents adaptation for colour vision deficiency using customised ICC profile",
+          "year": 2010,
+          "doi": "10.3109/17483101003718120",
+          "authors": [
+            "YoungGun Jang",
+            "Hoon Il Choi",
+            "Kyoung Soon Hong"
+          ],
+          "venue": "Disability and Rehabilitation Assistive Technology",
+          "citations": 3
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Factors that cause variability in chromatic sensitivity in normal colour vision and in congenital deficiency",
+          "year": 2010,
+          "doi": "10.1167/8.17.45",
+          "authors": [
+            "John L. Barbur",
+            "Marisa Rodríguez‐Carmona",
+            "Jonathan A. Harlow"
+          ],
+          "venue": "Journal of Vision",
+          "citations": 0
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 15,
+      "title": "Survey of hallucination in natural language generation",
+      "authors": [
+        "Ziwei Ji",
+        "Nayeon Lee",
+        "Rita Frieske"
+      ],
+      "year": 2023,
+      "doi": "10.1145/3571730",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Survey of Hallucination in Natural Language Generation",
+        "year": 2023,
+        "doi": "10.1145/3571730",
+        "authors": [
+          "Ziwei Ji",
+          "Nayeon Lee",
+          "Rita Frieske",
+          "Tiezheng Yu",
+          "Dan Su",
+          "Yan Xu",
+          "Etsuko Ishii",
+          "Ye Jin Bang",
+          "Andrea Madotto",
+          "Pascale Fung"
+        ],
+        "venue": "ACM Computing Surveys",
+        "type": "journal-article"
+      },
+      "s2_doi": {
+        "source": "S2",
+        "title": "Survey of Hallucination in Natural Language Generation",
+        "year": 2022,
+        "doi": "10.1145/3571730",
+        "authors": [
+          "Ziwei Ji",
+          "Nayeon Lee",
+          "Rita Frieske",
+          "Tiezheng Yu",
+          "D. Su",
+          "Yan Xu",
+          "Etsuko Ishii",
+          "Yejin Bang",
+          "Delong Chen",
+          "Wenliang Dai",
+          "Andrea Madotto",
+          "Pascale Fung"
+        ],
+        "venue": "ACM Computing Surveys"
+      },
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Detection of Rare Language Phenomena in NLP-Hallucination, Hyperbole, and Metaphor: A Survey",
+          "year": 2023,
+          "doi": "",
+          "arxiv": "",
+          "authors": [
+            "Naveen Badathala",
+            "P. Bhattacharyya"
+          ],
+          "venue": "",
+          "citations": 0
+        },
+        {
+          "source": "S2",
+          "title": "Large Language Models on Wikipedia-Style Survey Generation: an Evaluation in NLP Concepts",
+          "year": 2023,
+          "doi": "",
+          "arxiv": "",
+          "authors": [
+            "Fan Gao",
+            "Hang Jiang",
+            "Rui Yang",
+            "Moritz Blum",
+            "Jinghui Lu",
+            "Yuang Jiang",
+            "Irene Li"
+          ],
+          "venue": "arXiv.org",
+          "citations": 15
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Reducing named entity hallucination risk to ensure faithful summary generation",
+          "year": 2023,
+          "doi": "10.18653/v1/2023.inlg-main.33",
+          "authors": [
+            "Eunice Akani",
+            "Benoit Favre",
+            "Frederic Bechet",
+            "Romain Gemignani"
+          ],
+          "venue": "Proceedings of the 16th International Natural Language Generation Conference",
+          "score": 28.322668
+        },
+        {
+          "source": "CrossRef",
+          "title": "Hallucination Mitigation in Natural Language Generation from Large-Scale Open-Domain Knowledge Graphs",
+          "year": 2023,
+          "doi": "10.18653/v1/2023.emnlp-main.770",
+          "authors": [
+            "Xiao Shi",
+            "Zhengyuan Zhu",
+            "Zeyu Zhang",
+            "Chengkai Li"
+          ],
+          "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+          "score": 27.913828
+        },
+        {
+          "source": "CrossRef",
+          "title": "Survey of Hallucination in Natural Language Generation",
+          "year": 2023,
+          "doi": "10.1145/3571730",
+          "authors": [
+            "Ziwei Ji",
+            "Nayeon Lee",
+            "Rita Frieske",
+            "Tiezheng Yu",
+            "Dan Su",
+            "Yan Xu",
+            "Etsuko Ishii",
+            "Ye Jin Bang",
+            "Andrea Madotto",
+            "Pascale Fung"
+          ],
+          "venue": "ACM Computing Surveys",
+          "score": 26.895681
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Deep Learning Approaches on Image Captioning: A Review",
+          "year": 2023,
+          "doi": "10.1145/3617592",
+          "authors": [
+            "Taraneh Ghandi",
+            "Hamid Reza Pourreza",
+            "Hamidreza Mahyar"
+          ],
+          "venue": "ACM Computing Surveys",
+          "citations": 224
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 16,
+      "title": "Interactive color palette tools",
+      "authors": [
+        "Bernice Jennifer Meier",
+        "Anne Morgan Spalter",
+        "Dare B. Karelitz"
+      ],
+      "year": 2004,
+      "doi": "10.1109/MCG.2004.1297012",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Interactive color palette tools",
+        "year": 2004,
+        "doi": "10.1109/mcg.2004.1297012",
+        "authors": [
+          "B.J. Meier",
+          "A.M. Spalter",
+          "D.B. Karelitz"
+        ],
+        "venue": "IEEE Computer Graphics and Applications",
+        "type": "journal-article"
+      },
+      "s2_doi": {
+        "source": "S2",
+        "title": "Interactive Color Palette Tools",
+        "year": 2004,
+        "doi": "10.1109/MCG.2004.1297012",
+        "authors": [
+          "Barbara J. Meier",
+          "Anne Spalter",
+          "David B. Karelitz"
+        ],
+        "venue": "IEEE Computer Graphics and Applications"
+      },
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Interactive Color Palette Tools",
+          "year": 2004,
+          "doi": "10.1109/MCG.2004.1297012",
+          "arxiv": "",
+          "authors": [
+            "Barbara J. Meier",
+            "Anne Spalter",
+            "David B. Karelitz"
+          ],
+          "venue": "IEEE Computer Graphics and Applications",
+          "citations": 99
+        },
+        {
+          "source": "S2",
+          "title": "Interactive color palette tools",
+          "year": 2004,
+          "doi": "",
+          "arxiv": "",
+          "authors": [
+            "Barbara J. Meier",
+            "Anne Spalter",
+            "David B. Karelitz"
+          ],
+          "venue": "IEEE Computer Graphics and Applications",
+          "citations": 0
+        },
+        {
+          "source": "S2",
+          "title": "Fireballs in Shrek 2",
+          "year": 2004,
+          "doi": "10.1145/1186223.1186333",
+          "arxiv": "",
+          "authors": [
+            "Arnauld Lamorlette",
+            "M. Baer"
+          ],
+          "venue": "International Conference on Computer Graphics and Interactive Techniques",
+          "citations": 0
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Interactive color palette tools",
+          "year": 2004,
+          "doi": "10.1109/mcg.2004.1297012",
+          "authors": [
+            "B.J. Meier",
+            "A.M. Spalter",
+            "D.B. Karelitz"
+          ],
+          "venue": "IEEE Computer Graphics and Applications",
+          "score": 34.563972
+        },
+        {
+          "source": "CrossRef",
+          "title": "IRODORI",
+          "year": 2004,
+          "doi": "10.1145/1186155.1186169",
+          "authors": [
+            "Junko Kishimoto",
+            "Masahiro Yamaguchi",
+            "Hideaki Haneishi",
+            "Nagaaki Ohyama"
+          ],
+          "venue": "ACM SIGGRAPH 2004 Emerging technologies on   - SIGGRAPH '04",
+          "score": 19.761204
+        },
+        {
+          "source": "CrossRef",
+          "title": "A Note on Zeng's Technique for Color Reindexing of Palette-Based Images",
+          "year": 2004,
+          "doi": "10.1109/lsp.2003.821758",
+          "authors": [
+            "A.J. Pinho",
+            "A.J.R. Neves"
+          ],
+          "venue": "IEEE Signal Processing Letters",
+          "score": 18.892208
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Interactive color palette tools",
+          "year": 2004,
+          "doi": "10.1109/mcg.2004.1297012",
+          "authors": [
+            "Barbara J. Meier",
+            "Anne Morgan Spalter",
+            "David B. Karelitz"
+          ],
+          "venue": "IEEE Computer Graphics and Applications",
+          "citations": 92
+        },
+        {
+          "source": "OpenAlex",
+          "title": "CODACHROME",
+          "year": 2004,
+          "doi": "10.1145/1017833.1017859",
+          "authors": [
+            "Margarita Dekoli",
+            "Bakhtiar Mikhak"
+          ],
+          "venue": "ACM International Conference on Interaction Design and Children (IDC)",
+          "citations": 4
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 17,
+      "title": "Colorgorical: Creating discriminable and preferable color palettes for information visualization",
+      "authors": [
+        "Connor C. Gramazio",
+        "David H. Laidlaw",
+        "Karen B. Schloss"
+      ],
+      "year": 2017,
+      "doi": "10.1109/TVCG.2016.2598918",
+      "source": "IEEE Transactions on Visualization and Computer Graphics",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Colorgorical: Creating discriminable and preferable color palettes for information visualization",
+        "year": 2017,
+        "doi": "10.1109/tvcg.2016.2598918",
+        "authors": [
+          "Connor C. Gramazio",
+          "David H. Laidlaw",
+          "Karen B. Schloss"
+        ],
+        "venue": "IEEE Transactions on Visualization and Computer Graphics",
+        "type": "journal-article"
+      },
+      "s2_doi": {
+        "source": "S2",
+        "title": "Colorgorical: Creating discriminable and preferable color palettes for information visualization",
+        "year": 2017,
+        "doi": "10.1109/TVCG.2016.2598918",
+        "authors": [
+          "Connor C. Gramazio",
+          "D. Laidlaw",
+          "Karen B. Schloss"
+        ],
+        "venue": "IEEE Transactions on Visualization and Computer Graphics"
+      },
+      "s2_search": [],
+      "wos_search": [],
+      "scopus_search": [
+        {
+          "source": "Scopus",
+          "title": "Colorgorical: Creating discriminable and preferable color palettes for information visualization",
+          "year": 2017,
+          "doi": "10.1109/TVCG.2016.2598918",
+          "authors": [],
+          "venue": "IEEE Transactions on Visualization and Computer Graphics",
+          "citations": 156
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Colorgorical: Creating discriminable and preferable color palettes for information visualization",
+          "year": 2017,
+          "doi": "10.1109/tvcg.2016.2598918",
+          "authors": [
+            "Connor C. Gramazio",
+            "David H. Laidlaw",
+            "Karen B. Schloss"
+          ],
+          "venue": "IEEE Transactions on Visualization and Computer Graphics",
+          "score": 69.95271
+        },
+        {
+          "source": "CrossRef",
+          "title": "teamcolors: Color Palettes for Pro Sports Teams",
+          "year": 2017,
+          "doi": "10.32614/cran.package.teamcolors",
+          "authors": [
+            "Benjamin S. Baumer",
+            "Gregory J. Matthews"
+          ],
+          "venue": "CRAN: Contributed Packages",
+          "score": 33.10134
+        },
+        {
+          "source": "CrossRef",
+          "title": "Mining probabilistic color palettes for summarizing color use in artwork collections",
+          "year": 2017,
+          "doi": "10.1145/3139295.3139296",
+          "authors": [
+            "Ying Cao",
+            "Antoni B. Chan",
+            "Rynson W. H. Lau"
+          ],
+          "venue": "SIGGRAPH Asia 2017 Symposium on Visualization",
+          "score": 30.468243
+        }
+      ],
+      "openlibrary_search": [],
+      "openalex_search": []
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 18,
+      "title": "Palettailor: Discriminable colorization for categorical data",
+      "authors": [
+        "Kecheng Lu",
+        "Mi Feng",
+        "Xin Chen",
+        "Michael Sedlmair",
+        "Oliver Deussen",
+        "Dani Lischinski",
+        "Zhanglin Cheng",
+        "Yunhai Wang"
+      ],
+      "year": 2021,
+      "doi": "10.1109/TVCG.2020.3030406",
+      "source": "IEEE Transactions on Visualization and Computer Graphics",
+      "type": "article"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Palettailor: Discriminable Colorization for Categorical Data",
+        "year": 2021,
+        "doi": "10.1109/tvcg.2020.3030406",
+        "authors": [
+          "Kecheng Lu",
+          "Mi Feng",
+          "Xin Chen",
+          "Michael Sedlmair",
+          "Oliver Deussen",
+          "Dani Lischinski",
+          "Zhanglin Cheng",
+          "Yunhai Wang"
+        ],
+        "venue": "IEEE Transactions on Visualization and Computer Graphics",
+        "type": "journal-article"
+      },
+      "s2_doi": null,
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Epistatic interactions between pterin and carotenoid genes modulate intra-morph color variation in a lizard.",
+          "year": 2021,
+          "doi": "10.1111/1749-4877.12570",
+          "arxiv": "",
+          "authors": [
+            "P. Aguilar",
+            "P. Andrade",
+            "G. P. I. de Lanuza"
+          ],
+          "venue": "Integrative Zoology",
+          "citations": 12
+        },
+        {
+          "source": "S2",
+          "title": "Assessing Applicant Personality in Residency Selection",
+          "year": 2021,
+          "doi": "10.1177/23742895211052916",
+          "arxiv": "",
+          "authors": [
+            "C. Black"
+          ],
+          "venue": "Academic Pathology",
+          "citations": 2
+        }
+      ],
+      "wos_search": [],
+      "scopus_search": [
+        {
+          "source": "Scopus",
+          "title": "Palettailor: Discriminable colorization for categorical data",
+          "year": 2021,
+          "doi": "10.1109/TVCG.2020.3030406",
+          "authors": [],
+          "venue": "IEEE Transactions on Visualization and Computer Graphics",
+          "citations": 42
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Palettailor: Discriminable Colorization for Categorical Data",
+          "year": 2021,
+          "doi": "10.1109/tvcg.2020.3030406",
+          "authors": [
+            "Kecheng Lu",
+            "Mi Feng",
+            "Xin Chen",
+            "Michael Sedlmair",
+            "Oliver Deussen",
+            "Dani Lischinski",
+            "Zhanglin Cheng",
+            "Yunhai Wang"
+          ],
+          "venue": "IEEE Transactions on Visualization and Computer Graphics",
+          "score": 33.87579
+        },
+        {
+          "source": "CrossRef",
+          "title": "cfda: Categorical Functional Data Analysis",
+          "year": 2021,
+          "doi": "10.32614/cran.package.cfda",
+          "authors": [
+            "Cristian Preda",
+            "Quentin Grimonprez"
+          ],
+          "venue": "CRAN: Contributed Packages",
+          "score": 19.4488
+        },
+        {
+          "source": "CrossRef",
+          "title": "Associations Between Three Categorical Variables",
+          "year": 2021,
+          "doi": "10.4324/9780429330308-5",
+          "authors": [
+            "Razia Azen",
+            "Cindy M. Walker"
+          ],
+          "venue": "Categorical Data Analysis for the Behavioral and Social Sciences",
+          "score": 19.09673
+        }
+      ],
+      "openlibrary_search": [],
+      "openalex_search": []
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 19,
+      "title": "Color compatibility from large datasets",
+      "authors": [
+        "Peter O'Donovan",
+        "Aseem Agarwala",
+        "Aaron Hertzmann"
+      ],
+      "year": 2011,
+      "doi": "10.1145/1964921.1964958",
+      "source": "ACM SIGGRAPH 2011 Papers",
+      "type": "inproceedings"
+    },
+    "findings": {
+      "crossref_doi": {
+        "source": "CrossRef",
+        "title": "Color compatibility from large datasets",
+        "year": 2011,
+        "doi": "10.1145/1964921.1964958",
+        "authors": [
+          "Peter O'Donovan",
+          "Aseem Agarwala",
+          "Aaron Hertzmann"
+        ],
+        "venue": "ACM SIGGRAPH 2011 papers",
+        "type": "proceedings-article"
+      },
+      "s2_doi": null,
+      "s2_search": [],
+      "wos_search": [],
+      "scopus_search": [
+        {
+          "source": "Scopus",
+          "title": "Color Compatibility From Large Datasets",
+          "year": 2011,
+          "doi": "10.1145/2010324.1964958",
+          "authors": [],
+          "venue": "ACM Transactions on Graphics",
+          "citations": 52
+        },
+        {
+          "source": "Scopus",
+          "title": "Color compatibility from large datasets",
+          "year": 2011,
+          "doi": "10.1145/1964921.1964958",
+          "authors": [],
+          "venue": "ACM Transactions on Graphics",
+          "citations": 168
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Color compatibility from large datasets",
+          "year": 2011,
+          "doi": "10.1145/1964921.1964958",
+          "authors": [
+            "Peter O'Donovan",
+            "Aseem Agarwala",
+            "Aaron Hertzmann"
+          ],
+          "venue": "ACM SIGGRAPH 2011 papers",
+          "score": 34.721424
+        },
+        {
+          "source": "CrossRef",
+          "title": "Color compatibility from large datasets",
+          "year": 2011,
+          "doi": "10.1145/2010324.1964958",
+          "authors": [
+            "Peter O'Donovan",
+            "Aseem Agarwala",
+            "Aaron Hertzmann"
+          ],
+          "venue": "ACM Transactions on Graphics",
+          "score": 31.005686
+        },
+        {
+          "source": "CrossRef",
+          "title": "Maximum Radiated Power Density From Electrically Large Sources—Comparing Probability Theory and Measurements",
+          "year": 2011,
+          "doi": "10.1109/temc.2011.2167514",
+          "authors": [
+            "Magnus Hoijer"
+          ],
+          "venue": "IEEE Transactions on Electromagnetic Compatibility",
+          "score": 17.214268
+        }
+      ],
+      "openlibrary_search": [],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Color compatibility from large datasets",
+          "year": 2011,
+          "doi": "10.1145/1964921.1964958",
+          "authors": [
+            "Peter O'Donovan",
+            "Aseem Agarwala",
+            "Aaron Hertzmann"
+          ],
+          "venue": "ACM SIGGRAPH Conference (SIGGRAPH)",
+          "citations": 159
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Color compatibility from large datasets",
+          "year": 2011,
+          "doi": "10.1145/2010324.1964958",
+          "authors": [
+            "Peter O'Donovan",
+            "Aseem Agarwala",
+            "Aaron Hertzmann"
+          ],
+          "venue": "ACM Transactions on Graphics",
+          "citations": 141
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  },
+  {
+    "ref": {
+      "id": 20,
+      "title": "Material Design 3: Color system",
+      "authors": [
+        "Google"
+      ],
+      "year": 2024,
+      "source": "Material Design 3 documentation",
+      "type": "web"
+    },
+    "findings": {
+      "s2_search": [],
+      "wos_search": [],
+      "scopus_search": [
+        {
+          "source": "Scopus",
+          "title": "",
+          "year": null,
+          "doi": "",
+          "authors": [],
+          "venue": "",
+          "citations": 0
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Connecting the new to the past: The Color‐Material‐Finish design approach applied to the Fortezza da Basso",
+          "year": 2024,
+          "doi": "10.1002/col.22923",
+          "authors": [
+            "Francesca Valan",
+            "Pietro Paglierani"
+          ],
+          "venue": "Color Research &amp; Application",
+          "score": 19.399656
+        },
+        {
+          "source": "CrossRef",
+          "title": "Color in <i>Contempt</i>",
+          "year": 2024,
+          "doi": "10.1086/736258",
+          "authors": [
+            "Jennifer M. S. Stager"
+          ],
+          "venue": "West 86th: A Journal of Decorative Arts, Design History, and Material Culture",
+          "score": 18.955744
+        },
+        {
+          "source": "CrossRef",
+          "title": "Universal Color Design: Analyzing Color Perception and Proposing Color Scheme Design Methods for Tritanopia (Blue-Yellow Color Blindness)",
+          "year": 2024,
+          "doi": "10.31274/idec.26208",
+          "authors": [
+            "Heejin Lee"
+          ],
+          "venue": "2024 Annual Conference",
+          "score": 18.368418
+        }
+      ],
+      "openlibrary_search": [
+        {
+          "source": "OpenLibrary",
+          "title": "Fabrics",
+          "year": 2002,
+          "doi": "",
+          "isbn": "039373062X",
+          "authors": [
+            "Marypaul Yates"
+          ],
+          "venue": "W. W. Norton & Company"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "Intelligent Technologies and Engineering Systems",
+          "year": 2013,
+          "doi": "",
+          "isbn": "9781461467489",
+          "authors": [
+            "Jengnan Juang"
+          ],
+          "venue": "Imprint: Springer"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "Awareness Techniques by  William Swygard",
+          "year": 1971,
+          "doi": "",
+          "isbn": "",
+          "authors": [
+            "William Swygard"
+          ],
+          "venue": "William A. Reilly, Awareness Techniques sub.Theater University, Inc."
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "High Color Purity CsPbBr 3 Nanocrystals Prepared by a Heterogeneous Reaction System",
+          "year": 2024,
+          "doi": "10.1021/acsanm.4c00433",
+          "authors": [
+            "Xue Zhang",
+            "Yuqiu Tang",
+            "Fei Lin",
+            "Siyuan Ye",
+            "Yan Li"
+          ],
+          "venue": "ACS Applied Nano Materials",
+          "citations": 8
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Light-to-color conversion on MoO3, WO3, and Bi2WO6: from mechanism to materials and applications",
+          "year": 2024,
+          "doi": "10.1016/j.mtener.2024.101632",
+          "authors": [
+            "Dong Xu",
+            "Yongjuan Dang",
+            "Zhengyu Wu",
+            "Yindong Tong",
+            "Xianhua Liu",
+            "Yiren Lu"
+          ],
+          "venue": "Materials Today Energy",
+          "citations": 23
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Color stability of CAD‐CAM hybrid ceramic materials following immersion in artificial saliva and wine",
+          "year": 2024,
+          "doi": "10.1111/jopr.13868",
+          "authors": [
+            "Toshiki Nagai",
+            "Amal Alfaraj",
+            "Tien‐Min Gabriel Chu",
+            "Chao‐Chieh Yang",
+            "Wei‐Shao Lin"
+          ],
+          "venue": "Journal of Prosthodontics",
+          "citations": 18
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 21,
+      "title": "Color design tokens",
+      "authors": [
+        "U.S. Web Design System"
+      ],
+      "year": 2024,
+      "source": "U.S. Web Design System documentation",
+      "type": "web"
+    },
+    "findings": {
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Transformer Based Pluralistic Image Completion With Reduced Information Loss",
+          "year": 2024,
+          "doi": "10.1109/TPAMI.2024.3384406",
+          "arxiv": "2404.00513",
+          "authors": [
+            "Qian-Kun Liu",
+            "Yuqi Jiang",
+            "Zhentao Tan",
+            "Dongdong Chen",
+            "Ying Fu",
+            "Qi Chu",
+            "G. Hua",
+            "Neng-Hai Yu"
+          ],
+          "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+          "citations": 36
+        },
+        {
+          "source": "S2",
+          "title": "Group Diffusion Transformers are Unsupervised Multitask Learners",
+          "year": 2024,
+          "doi": "10.48550/arXiv.2410.15027",
+          "arxiv": "2410.15027",
+          "authors": [
+            "Liang-Hua Huang",
+            "Wei Wang",
+            "Zhi-Fan Wu",
+            "Huan-Zhang Dou",
+            "Yupeng Shi",
+            "Yutong Feng",
+            "Chen Liang",
+            "Yu Liu",
+            "Jing-Ren Zhou"
+          ],
+          "venue": "arXiv.org",
+          "citations": 27
+        },
+        {
+          "source": "S2",
+          "title": "CMA: A Chromaticity Map Adapter for Robust Detection of Screen-Recapture Document Images",
+          "year": 2024,
+          "doi": "10.1109/CVPR52733.2024.01475",
+          "arxiv": "",
+          "authors": [
+            "Changsheng Chen",
+            "Liangwei Lin",
+            "Yongqi Chen",
+            "Bin Li",
+            "Jishen Zeng",
+            "Ji-Wu Huang"
+          ],
+          "venue": "Computer Vision and Pattern Recognition",
+          "citations": 13
+        }
+      ],
+      "wos_search": [],
+      "scopus_search": [
+        {
+          "source": "Scopus",
+          "title": "",
+          "year": null,
+          "doi": "",
+          "authors": [],
+          "venue": "",
+          "citations": 0
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "A Managed Tokens Service for Securely Keeping and Distributing Grid Tokens",
+          "year": 2024,
+          "doi": "10.2172/2477313",
+          "authors": [
+            "Shreyas Bhat",
+            "Dave Dykstra"
+          ],
+          "venue": "A Managed Tokens Service for Securely Keeping and Distributing Grid Tokens",
+          "score": 18.380896
+        },
+        {
+          "source": "CrossRef",
+          "title": "Universal Color Design: Analyzing Color Perception and Proposing Color Scheme Design Methods for Tritanopia (Blue-Yellow Color Blindness)",
+          "year": 2024,
+          "doi": "10.31274/idec.26208",
+          "authors": [
+            "Heejin Lee"
+          ],
+          "venue": "2024 Annual Conference",
+          "score": 18.3689
+        },
+        {
+          "source": "CrossRef",
+          "title": "Tokens",
+          "year": 2024,
+          "doi": "10.2307/jj.34481663.21",
+          "authors": [],
+          "venue": "The Transatlantic Design Network",
+          "score": 18.289148
+        }
+      ],
+      "openlibrary_search": [
+        {
+          "source": "OpenLibrary",
+          "title": "Mandela Coloring Book for Adults : Https",
+          "year": 2020,
+          "doi": "",
+          "isbn": "9798587978515",
+          "authors": [
+            "Jasmine Hoffmann Langslow"
+          ],
+          "venue": "Independently Published"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "Beautiful by Default",
+          "year": 2026,
+          "doi": "",
+          "isbn": "9798170899494",
+          "authors": [
+            "Ravi Vale"
+          ],
+          "venue": "Greenlit Books"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "Understanding object-oriented programming with Java",
+          "year": 1998,
+          "doi": "",
+          "isbn": "032121174X",
+          "authors": [
+            "Timothy Budd"
+          ],
+          "venue": "Addison Wesley"
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "A collective inquiry into betweenness: emerging scholars of color navigating the socialization process",
+          "year": 2024,
+          "doi": "10.1108/jarhe-08-2023-0405",
+          "authors": [
+            "Ahreum Lim",
+            "Daeun Jung",
+            "Eunsun Lee"
+          ],
+          "venue": "Journal of Applied Research in Higher Education",
+          "citations": 0
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Pluriversal Design as a Paradigm",
+          "year": 2024,
+          "doi": "10.21606/drs.2024.169",
+          "authors": [
+            "Renata M. Leitão",
+            "Lesley-Ann Nöel",
+            "Maria Rogal",
+            "Nicholas Baroncelli Torretta",
+            "Juan Montalván Lume",
+            "Sucharita Beniwal",
+            "Mariana Fonseca Braga",
+            "Dimeji Onafuwa",
+            "Maria Cristina Ibarra"
+          ],
+          "venue": "Proceedings of DRS",
+          "citations": 5
+        },
+        {
+          "source": "OpenAlex",
+          "title": "From assimilation to alienation: exploring the career trajectories of women of color leaders and the coping strategies used",
+          "year": 2024,
+          "doi": "10.1108/edi-03-2024-0108",
+          "authors": [
+            "Shelomi Gomes"
+          ],
+          "venue": "Equality Diversity and Inclusion An International Journal",
+          "citations": 2
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 22,
+      "title": "axe-core",
+      "authors": [
+        "Deque Systems"
+      ],
+      "year": 2024,
+      "source": "axe-core software repository",
+      "type": "software"
+    },
+    "findings": {
+      "s2_search": [
+        {
+          "source": "S2",
+          "title": "Kinematic Analysis of z = 4.3 Galaxies in the SPT2349–56 Protocluster Core",
+          "year": 2024,
+          "doi": "10.3847/1538-4357/ad7bb4",
+          "arxiv": "2409.13823",
+          "authors": [
+            "Aparna Venkateshwaran",
+            "A. Weiss",
+            "N. Sulzenauer",
+            "K. Menten",
+            "M. Aravena",
+            "S. Chapman",
+            "Anthony H. Gonzalez",
+            "G. Gururajan",
+            "C. Hayward",
+            "R. Hill",
+            "C. Reuter",
+            "J. Spilker",
+            "J. Vieira"
+          ],
+          "venue": "Astrophysical Journal",
+          "citations": 6
+        },
+        {
+          "source": "S2",
+          "title": "The site Vylys Tom 3 on the Izhma river",
+          "year": 2024,
+          "doi": "10.19110/1994-5655-2024-1-5-11",
+          "arxiv": "",
+          "authors": [
+            "A. Volokitin",
+            "N. Volokitina"
+          ],
+          "venue": "Proceedings of the Komi Science Centre of the Ural Division of the Russian Academy of Sciences",
+          "citations": 1
+        },
+        {
+          "source": "S2",
+          "title": "Unusual transformations of sickle-shaped knives made of Ożarów flint",
+          "year": 2024,
+          "doi": "10.23858/sa/76.2024.1.3600",
+          "arxiv": "",
+          "authors": [
+            "Janusz Budziszewski",
+            "Katarzyna Pyżewicz"
+          ],
+          "venue": "Sprawozdania Archeologiczne",
+          "citations": 1
+        }
+      ],
+      "wos_search": [],
+      "scopus_search": [
+        {
+          "source": "Scopus",
+          "title": "",
+          "year": null,
+          "doi": "",
+          "authors": [],
+          "venue": "",
+          "citations": 0
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Victoria West: a highly standardized prepared core technology",
+          "year": 2024,
+          "doi": "10.4324/9781003579595-10",
+          "authors": [
+            "Gonen Sharon",
+            "Peter Beaumont"
+          ],
+          "venue": "Axe Age",
+          "score": 19.18417
+        },
+        {
+          "source": "CrossRef",
+          "title": "axe murder, n.",
+          "year": 2024,
+          "doi": "10.1093/oed/8389770250",
+          "authors": [],
+          "venue": "Oxford English Dictionary",
+          "score": 15.961657
+        },
+        {
+          "source": "CrossRef",
+          "title": "axe, v.",
+          "year": 2024,
+          "doi": "10.1093/oed/6639018478",
+          "authors": [],
+          "venue": "Oxford English Dictionary",
+          "score": 15.960943
+        }
+      ],
+      "openlibrary_search": [
+        {
+          "source": "OpenLibrary",
+          "title": "La myopathie à axe central, \"central core disease\"",
+          "year": 1973,
+          "doi": "",
+          "isbn": "",
+          "authors": [
+            "Danièle Pouget-Charbinat"
+          ],
+          "venue": "Université Claude-Bernard"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "From Axes to Zippers - Simple Machines - 6 Pack",
+          "year": 2015,
+          "doi": "",
+          "isbn": "1502127776",
+          "authors": [
+            "Kathy French"
+          ],
+          "venue": "Benchmark Education Company"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "From Axes to Zippers Simple Machines Teacher's Guide",
+          "year": 2015,
+          "doi": "",
+          "isbn": "9781502121899",
+          "authors": [
+            "LLC Staff Benchmark Education Co."
+          ],
+          "venue": "Benchmark Education Company"
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "Axion Emission from Strange Matter in Core-Collapse SNe",
+          "year": 2024,
+          "doi": "10.1103/physrevlett.133.121002",
+          "authors": [
+            "Maël Cavan-Piton",
+            "Diego Guadagnoli",
+            "Micaela Oertel B",
+            "Hyeonseok Seong",
+            "Ludovico Vittorio"
+          ],
+          "venue": "Physical Review Letters",
+          "citations": 27
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Axion star explosions: A new source for axion indirect detection",
+          "year": 2024,
+          "doi": "10.1103/physrevd.109.043018",
+          "authors": [
+            "Miguel Escudero",
+            "Charis Kaur Pooni",
+            "Malcolm Fairbairn",
+            "Diego Blas",
+            "Xiaolong Du",
+            "David J. E. Marsh"
+          ],
+          "venue": "Physical review. D/Physical review. D.",
+          "citations": 59
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Getting the most on supernova axions",
+          "year": 2024,
+          "doi": "10.1103/physrevd.109.023001",
+          "authors": [
+            "Alessandro Lella",
+            "Pierluca Carenza",
+            "Giampaolo Co'",
+            "Giuseppe Lucente",
+            "Maurizio Giannotti",
+            "Alessandro Mirizzi",
+            "T. Rauscher"
+          ],
+          "venue": "Physical review. D/Physical review. D.",
+          "citations": 102
+        }
+      ]
+    },
+    "verdict": "PARTIAL"
+  },
+  {
+    "ref": {
+      "id": 23,
+      "title": "Lighthouse",
+      "authors": [
+        "Google"
+      ],
+      "year": 2024,
+      "source": "Lighthouse documentation",
+      "type": "web"
+    },
+    "findings": {
+      "s2_search": [],
+      "wos_search": [],
+      "scopus_search": [
+        {
+          "source": "Scopus",
+          "title": "Lake Superior evaporation: A long-term eddy covariance dataset at Stannard Rock Lighthouse (2008–2022)",
+          "year": 2024,
+          "doi": "10.1038/s41597-024-03940-7",
+          "authors": [],
+          "venue": "Scientific Data",
+          "citations": 8
+        },
+        {
+          "source": "Scopus",
+          "title": "“Beauty Would Roll Itself up”: From Beauty to the Feminine Sublime in To the Lighthouse",
+          "year": 2024,
+          "doi": "10.53397/hunnu.jflc.202402009",
+          "authors": [],
+          "venue": "Journal of Foreign Languages and Cultures",
+          "citations": 0
+        },
+        {
+          "source": "Scopus",
+          "title": "A Comparative Study of the Translated Arabic Versions of the Novel ‘To the Lighthouse’ under Feminist Translation Theory",
+          "year": 2024,
+          "doi": "10.30564/fls.v6i5.6708",
+          "authors": [],
+          "venue": "Forum for Linguistic Studies",
+          "citations": 2
+        }
+      ],
+      "crossref_search": [
+        {
+          "source": "CrossRef",
+          "title": "Exploring The Narrative Structure In Virginia Woolf's To The Lighthouse: A Structuralist Approach Lighthouse: A Structuralist Approach",
+          "year": 2024,
+          "doi": "10.69980/redvet.v25i1.1021",
+          "authors": [
+            "Nawal Al-Sheikh"
+          ],
+          "venue": "Revista Electronica de Veterinaria",
+          "score": 16.17081
+        },
+        {
+          "source": "CrossRef",
+          "title": "Editorial Lighthouse Sympolism and Philosophy For Law, Economics And Public Policy",
+          "year": 2024,
+          "doi": "10.71458/1z1q5632",
+          "authors": [
+            "Ellen Sithole"
+          ],
+          "venue": "Lighthouse: The Zimbabwe Ezekiel Guti University Journal of Law, Economics and Public Policy",
+          "score": 15.489545
+        },
+        {
+          "source": "CrossRef",
+          "title": "Lighthouse in the Dark: Search in Marketplace Lending",
+          "year": null,
+          "doi": "10.2139/ssrn.4788030",
+          "authors": [
+            "Shasha Li"
+          ],
+          "venue": "",
+          "score": 15.458569
+        }
+      ],
+      "openlibrary_search": [
+        {
+          "source": "OpenLibrary",
+          "title": "To the Lighthouse",
+          "year": 1927,
+          "doi": "",
+          "isbn": "9781781397985",
+          "authors": [
+            "Virginia Woolf"
+          ],
+          "venue": "Harcourt, Brace and World"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "16 Lighthouse Road",
+          "year": 2001,
+          "doi": "",
+          "isbn": "9780778315612",
+          "authors": [
+            "Debbie Macomber"
+          ],
+          "venue": "Brilliance Audio"
+        },
+        {
+          "source": "OpenLibrary",
+          "title": "The Lighthouse Mystery",
+          "year": 1963,
+          "doi": "",
+          "isbn": "9781299967465",
+          "authors": [
+            "Gertrude Chandler Warner",
+            "Shane Clester",
+            "David Cunningham"
+          ],
+          "venue": "Albert Whitman & Company"
+        }
+      ],
+      "openalex_search": [
+        {
+          "source": "OpenAlex",
+          "title": "The Lighthouse in Economics",
+          "year": 2024,
+          "doi": "10.4324/9781003576570-16",
+          "authors": [
+            "Ronald H. Coase"
+          ],
+          "venue": "Routledge eBooks",
+          "citations": 13
+        },
+        {
+          "source": "OpenAlex",
+          "title": "“Lighthouse”",
+          "year": 2024,
+          "doi": "10.3928/02793695-20240422-01",
+          "authors": [
+            "Jennifer E. Walker"
+          ],
+          "venue": "Journal of Psychosocial Nursing and Mental Health Services",
+          "citations": 0
+        },
+        {
+          "source": "OpenAlex",
+          "title": "Lighthouse",
+          "year": 2024,
+          "doi": "10.46428/ejail.49.03",
+          "authors": [
+            "Abu K. M. Sarwar"
+          ],
+          "venue": "Ellipsis A Journal of Art Ideas and Literature",
+          "citations": 0
+        }
+      ]
+    },
+    "verdict": "FOUND"
+  }
+]
