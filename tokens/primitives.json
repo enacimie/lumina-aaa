@@ -1,0 +1,889 @@
+{
+  "$schema": "lumina/schemas/primitives/v1.json",
+  "system": "lumina",
+  "specVersion": "0.3.0",
+  "algorithmVersion": "1.0.0",
+  "identity": {
+    "name": "LUMINA Sapphire",
+    "family": "sapphire",
+    "brand": "#1E40AF",
+    "brandOklch": {
+      "L": 0.42444500037043004,
+      "C": 0.18086883857590275,
+      "H": 265.637710482825
+    }
+  },
+  "note": "Layer 1 of 4. Reference scales for authoring and illustration. Semantic and component tokens are derived by constraint solving, not selected from these ramps; section 4.4 forbids using primitives directly in components.",
+  "families": {
+    "neutral": [
+      {
+        "id": "lumina.primitive.neutral.000",
+        "step": 0,
+        "value": "#FFFFFF",
+        "oklch": {
+          "l": 1,
+          "c": 0,
+          "h": 89.88
+        },
+        "relativeLuminance": 1
+      },
+      {
+        "id": "lumina.primitive.neutral.050",
+        "step": 50,
+        "value": "#F5F8FF",
+        "oklch": {
+          "l": 0.9789,
+          "c": 0.0099,
+          "h": 267.36
+        },
+        "relativeLuminance": 0.937673
+      },
+      {
+        "id": "lumina.primitive.neutral.100",
+        "step": 100,
+        "value": "#ECF0FA",
+        "oklch": {
+          "l": 0.955,
+          "c": 0.0141,
+          "h": 268.49
+        },
+        "relativeLuminance": 0.870552
+      },
+      {
+        "id": "lumina.primitive.neutral.200",
+        "step": 200,
+        "value": "#DCDFE9",
+        "oklch": {
+          "l": 0.9043,
+          "c": 0.014,
+          "h": 272.68
+        },
+        "relativeLuminance": 0.738742
+      },
+      {
+        "id": "lumina.primitive.neutral.300",
+        "step": 300,
+        "value": "#C8CCD6",
+        "oklch": {
+          "l": 0.8451,
+          "c": 0.0145,
+          "h": 268.47
+        },
+        "relativeLuminance": 0.603201
+      },
+      {
+        "id": "lumina.primitive.neutral.400",
+        "step": 400,
+        "value": "#ACAFB9",
+        "oklch": {
+          "l": 0.7547,
+          "c": 0.0146,
+          "h": 272.63
+        },
+        "relativeLuminance": 0.429334
+      },
+      {
+        "id": "lumina.primitive.neutral.500",
+        "step": 500,
+        "value": "#8D909A",
+        "oklch": {
+          "l": 0.6541,
+          "c": 0.0152,
+          "h": 272.59
+        },
+        "relativeLuminance": 0.279423
+      },
+      {
+        "id": "lumina.primitive.neutral.600",
+        "step": 600,
+        "value": "#70737C",
+        "oklch": {
+          "l": 0.556,
+          "c": 0.0143,
+          "h": 271.15
+        },
+        "relativeLuminance": 0.171614
+      },
+      {
+        "id": "lumina.primitive.neutral.700",
+        "step": 700,
+        "value": "#53565F",
+        "oklch": {
+          "l": 0.4537,
+          "c": 0.0151,
+          "h": 271.07
+        },
+        "relativeLuminance": 0.093208
+      },
+      {
+        "id": "lumina.primitive.neutral.800",
+        "step": 800,
+        "value": "#3A3D45",
+        "oklch": {
+          "l": 0.3603,
+          "c": 0.0144,
+          "h": 269.29
+        },
+        "relativeLuminance": 0.046667
+      },
+      {
+        "id": "lumina.primitive.neutral.900",
+        "step": 900,
+        "value": "#24262D",
+        "oklch": {
+          "l": 0.2695,
+          "c": 0.0133,
+          "h": 272.86
+        },
+        "relativeLuminance": 0.019508
+      },
+      {
+        "id": "lumina.primitive.neutral.950",
+        "step": 950,
+        "value": "#15171E",
+        "oklch": {
+          "l": 0.2057,
+          "c": 0.0143,
+          "h": 272.58
+        },
+        "relativeLuminance": 0.00866
+      },
+      {
+        "id": "lumina.primitive.neutral.1000",
+        "step": 1000,
+        "value": "#000000",
+        "oklch": {
+          "l": 0,
+          "c": 0,
+          "h": 0
+        },
+        "relativeLuminance": 0
+      }
+    ],
+    "brand": [
+      {
+        "id": "lumina.primitive.brand.000",
+        "step": 0,
+        "value": "#FFFFFF",
+        "oklch": {
+          "l": 1,
+          "c": 0,
+          "h": 89.88
+        },
+        "relativeLuminance": 1
+      },
+      {
+        "id": "lumina.primitive.brand.050",
+        "step": 50,
+        "value": "#F4F8FF",
+        "oklch": {
+          "l": 0.9781,
+          "c": 0.0103,
+          "h": 261.79
+        },
+        "relativeLuminance": 0.935879
+      },
+      {
+        "id": "lumina.primitive.brand.100",
+        "step": 100,
+        "value": "#E9F0FF",
+        "oklch": {
+          "l": 0.9543,
+          "c": 0.0215,
+          "h": 265.76
+        },
+        "relativeLuminance": 0.868638
+      },
+      {
+        "id": "lumina.primitive.brand.200",
+        "step": 200,
+        "value": "#D1E0FF",
+        "oklch": {
+          "l": 0.9052,
+          "c": 0.0455,
+          "h": 264.92
+        },
+        "relativeLuminance": 0.740866
+      },
+      {
+        "id": "lumina.primitive.brand.300",
+        "step": 300,
+        "value": "#B5CCFF",
+        "oklch": {
+          "l": 0.8456,
+          "c": 0.0759,
+          "h": 265.84
+        },
+        "relativeLuminance": 0.602295
+      },
+      {
+        "id": "lumina.primitive.brand.400",
+        "step": 400,
+        "value": "#8AADFF",
+        "oklch": {
+          "l": 0.755,
+          "c": 0.1249,
+          "h": 265.88
+        },
+        "relativeLuminance": 0.425104
+      },
+      {
+        "id": "lumina.primitive.brand.500",
+        "step": 500,
+        "value": "#5B89FE",
+        "oklch": {
+          "l": 0.6556,
+          "c": 0.1808,
+          "h": 265.55
+        },
+        "relativeLuminance": 0.272712
+      },
+      {
+        "id": "lumina.primitive.brand.600",
+        "step": 600,
+        "value": "#3F69DB",
+        "oklch": {
+          "l": 0.5545,
+          "c": 0.1808,
+          "h": 265.56
+        },
+        "relativeLuminance": 0.162744
+      },
+      {
+        "id": "lumina.primitive.brand.700",
+        "step": 700,
+        "value": "#254AB9",
+        "oklch": {
+          "l": 0.4552,
+          "c": 0.1803,
+          "h": 265.46
+        },
+        "relativeLuminance": 0.087937
+      },
+      {
+        "id": "lumina.primitive.brand.800",
+        "step": 800,
+        "value": "#102B9A",
+        "oklch": {
+          "l": 0.3609,
+          "c": 0.181,
+          "h": 265.69
+        },
+        "relativeLuminance": 0.04171
+      },
+      {
+        "id": "lumina.primitive.brand.900",
+        "step": 900,
+        "value": "#05037C",
+        "oklch": {
+          "l": 0.2698,
+          "c": 0.1803,
+          "h": 265.69
+        },
+        "relativeLuminance": 0.015526
+      },
+      {
+        "id": "lumina.primitive.brand.950",
+        "step": 950,
+        "value": "#020055",
+        "oklch": {
+          "l": 0.2046,
+          "c": 0.1398,
+          "h": 265.48
+        },
+        "relativeLuminance": 0.006688
+      },
+      {
+        "id": "lumina.primitive.brand.1000",
+        "step": 1000,
+        "value": "#000000",
+        "oklch": {
+          "l": 0,
+          "c": 0,
+          "h": 0
+        },
+        "relativeLuminance": 0
+      }
+    ],
+    "success": [
+      {
+        "id": "lumina.primitive.success.000",
+        "step": 0,
+        "value": "#FFFFFF",
+        "oklch": {
+          "l": 1,
+          "c": 0,
+          "h": 89.88
+        },
+        "relativeLuminance": 1
+      },
+      {
+        "id": "lumina.primitive.success.050",
+        "step": 50,
+        "value": "#E6FFF0",
+        "oklch": {
+          "l": 0.9778,
+          "c": 0.0327,
+          "h": 159.45
+        },
+        "relativeLuminance": 0.946343
+      },
+      {
+        "id": "lumina.primitive.success.100",
+        "step": 100,
+        "value": "#C9FFE1",
+        "oklch": {
+          "l": 0.9549,
+          "c": 0.068,
+          "h": 160.46
+        },
+        "relativeLuminance": 0.893737
+      },
+      {
+        "id": "lumina.primitive.success.200",
+        "step": 200,
+        "value": "#8CFAC2",
+        "oklch": {
+          "l": 0.9043,
+          "c": 0.1292,
+          "h": 160.09
+        },
+        "relativeLuminance": 0.778417
+      },
+      {
+        "id": "lumina.primitive.success.300",
+        "step": 300,
+        "value": "#77E6AF",
+        "oklch": {
+          "l": 0.8443,
+          "c": 0.1297,
+          "h": 160.22
+        },
+        "relativeLuminance": 0.636107
+      },
+      {
+        "id": "lumina.primitive.success.400",
+        "step": 400,
+        "value": "#58C993",
+        "oklch": {
+          "l": 0.756,
+          "c": 0.1306,
+          "h": 160.04
+        },
+        "relativeLuminance": 0.459546
+      },
+      {
+        "id": "lumina.primitive.success.500",
+        "step": 500,
+        "value": "#33A875",
+        "oklch": {
+          "l": 0.6539,
+          "c": 0.129,
+          "h": 160.26
+        },
+        "relativeLuminance": 0.299934
+      },
+      {
+        "id": "lumina.primitive.success.600",
+        "step": 600,
+        "value": "#008959",
+        "oklch": {
+          "l": 0.5559,
+          "c": 0.1258,
+          "h": 160
+        },
+        "relativeLuminance": 0.186126
+      },
+      {
+        "id": "lumina.primitive.success.700",
+        "step": 700,
+        "value": "#006842",
+        "oklch": {
+          "l": 0.4563,
+          "c": 0.1037,
+          "h": 159.7
+        },
+        "relativeLuminance": 0.10294
+      },
+      {
+        "id": "lumina.primitive.success.800",
+        "step": 800,
+        "value": "#004A2E",
+        "oklch": {
+          "l": 0.361,
+          "c": 0.0817,
+          "h": 159.98
+        },
+        "relativeLuminance": 0.050948
+      },
+      {
+        "id": "lumina.primitive.success.900",
+        "step": 900,
+        "value": "#002F1C",
+        "oklch": {
+          "l": 0.2694,
+          "c": 0.0605,
+          "h": 160.47
+        },
+        "relativeLuminance": 0.021169
+      },
+      {
+        "id": "lumina.primitive.success.950",
+        "step": 950,
+        "value": "#001D10",
+        "oklch": {
+          "l": 0.2038,
+          "c": 0.0453,
+          "h": 161.16
+        },
+        "relativeLuminance": 0.009161
+      },
+      {
+        "id": "lumina.primitive.success.1000",
+        "step": 1000,
+        "value": "#000000",
+        "oklch": {
+          "l": 0,
+          "c": 0,
+          "h": 0
+        },
+        "relativeLuminance": 0
+      }
+    ],
+    "warning": [
+      {
+        "id": "lumina.primitive.warning.000",
+        "step": 0,
+        "value": "#FFFFFF",
+        "oklch": {
+          "l": 1,
+          "c": 0,
+          "h": 89.88
+        },
+        "relativeLuminance": 1
+      },
+      {
+        "id": "lumina.primitive.warning.050",
+        "step": 50,
+        "value": "#FFF6ED",
+        "oklch": {
+          "l": 0.9777,
+          "c": 0.0154,
+          "h": 67.65
+        },
+        "relativeLuminance": 0.93286
+      },
+      {
+        "id": "lumina.primitive.warning.100",
+        "step": 100,
+        "value": "#FFEDD9",
+        "oklch": {
+          "l": 0.9552,
+          "c": 0.0329,
+          "h": 70.35
+        },
+        "relativeLuminance": 0.868381
+      },
+      {
+        "id": "lumina.primitive.warning.200",
+        "step": 200,
+        "value": "#FFD8AC",
+        "oklch": {
+          "l": 0.9047,
+          "c": 0.0719,
+          "h": 70.1
+        },
+        "relativeLuminance": 0.733503
+      },
+      {
+        "id": "lumina.primitive.warning.300",
+        "step": 300,
+        "value": "#FFBE6F",
+        "oklch": {
+          "l": 0.8454,
+          "c": 0.1219,
+          "h": 70.28
+        },
+        "relativeLuminance": 0.592346
+      },
+      {
+        "id": "lumina.primitive.warning.400",
+        "step": 400,
+        "value": "#E79E3C",
+        "oklch": {
+          "l": 0.7544,
+          "c": 0.1399,
+          "h": 70.2
+        },
+        "relativeLuminance": 0.417689
+      },
+      {
+        "id": "lumina.primitive.warning.500",
+        "step": 500,
+        "value": "#C67F09",
+        "oklch": {
+          "l": 0.6553,
+          "c": 0.1399,
+          "h": 70.09
+        },
+        "relativeLuminance": 0.272042
+      },
+      {
+        "id": "lumina.primitive.warning.600",
+        "step": 600,
+        "value": "#9F6400",
+        "oklch": {
+          "l": 0.5547,
+          "c": 0.1203,
+          "h": 69.77
+        },
+        "relativeLuminance": 0.164853
+      },
+      {
+        "id": "lumina.primitive.warning.700",
+        "step": 700,
+        "value": "#794B00",
+        "oklch": {
+          "l": 0.455,
+          "c": 0.0987,
+          "h": 69.82
+        },
+        "relativeLuminance": 0.090971
+      },
+      {
+        "id": "lumina.primitive.warning.800",
+        "step": 800,
+        "value": "#573400",
+        "oklch": {
+          "l": 0.3595,
+          "c": 0.0784,
+          "h": 69.02
+        },
+        "relativeLuminance": 0.044822
+      },
+      {
+        "id": "lumina.primitive.warning.900",
+        "step": 900,
+        "value": "#382000",
+        "oklch": {
+          "l": 0.2687,
+          "c": 0.0584,
+          "h": 69.53
+        },
+        "relativeLuminance": 0.018738
+      },
+      {
+        "id": "lumina.primitive.warning.950",
+        "step": 950,
+        "value": "#241300",
+        "oklch": {
+          "l": 0.2057,
+          "c": 0.0446,
+          "h": 69.93
+        },
+        "relativeLuminance": 0.008408
+      },
+      {
+        "id": "lumina.primitive.warning.1000",
+        "step": 1000,
+        "value": "#000000",
+        "oklch": {
+          "l": 0,
+          "c": 0,
+          "h": 0
+        },
+        "relativeLuminance": 0
+      }
+    ],
+    "error": [
+      {
+        "id": "lumina.primitive.error.000",
+        "step": 0,
+        "value": "#FFFFFF",
+        "oklch": {
+          "l": 1,
+          "c": 0,
+          "h": 89.88
+        },
+        "relativeLuminance": 1
+      },
+      {
+        "id": "lumina.primitive.error.050",
+        "step": 50,
+        "value": "#FFF5F5",
+        "oklch": {
+          "l": 0.9779,
+          "c": 0.0107,
+          "h": 17.34
+        },
+        "relativeLuminance": 0.931574
+      },
+      {
+        "id": "lumina.primitive.error.100",
+        "step": 100,
+        "value": "#FFEBEB",
+        "oklch": {
+          "l": 0.956,
+          "c": 0.0218,
+          "h": 17.54
+        },
+        "relativeLuminance": 0.866748
+      },
+      {
+        "id": "lumina.primitive.error.200",
+        "step": 200,
+        "value": "#FFD3D4",
+        "oklch": {
+          "l": 0.9047,
+          "c": 0.0495,
+          "h": 16.57
+        },
+        "relativeLuminance": 0.72602
+      },
+      {
+        "id": "lumina.primitive.error.300",
+        "step": 300,
+        "value": "#FFB6B8",
+        "oklch": {
+          "l": 0.845,
+          "c": 0.0852,
+          "h": 17.2
+        },
+        "relativeLuminance": 0.581766
+      },
+      {
+        "id": "lumina.primitive.error.400",
+        "step": 400,
+        "value": "#FF858D",
+        "oklch": {
+          "l": 0.7546,
+          "c": 0.1481,
+          "h": 17.16
+        },
+        "relativeLuminance": 0.399581
+      },
+      {
+        "id": "lumina.primitive.error.500",
+        "step": 500,
+        "value": "#DD656F",
+        "oklch": {
+          "l": 0.6553,
+          "c": 0.1503,
+          "h": 17.08
+        },
+        "relativeLuminance": 0.258272
+      },
+      {
+        "id": "lumina.primitive.error.600",
+        "step": 600,
+        "value": "#BA4653",
+        "oklch": {
+          "l": 0.5551,
+          "c": 0.1496,
+          "h": 16.79
+        },
+        "relativeLuminance": 0.15444
+      },
+      {
+        "id": "lumina.primitive.error.700",
+        "step": 700,
+        "value": "#982537",
+        "oklch": {
+          "l": 0.4546,
+          "c": 0.15,
+          "h": 17.07
+        },
+        "relativeLuminance": 0.082744
+      },
+      {
+        "id": "lumina.primitive.error.800",
+        "step": 800,
+        "value": "#760020",
+        "oklch": {
+          "l": 0.359,
+          "c": 0.1437,
+          "h": 16.89
+        },
+        "relativeLuminance": 0.039558
+      },
+      {
+        "id": "lumina.primitive.error.900",
+        "step": 900,
+        "value": "#4E0012",
+        "oklch": {
+          "l": 0.269,
+          "c": 0.1077,
+          "h": 16.94
+        },
+        "relativeLuminance": 0.016634
+      },
+      {
+        "id": "lumina.primitive.error.950",
+        "step": 950,
+        "value": "#340009",
+        "oklch": {
+          "l": 0.2062,
+          "c": 0.0825,
+          "h": 16.92
+        },
+        "relativeLuminance": 0.007498
+      },
+      {
+        "id": "lumina.primitive.error.1000",
+        "step": 1000,
+        "value": "#000000",
+        "oklch": {
+          "l": 0,
+          "c": 0,
+          "h": 0
+        },
+        "relativeLuminance": 0
+      }
+    ],
+    "info": [
+      {
+        "id": "lumina.primitive.info.000",
+        "step": 0,
+        "value": "#FFFFFF",
+        "oklch": {
+          "l": 1,
+          "c": 0,
+          "h": 89.88
+        },
+        "relativeLuminance": 1
+      },
+      {
+        "id": "lumina.primitive.info.050",
+        "step": 50,
+        "value": "#F4F8FF",
+        "oklch": {
+          "l": 0.9781,
+          "c": 0.0103,
+          "h": 261.79
+        },
+        "relativeLuminance": 0.935879
+      },
+      {
+        "id": "lumina.primitive.info.100",
+        "step": 100,
+        "value": "#E9F0FF",
+        "oklch": {
+          "l": 0.9543,
+          "c": 0.0215,
+          "h": 265.76
+        },
+        "relativeLuminance": 0.868638
+      },
+      {
+        "id": "lumina.primitive.info.200",
+        "step": 200,
+        "value": "#D1E0FF",
+        "oklch": {
+          "l": 0.9052,
+          "c": 0.0455,
+          "h": 264.92
+        },
+        "relativeLuminance": 0.740866
+      },
+      {
+        "id": "lumina.primitive.info.300",
+        "step": 300,
+        "value": "#B5CCFF",
+        "oklch": {
+          "l": 0.8456,
+          "c": 0.0759,
+          "h": 265.84
+        },
+        "relativeLuminance": 0.602295
+      },
+      {
+        "id": "lumina.primitive.info.400",
+        "step": 400,
+        "value": "#8AADFF",
+        "oklch": {
+          "l": 0.755,
+          "c": 0.1249,
+          "h": 265.88
+        },
+        "relativeLuminance": 0.425104
+      },
+      {
+        "id": "lumina.primitive.info.500",
+        "step": 500,
+        "value": "#5B89FE",
+        "oklch": {
+          "l": 0.6556,
+          "c": 0.1808,
+          "h": 265.55
+        },
+        "relativeLuminance": 0.272712
+      },
+      {
+        "id": "lumina.primitive.info.600",
+        "step": 600,
+        "value": "#3F69DB",
+        "oklch": {
+          "l": 0.5545,
+          "c": 0.1808,
+          "h": 265.56
+        },
+        "relativeLuminance": 0.162744
+      },
+      {
+        "id": "lumina.primitive.info.700",
+        "step": 700,
+        "value": "#254AB9",
+        "oklch": {
+          "l": 0.4552,
+          "c": 0.1803,
+          "h": 265.46
+        },
+        "relativeLuminance": 0.087937
+      },
+      {
+        "id": "lumina.primitive.info.800",
+        "step": 800,
+        "value": "#102B9A",
+        "oklch": {
+          "l": 0.3609,
+          "c": 0.181,
+          "h": 265.69
+        },
+        "relativeLuminance": 0.04171
+      },
+      {
+        "id": "lumina.primitive.info.900",
+        "step": 900,
+        "value": "#05037C",
+        "oklch": {
+          "l": 0.2698,
+          "c": 0.1803,
+          "h": 265.69
+        },
+        "relativeLuminance": 0.015526
+      },
+      {
+        "id": "lumina.primitive.info.950",
+        "step": 950,
+        "value": "#020055",
+        "oklch": {
+          "l": 0.2046,
+          "c": 0.1398,
+          "h": 265.48
+        },
+        "relativeLuminance": 0.006688
+      },
+      {
+        "id": "lumina.primitive.info.1000",
+        "step": 1000,
+        "value": "#000000",
+        "oklch": {
+          "l": 0,
+          "c": 0,
+          "h": 0
+        },
+        "relativeLuminance": 0
+      }
+    ]
+  }
+}

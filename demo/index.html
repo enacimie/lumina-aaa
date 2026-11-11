@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMINA-AAA palette tester</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231E40AF%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22%3EL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand-block">
+    <h1>LUMINA<span class="aaa">AAA</span></h1>
+    <p class="tagline">WCAG 2.2 AAA palette tester</p>
+  </div>
+  <div class="status" id="status" role="status" aria-live="polite">
+    <span class="status-dot" id="status-dot"></span>
+    <span id="status-text">loading...</span>
+  </div>
+  <div class="theme-switch" role="radiogroup" aria-label="Theme">
+    <button class="theme-btn is-active" data-theme-set="light" aria-pressed="true">Light</button>
+    <button class="theme-btn" data-theme-set="dark" aria-pressed="false">Dark</button>
+    <button class="theme-btn" data-theme-set="contrast" aria-pressed="false">Contrast</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="controls" aria-label="Palette controls">
+    <h2>Controls</h2>
+    <div class="field" role="group" aria-labelledby="brand-caption">
+      <span class="field-caption" id="brand-caption">Brand colour</span>
+      <span class="brand-row">
+        <label class="sr-only" for="brand-color">Brand colour swatch</label>
+        <input type="color" id="brand-color" value="#1E40AF">
+        <label class="sr-only" for="brand-hex">Brand hex value</label>
+        <input type="text" id="brand-hex" value="#1E40AF" spellcheck="false" autocomplete="off" maxlength="7" aria-describedby="brand-hex-hint" placeholder="#RRGGBB">
+      </span>
+      <span class="hint" id="brand-hex-hint">Hex value in #RRGGBB format; edits update the swatch</span>
+    </div>
+    <label class="field">
+      <span>Profile</span>
+      <select id="profile">
+        <option value="wcag-aaa">wcag-aaa (7.0 / 4.5)</option>
+        <option value="aaa-plus">aaa-plus (7.5 / 5.0)</option>
+        <option value="integral" selected>integral (7.5 / 7.5)</option>
+      </select>
+    </label>
+    <label class="field">
+      <span>Seed</span>
+      <input type="number" id="seed" value="20260908" step="1">
+    </label>
+    <button id="regen" class="btn primary">Regenerate</button>
+    <p class="hint">Generation runs in a worker and takes a few seconds. Every check below is measured on the published colours.</p>
+
+    <section class="cert" id="cert" hidden>
+      <h3 id="cert-level">-</h3>
+      <dl class="cert-grid">
+        <dt>Blocking failures</dt><dd id="cert-blocking">-</dd>
+        <dt>Warnings</dt><dd id="cert-warnings">-</dd>
+        <dt>Pairs audited</dt><dd id="cert-pairs">-</dd>
+        <dt>Hash</dt><dd id="cert-hash" class="mono">-</dd>
+      </dl>
+    </section>
+
+    <label class="field">
+      <span>CVD simulation</span>
+      <select id="cvd">
+        <option value="none" selected>None</option>
+        <option value="deuteranopia">Deuteranopia</option>
+        <option value="protanopia">Protanopia</option>
+        <option value="tritanopia">Tritanopia</option>
+      </select>
+    </label>
+  </aside>
+
+  <main class="content">
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" aria-selected="true" data-tab="components" class="is-active">Components</button>
+      <button role="tab" aria-selected="false" data-tab="focus">Focus test</button>
+      <button role="tab" aria-selected="false" data-tab="chart">Charts</button>
+      <button role="tab" aria-selected="false" data-tab="tokens">Tokens</button>
+      <button role="tab" aria-selected="false" data-tab="audit">Audit matrix</button>
+    </nav>
+
+    <section id="panel-components" role="tabpanel" class="panel is-active">
+      <h2>Buttons</h2>
+      <div class="row wrap">
+        <button class="btn primary">Primary</button>
+        <button class="btn secondary">Secondary</button>
+        <button class="btn ghost">Ghost</button>
+        <button class="btn primary" disabled>Disabled</button>
+        <button class="btn destructive">Destructive</button>
+      </div>
+
+      <h2>Text</h2>
+      <p class="t-primary">Primary text: the quick brown fox jumps over the lazy dog</p>
+      <p class="t-secondary">Secondary text: the quick brown fox jumps over the lazy dog</p>
+      <p class="t-disabled">Disabled text: the quick brown fox jumps over the lazy dog</p>
+      <p><a class="link" href="#" onclick="return false">A text link</a> or <a class="link" href="#" onclick="return false">another link</a></p>
+      <p class="t-on-inverse inverse-box">Inverse text on inverse background</p>
+
+      <h2>Form fields</h2>
+      <div class="row wrap">
+        <label class="field grow">
+          <span>Default</span>
+          <input type="text" placeholder="Type here...">
+        </label>
+        <label class="field grow has-error">
+          <span>With error</span>
+          <input type="text" value="invalid@" aria-invalid="true" aria-describedby="err-1">
+          <small class="error-msg" id="err-1">Enter a valid email address</small>
+        </label>
+        <label class="field grow">
+          <span>Disabled</span>
+          <input type="text" value="Not editable" disabled>
+        </label>
+      </div>
+
+      <h2>Feedback</h2>
+      <div class="grid-2">
+        <div class="alert success" role="status"><strong>Success.</strong> Changes were saved.</div>
+        <div class="alert warning" role="alert"><strong>Warning.</strong> Your session expires soon.</div>
+        <div class="alert error" role="alert"><strong>Error.</strong> The upload failed.</div>
+        <div class="alert info" role="status"><strong>Info.</strong> A new version is available.</div>
+      </div>
+    </section>
+
+    <section id="panel-focus" role="tabpanel" class="panel" hidden>
+      <h2>Focus test (SC 2.4.11 / 2.4.13)</h2>
+      <p class="t-secondary">Press <kbd>Tab</kbd> to move through the controls. The double ring must be visible against the page background and against each fill, with a 3.2:1 minimum in this profile.</p>
+      <div class="row wrap focus-playground">
+        <button class="btn primary">Primary</button>
+        <button class="btn secondary">Secondary</button>
+        <button class="btn ghost">Ghost</button>
+        <a class="link" href="#" onclick="return false">A link</a>
+        <input type="text" placeholder="A text input" class="w-compact">
+        <select class="w-compact"><option>A select</option></select>
+        <input type="checkbox"> <span class="t-primary">A checkbox</span>
+      </div>
+      <h2>State changes (DeltaE2000 >= 5)</h2>
+      <table class="table" id="state-table"><thead><tr><th>Token</th><th>Default</th><th>Hover</th><th>Active</th></tr></thead><tbody></tbody></table>
+    </section>
+
+    <section id="panel-chart" role="tabpanel" class="panel" hidden>
+      <h2>Chart series (greedy CVD-aware selection)</h2>
+      <p class="t-secondary">Six series selected to maximise the minimum CIEDE2000 distance under normal vision and the simulated deficiency chosen in the sidebar.</p>
+      <div class="chart-card"><svg id="chart-svg" viewBox="0 0 640 320" role="img" aria-label="Demo line chart with six series"></svg></div>
+      <div class="row wrap" id="chart-legend"></div>
+    </section>
+
+    <section id="panel-tokens" role="tabpanel" class="panel" hidden>
+      <h2 id="tokens-title">Tokens, light</h2>
+      <div id="token-grid" class="token-grid"></div>
+    </section>
+
+    <section id="panel-audit" role="tabpanel" class="panel" hidden>
+      <h2>Audit matrix</h2>
+      <div class="row wrap audit-summary" id="audit-summary"></div>
+      <label class="field">
+        <span>Filter</span>
+        <select id="audit-filter">
+          <option value="all">All</option>
+          <option value="fail">Fail</option>
+          <option value="warning">Warning</option>
+          <option value="exception">Exception</option>
+          <option value="not_applicable">Not applicable</option>
+          <option value="pass">Pass (sample)</option>
+        </select>
+      </label>
+      <table class="table" id="audit-table">
+        <thead><tr><th>Pair</th><th>Class</th><th>Fg</th><th>Bg</th><th>CR</th><th>Status</th><th>Reason</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+</div>
+
+<footer class="footer">
+  <span class="mono" id="footer-hash">-</span>
+  <span>LUMINA spec v0.3.0, every value above is measured, not declared</span>
+</footer>
+
+<dialog id="swatch-dialog" class="swatch-dialog">
+  <h2 id="swatch-title">Token</h2>
+  <div id="swatch-body" class="mono"></div>
+  <button class="btn secondary" onclick="document.getElementById('swatch-dialog').close()">Close</button>
+</dialog>
+
+<script type="module" src="demo.js"></script>
+</body>
+</html>

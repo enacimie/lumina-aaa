@@ -1,0 +1,59 @@
+{
+  "description": "external validation of the rendered demo (reference palette) with axe-core and Lighthouse",
+  "demo_url": "http://localhost:8130/demo/",
+  "display": ":99",
+  "axe": {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.12.1"
+    },
+    "url": "http://localhost:8130/demo/",
+    "violations": 0,
+    "violation_ids": [],
+    "passes": 26,
+    "pass_ids": [
+      "aria-allowed-attr",
+      "aria-conditional-attr",
+      "aria-deprecated-role",
+      "aria-hidden-body",
+      "aria-prohibited-attr",
+      "aria-required-attr",
+      "aria-required-children",
+      "aria-required-parent",
+      "aria-roles",
+      "aria-valid-attr",
+      "aria-valid-attr-value",
+      "autocomplete-valid",
+      "button-name",
+      "bypass",
+      "color-contrast",
+      "document-title",
+      "duplicate-id-aria",
+      "form-field-multiple-labels",
+      "html-has-lang",
+      "html-lang-valid",
+      "label",
+      "link-name",
+      "meta-viewport",
+      "nested-interactive",
+      "select-name",
+      "target-size"
+    ],
+    "inapplicable": 37,
+    "incomplete": 0,
+    "color_contrast_nodes": 56,
+    "color_contrast_passes": true
+  },
+  "lighthouse": {
+    "lighthouse_version": "12.8.2",
+    "url": "http://localhost:8130/demo/",
+    "accessibility_score": 1,
+    "failing_audits": [],
+    "color_contrast": {
+      "score": 1,
+      "display_mode": "binary",
+      "items": 0
+    }
+  },
+  "interpretation": "the demo renders the released tokens; a passing axe/Lighthouse colour-contrast check confirms the certified values in a real browser DOM"
+}

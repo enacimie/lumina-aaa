@@ -1,0 +1,327 @@
+{
+  "source": "archive/chat-export-1788860678731.json",
+  "description": "Forensic re-derivation of the v0.2 defect taxonomy. Every number is computed from the published values; the operational definitions are in the script header.",
+  "provenance": {
+    "assistantMessages": 4,
+    "userMessages": 4,
+    "normativeMessage": 4,
+    "models": [
+      "qwen3.8-max"
+    ]
+  },
+  "declaredRatios": {
+    "definition": "unique text/background ratios printed in the palette tables, background from the row wording and the section theme",
+    "total": 19,
+    "wrongOverPointOne": 4,
+    "wrongRoundedToOneDecimal": 6,
+    "tolerance": 0.1,
+    "pairs": [
+      {
+        "fg": "#374151",
+        "bg": "#FFFFFF",
+        "declared": 9.9,
+        "measured": 10.31,
+        "delta": 0.41
+      },
+      {
+        "fg": "#86EFAC",
+        "bg": "#052E16",
+        "declared": 10.4,
+        "measured": 10.62,
+        "delta": 0.22
+      },
+      {
+        "fg": "#93C5FD",
+        "bg": "#082F49",
+        "declared": 7.5,
+        "measured": 7.7,
+        "delta": 0.2
+      },
+      {
+        "fg": "#0F172A",
+        "bg": "#BFDBFE",
+        "declared": 12.7,
+        "measured": 12.56,
+        "delta": -0.14
+      },
+      {
+        "fg": "#7C2D12",
+        "bg": "#FEF3C7",
+        "declared": 8.5,
+        "measured": 8.42,
+        "delta": -0.08
+      },
+      {
+        "fg": "#14532D",
+        "bg": "#ECFDF5",
+        "declared": 8.6,
+        "measured": 8.65,
+        "delta": 0.05
+      },
+      {
+        "fg": "#64748B",
+        "bg": "#0F172A",
+        "declared": 3.8,
+        "measured": 3.75,
+        "delta": -0.05
+      },
+      {
+        "fg": "#111827",
+        "bg": "#FFFFFF",
+        "declared": 17.7,
+        "measured": 17.74,
+        "delta": 0.04
+      },
+      {
+        "fg": "#7F1D1D",
+        "bg": "#FEF2F2",
+        "declared": 9.2,
+        "measured": 9.16,
+        "delta": -0.04
+      },
+      {
+        "fg": "#6B7280",
+        "bg": "#FFFFFF",
+        "declared": 4.8,
+        "measured": 4.83,
+        "delta": 0.03
+      },
+      {
+        "fg": "#FDE68A",
+        "bg": "#451A03",
+        "declared": 12,
+        "measured": 12.03,
+        "delta": 0.03
+      },
+      {
+        "fg": "#708096",
+        "bg": "#1E293B",
+        "declared": 3.6,
+        "measured": 3.63,
+        "delta": 0.03
+      },
+      {
+        "fg": "#FFFFFF",
+        "bg": "#1E40AF",
+        "declared": 8.7,
+        "measured": 8.72,
+        "delta": 0.02
+      },
+      {
+        "fg": "#E2E8F0",
+        "bg": "#0F172A",
+        "declared": 14.5,
+        "measured": 14.48,
+        "delta": -0.02
+      },
+      {
+        "fg": "#FFFFFF",
+        "bg": "#172554",
+        "declared": 14.7,
+        "measured": 14.69,
+        "delta": -0.01
+      },
+      {
+        "fg": "#1E40AF",
+        "bg": "#EFF6FF",
+        "declared": 8,
+        "measured": 8.01,
+        "delta": 0.01
+      },
+      {
+        "fg": "#B6C2D4",
+        "bg": "#0F172A",
+        "declared": 9.9,
+        "measured": 9.91,
+        "delta": 0.01
+      },
+      {
+        "fg": "#FCA5A5",
+        "bg": "#450A0A",
+        "declared": 8.5,
+        "measured": 8.51,
+        "delta": 0.01
+      },
+      {
+        "fg": "#0F172A",
+        "bg": "#93C5FD",
+        "declared": 9.9,
+        "measured": 9.9,
+        "delta": 0
+      }
+    ]
+  },
+  "inventedHex": {
+    "definition": "hex values in the CSS reference block absent from the published palette tables",
+    "count": 5,
+    "values": [
+      "#101A2E",
+      "#1E3A8A",
+      "#243044",
+      "#7DD3FC",
+      "#F1F5F9"
+    ]
+  },
+  "neutralChroma": {
+    "definition": "distinct hex values of the background, text and border roles in the CSS block, excluding the coloured link and focus roles",
+    "ceiling": 0.02,
+    "total": 13,
+    "over": 9,
+    "values": [
+      {
+        "hex": "#0F172A",
+        "chroma": 0.0398,
+        "over": true
+      },
+      {
+        "hex": "#101A2E",
+        "chroma": 0.0421,
+        "over": true
+      },
+      {
+        "hex": "#111827",
+        "chroma": 0.0318,
+        "over": true
+      },
+      {
+        "hex": "#1E293B",
+        "chroma": 0.0368,
+        "over": true
+      },
+      {
+        "hex": "#243044",
+        "chroma": 0.0399,
+        "over": true
+      },
+      {
+        "hex": "#374151",
+        "chroma": 0.0306,
+        "over": true
+      },
+      {
+        "hex": "#6B7280",
+        "chroma": 0.0234,
+        "over": true
+      },
+      {
+        "hex": "#708096",
+        "chroma": 0.0386,
+        "over": true
+      },
+      {
+        "hex": "#B6C2D4",
+        "chroma": 0.0286,
+        "over": true
+      },
+      {
+        "hex": "#E2E8F0",
+        "chroma": 0.0126,
+        "over": false
+      },
+      {
+        "hex": "#F1F5F9",
+        "chroma": 0.0069,
+        "over": false
+      },
+      {
+        "hex": "#F8FAFC",
+        "chroma": 0.0034,
+        "over": false
+      },
+      {
+        "hex": "#FFFFFF",
+        "chroma": 0,
+        "over": false
+      }
+    ]
+  },
+  "achromaticDrift": {
+    "definition": "naive OKLCH hue difference between #FFFFFF and #F8FAFC",
+    "whiteHue": 89.8756,
+    "nearWhiteHue": 247.8575,
+    "naiveDrift": 157.98,
+    "guardedDrift": null,
+    "note": "hueDifference returns null under the achromatic guard (C < 0.005)"
+  },
+  "coverage": {
+    "definition": "mandatory tokens (section 14 of the normative message) never named in the declared pair lists (section 15)",
+    "mandatory": 59,
+    "namedInPairs": 30,
+    "covered": 28,
+    "uncovered": 31,
+    "undefinedReferenced": [
+      "interactive.primary.border",
+      "interactive.secondary.border"
+    ],
+    "uncoveredTokens": [
+      "background.inverse",
+      "background.overlay",
+      "background.raised",
+      "border.error",
+      "border.focus",
+      "border.strong",
+      "border.subtle",
+      "chart.grid",
+      "chart.series.4",
+      "chart.series.5",
+      "chart.series.6",
+      "chart.surface",
+      "feedback.error.border",
+      "feedback.error.icon",
+      "feedback.info.border",
+      "feedback.info.icon",
+      "feedback.success.border",
+      "feedback.success.icon",
+      "feedback.warning.border",
+      "feedback.warning.icon",
+      "focus.inner",
+      "interactive.disabled",
+      "interactive.ghost.default",
+      "interactive.ghost.hover",
+      "interactive.primary.focus",
+      "interactive.secondary.active",
+      "interactive.secondary.default",
+      "interactive.secondary.hover",
+      "text.disabled",
+      "text.inverse",
+      "text.on-surface"
+    ]
+  },
+  "undefinedFunctions": {
+    "definition": "function names invoked in the normative message without a function definition",
+    "count": 16,
+    "names": [
+      "adjustOrReject",
+      "assembleTokens",
+      "assignDarkTheme",
+      "assignLightTheme",
+      "contrast",
+      "generateDarkSurface",
+      "generateNeutralRamp",
+      "generateSemanticRamps",
+      "optimizeColor",
+      "select",
+      "solvePrimary",
+      "solveSemanticRamps",
+      "toOKLCH",
+      "validateColorVision",
+      "verifyAllPairs",
+      "wcagContrast"
+    ]
+  },
+  "focusPair": {
+    "focusRing": [
+      "##1E40AF",
+      "##93C5FD"
+    ],
+    "primary": [
+      "##1E40AF",
+      "##93C5FD"
+    ],
+    "identical": true
+  },
+  "luminance": {
+    "white": 1,
+    "nearWhite": 0.953559
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "light": {
+    "series": [
+      "#9E246B",
+      "#798F00",
+      "#5671E0",
+      "#206735",
+      "#D35081",
+      "#009690"
+    ],
+    "background": "#FFFFFF",
+    "min_deltaE2000_normal": 16.0888700494071,
+    "min_deltaE2000_deuteranopia": 13.644025946291901,
+    "min_deltaE2000_protanopia": 13.792491595356058,
+    "min_deltaE2000_tritanopia": 11.13329460709108
+  },
+  "dark": {
+    "series": [
+      "#D7DA82",
+      "#5B97D4",
+      "#BE8686",
+      "#69E4DC",
+      "#92943C",
+      "#AFDCB7"
+    ],
+    "background": "#151821",
+    "min_deltaE2000_normal": 15.065229437442879,
+    "min_deltaE2000_deuteranopia": 13.727080289741082,
+    "min_deltaE2000_protanopia": 12.256228124738314,
+    "min_deltaE2000_tritanopia": 12.781005211405176
+  },
+  "contrast": {
+    "series": [
+      "#5026A8",
+      "#D34900",
+      "#008680",
+      "#7D272E",
+      "#7A5BDE",
+      "#005A5E"
+    ],
+    "background": "#FFFFFF",
+    "min_deltaE2000_normal": 15.786179074003,
+    "min_deltaE2000_deuteranopia": 14.000237209120503,
+    "min_deltaE2000_protanopia": 15.424754310300251,
+    "min_deltaE2000_tritanopia": 15.413204540441663
+  }
+}

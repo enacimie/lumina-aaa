@@ -1,0 +1,92 @@
+{
+  "description": "audit verdicts on the reference palette as a function of the DeltaE2000 threshold for state-change, distinctness and CVD",
+  "reference": {
+    "brand": "#1E40AF",
+    "profile": "integral",
+    "seed": 20260908
+  },
+  "current_threshold": 5,
+  "note": "the profile thresholds are design constants; this table shows their sensitivity, not a perceptual validation",
+  "rows": [
+    {
+      "threshold": 0,
+      "isCurrent": false,
+      "blocking_failures": 0,
+      "warnings": 0,
+      "certifiable": true,
+      "pair_status": {
+        "pass": 333,
+        "not_applicable": 12,
+        "exception": 3
+      }
+    },
+    {
+      "threshold": 3,
+      "isCurrent": false,
+      "blocking_failures": 0,
+      "warnings": 2,
+      "certifiable": true,
+      "pair_status": {
+        "pass": 331,
+        "not_applicable": 12,
+        "exception": 3,
+        "warning": 2
+      }
+    },
+    {
+      "threshold": 5,
+      "isCurrent": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "certifiable": true,
+      "pair_status": {
+        "pass": 328,
+        "not_applicable": 12,
+        "warning": 5,
+        "exception": 3
+      }
+    },
+    {
+      "threshold": 7,
+      "isCurrent": false,
+      "blocking_failures": 5,
+      "warnings": 14,
+      "certifiable": false,
+      "pair_status": {
+        "pass": 314,
+        "not_applicable": 12,
+        "warning": 14,
+        "exception": 3,
+        "fail": 5
+      }
+    },
+    {
+      "threshold": 10,
+      "isCurrent": false,
+      "blocking_failures": 6,
+      "warnings": 18,
+      "certifiable": false,
+      "pair_status": {
+        "pass": 309,
+        "not_applicable": 12,
+        "warning": 18,
+        "exception": 3,
+        "fail": 6
+      }
+    },
+    {
+      "threshold": 12,
+      "isCurrent": false,
+      "blocking_failures": 8,
+      "warnings": 20,
+      "certifiable": false,
+      "pair_status": {
+        "pass": 305,
+        "not_applicable": 12,
+        "warning": 20,
+        "exception": 3,
+        "fail": 8
+      }
+    }
+  ]
+}

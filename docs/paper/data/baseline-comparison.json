@@ -1,0 +1,154 @@
+{
+  "description": "golden-angle baseline vs LUMINA solver vs the v0.2 categorical palette, min pairwise DeltaE2000 against already-selected series and chart background",
+  "themes": {
+    "light": {
+      "budget": {
+        "L": 0.5598,
+        "C": 0.1448,
+        "brandHue": 265.5
+      },
+      "lumina": {
+        "series": [
+          "#9E246B",
+          "#798F00",
+          "#5671E0",
+          "#206735",
+          "#D35081",
+          "#009690"
+        ],
+        "minDeltaE2000": {
+          "normal": 16.09,
+          "deuteranopia": 13.64,
+          "protanopia": 13.79,
+          "tritanopia": 11.13
+        }
+      },
+      "goldenAngle": {
+        "series": [
+          "#4B6FC9",
+          "#B75222",
+          "#008777",
+          "#9755AB",
+          "#897300",
+          "#007FAD"
+        ],
+        "minDeltaE2000": {
+          "normal": 13.99,
+          "deuteranopia": 1.39,
+          "protanopia": 6.22,
+          "tritanopia": 4.96
+        }
+      },
+      "v02Categorical": {
+        "series": [
+          "#1E40AF",
+          "#14532D",
+          "#7C2D12",
+          "#5B21B6",
+          "#7F1D1D"
+        ],
+        "background": "#FFFFFF",
+        "minDeltaE2000": {
+          "normal": 7.76,
+          "deuteranopia": 0.95,
+          "protanopia": 2.96,
+          "tritanopia": 2.64
+        }
+      }
+    },
+    "dark": {
+      "budget": {
+        "L": 0.7583,
+        "C": 0.097,
+        "brandHue": 265.47
+      },
+      "lumina": {
+        "series": [
+          "#D7DA82",
+          "#5B97D4",
+          "#BE8686",
+          "#69E4DC",
+          "#92943C",
+          "#AFDCB7"
+        ],
+        "minDeltaE2000": {
+          "normal": 15.07,
+          "deuteranopia": 13.73,
+          "protanopia": 12.26,
+          "tritanopia": 12.78
+        }
+      },
+      "goldenAngle": {
+        "series": [
+          "#93B0EF",
+          "#E59C7F",
+          "#62C5B3",
+          "#CB9DD9",
+          "#C3B066",
+          "#6DBBE4"
+        ],
+        "minDeltaE2000": {
+          "normal": 12.08,
+          "deuteranopia": 2.12,
+          "protanopia": 3.92,
+          "tritanopia": 3.87
+        }
+      },
+      "v02Categorical": {
+        "series": [
+          "#93C5FD",
+          "#86EFAC",
+          "#FDE68A",
+          "#C4B5FD",
+          "#FCA5A5"
+        ],
+        "background": "#1E293B",
+        "minDeltaE2000": {
+          "normal": 15.99,
+          "deuteranopia": 0.59,
+          "protanopia": 2.42,
+          "tritanopia": 9.85
+        }
+      }
+    },
+    "contrast": {
+      "budget": {
+        "L": 0.4941,
+        "C": 0.1425,
+        "brandHue": 265.65
+      },
+      "lumina": {
+        "series": [
+          "#5026A8",
+          "#D34900",
+          "#008680",
+          "#7D272E",
+          "#7A5BDE",
+          "#005A5E"
+        ],
+        "minDeltaE2000": {
+          "normal": 15.79,
+          "deuteranopia": 14,
+          "protanopia": 15.42,
+          "tritanopia": 15.41
+        }
+      },
+      "goldenAngle": {
+        "series": [
+          "#3A5BB2",
+          "#A03E06",
+          "#007264",
+          "#824295",
+          "#736000",
+          "#006A92"
+        ],
+        "minDeltaE2000": {
+          "normal": 12.98,
+          "deuteranopia": 0.72,
+          "protanopia": 5.54,
+          "tritanopia": 3.98
+        }
+      }
+    }
+  }
+}

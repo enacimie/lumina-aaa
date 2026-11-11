@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMINA perceptual study: state discrimination</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%231E40AF%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22%3EL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="study.css">
+</head>
+<body>
+<main class="wrap">
+  <h1>State discrimination study</h1>
+  <p class="lead">The page is static; responses stay in this browser and are
+  exported as CSV.</p>
+
+  <section id="screen-start">
+    <h2>Instructions</h2>
+    <p>You will see two patches of the same component. One is the resting state
+    and the other is the state colour. Decide whether the two patches are the
+    <strong>same</strong> colour or <strong>different</strong> colours.</p>
+    <p>Press <kbd>S</kbd> for "same" and <kbd>D</kbd> for "different". Answer as
+    fast as you can without guessing randomly.</p>
+    <label class="field">
+      <span>Participant code</span>
+      <input id="participant" type="text" autocomplete="off" placeholder="for example, P01">
+    </label>
+    <label class="field">
+      <span>Cohort</span>
+      <select id="cohort">
+        <option value="simulation" selected>Simulation (normal vision)</option>
+        <option value="clinical">Clinical (colour vision deficiency)</option>
+      </select>
+    </label>
+    <label class="field" id="deficiency-field" hidden>
+      <span>Deficiency</span>
+      <select id="deficiency">
+        <option value="deuteranopia">Deuteranopia</option>
+        <option value="protanopia">Protanopia</option>
+        <option value="tritanopia">Tritanopia</option>
+      </select>
+    </label>
+    <button id="start">Start the practice block</button>
+  </section>
+
+  <section id="screen-trial" hidden>
+    <p class="meta"><span id="progress">0 / 0</span> <span id="condition"></span></p>
+    <div class="patches" id="patches">
+      <div class="patch" id="patch-a"></div>
+      <div class="patch" id="patch-b"></div>
+    </div>
+    <div class="answers">
+      <button id="same">Same <kbd>S</kbd></button>
+      <button id="different">Different <kbd>D</kbd></button>
+    </div>
+    <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+  </section>
+
+  <section id="screen-end" hidden>
+    <h2>Done</h2>
+    <p id="summary"></p>
+    <button id="export">Export CSV</button>
+    <button id="restart">Restart</button>
+  </section>
+</main>
+<script type="module" src="study.js"></script>
+</body>
+</html>
