@@ -1,6 +1,7 @@
 // Controlled accessibility stimuli with KNOWN ground truth from the LUMINA
 // oracle. Text-on-background swatches at target contrast ratios, and focus
-// ring-vs-fill pairs. The actual ratio is recomputed by lib (ground truth).
+// ring-vs-page pairs (the normative SC 2.4.13 adjacency for an outer outline).
+// The actual ratio is recomputed by lib (ground truth).
 import { relativeLuminance, contrastRatio } from '../../lib/color.js';
 import { writeFileSync, mkdirSync } from 'fs';
 mkdirSync('work', { recursive: true });

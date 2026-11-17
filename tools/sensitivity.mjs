@@ -26,8 +26,6 @@ for (const tau of THRESHOLDS) {
   palette.profile = {
     ...palette.profile,
     stateChange: { ...palette.profile.stateChange, deltaE2000: tau },
-    distinct: { ...palette.profile.distinct, deltaE2000Min: tau },
-    cvd: { ...palette.profile.cvd, deltaE2000Min: tau },
   };
   const report = auditPalette(palette);
   const status = {};
@@ -43,7 +41,7 @@ for (const tau of THRESHOLDS) {
 }
 
 const out = {
-  description: 'audit verdicts on the reference palette as a function of the DeltaE2000 threshold for state-change, distinctness and CVD',
+  description: 'audit verdicts on the reference palette as a function of the state-change DeltaE2000 threshold only; distinctness (5) and CVD (10) are held at the integral profile values',
   reference: { brand: '#1E40AF', profile: 'integral', seed: 20260908 },
   current_threshold: 5,
   note: 'the profile thresholds are design constants; this table shows their sensitivity, not a perceptual validation',

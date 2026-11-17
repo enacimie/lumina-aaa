@@ -45,9 +45,9 @@ for row in res:
     vs = [bool(v) for v in vs if v is not None]
     if not vs: continue
     if (sum(vs) > len(vs) / 2) == row['gt_aaa']: maj += 1
-    if len(vs) == 3:
+    if len(vs) == 3 and len(set(vs)) == 1:
         unatot += 1
-        if len(set(vs)) == 1 and vs[0] == row['gt_aaa']: una += 1
+        if vs[0] == row['gt_aaa']: una += 1
 summary = {'method': '3x3 (3 judges x 3 runs; per-judge majority, then cross-judge majority)',
            'panel': JUDGES, 'conditions': 'pure VLM, image+prompt only, official API, no tools, thinking enabled, generous max_tokens',
            'ground_truth': 'LUMINA deterministic oracle', 'n_stimuli': len(res),

@@ -1,0 +1,2860 @@
+{
+  "description": "Uniform hue sweep: 360 brand hues at 1 degree (OKLCH L=0.45, C=0.15), integral profile, seed 20260908. Reports certifiability, blocking failures, margin escalations and rejections over a uniform sample of the hue circle.",
+  "seed": 20260908,
+  "profile": "integral",
+  "hues": 360,
+  "certifiable": 317,
+  "blocking_failures": 27,
+  "margin_escalations": 35,
+  "rejected": 16,
+  "rows": [
+    {
+      "hue": 0,
+      "brand": "#922452",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 1,
+      "brand": "#922450",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 2,
+      "brand": "#93234F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": true
+    },
+    {
+      "hue": 3,
+      "brand": "#93234D",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 6,
+      "adjusted": true
+    },
+    {
+      "hue": 4,
+      "brand": "#93234C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 5,
+      "brand": "#94234A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 6,
+      "brand": "#942348",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 7,
+      "brand": "#942347",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": true
+    },
+    {
+      "hue": 8,
+      "brand": "#952345",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 9,
+      "brand": "#952344",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 10,
+      "brand": "#952342",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 11,
+      "brand": "#952340",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 12,
+      "brand": "#96233F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 13,
+      "brand": "#96233D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 14,
+      "brand": "#96233B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 15,
+      "brand": "#962339",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 16,
+      "brand": "#962338",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 17,
+      "brand": "#962336",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 18,
+      "brand": "#972334",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 19,
+      "brand": "#972432",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 20,
+      "brand": "#972430",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 21,
+      "brand": "#97242F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 22,
+      "brand": "#97242D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 23,
+      "brand": "#97252B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 24,
+      "brand": "#972529",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 25,
+      "brand": "#972527",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 26,
+      "brand": "#972524",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 27,
+      "brand": "#972622",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 28,
+      "brand": "#972620",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 29,
+      "brand": "#97261D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 30,
+      "brand": "#97271B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 31,
+      "brand": "#972718",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 32,
+      "brand": "#972815",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 33,
+      "brand": "#972812",
+      "certifiable": false,
+      "blocking_failures": 2,
+      "warnings": 6,
+      "adjusted": true
+    },
+    {
+      "hue": 34,
+      "brand": "#96280E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 35,
+      "brand": "#96290A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 36,
+      "brand": "#962905",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 37,
+      "brand": "#962A01",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 38,
+      "brand": "#952C00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 39,
+      "brand": "#942E00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 40,
+      "brand": "#923000",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 41,
+      "brand": "#913200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 42,
+      "brand": "#903300",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 43,
+      "brand": "#8F3500",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 44,
+      "brand": "#8D3600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 45,
+      "brand": "#8C3700",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 46,
+      "brand": "#8B3800",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 47,
+      "brand": "#8A3A00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 48,
+      "brand": "#893B00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 49,
+      "brand": "#883C00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 50,
+      "brand": "#873D00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 51,
+      "brand": "#863E00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 52,
+      "brand": "#853E00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": true
+    },
+    {
+      "hue": 53,
+      "brand": "#843F00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 54,
+      "brand": "#844000",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 55,
+      "brand": "#834100",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 56,
+      "brand": "#824200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 57,
+      "brand": "#814200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 58,
+      "brand": "#804300",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 59,
+      "brand": "#7F4400",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 60,
+      "brand": "#7F4400",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 61,
+      "brand": "#7E4500",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 62,
+      "brand": "#7D4600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 63,
+      "brand": "#7C4600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 64,
+      "brand": "#7B4700",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 65,
+      "brand": "#7B4700",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 66,
+      "brand": "#7A4800",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 67,
+      "brand": "#794800",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 68,
+      "brand": "#784900",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 69,
+      "brand": "#784900",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 70,
+      "brand": "#774A00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 71,
+      "brand": "#764A00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 72,
+      "brand": "#764B00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 73,
+      "brand": "#754B00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 74,
+      "brand": "#744C00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 75,
+      "brand": "#734C00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 76,
+      "brand": "#734D00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 77,
+      "brand": "#724D00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 78,
+      "brand": "#714D00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 79,
+      "brand": "#714E00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 80,
+      "brand": "#704E00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 81,
+      "brand": "#6F4F00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 82,
+      "brand": "#6F4F00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 83,
+      "brand": "#6E4F00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 84,
+      "brand": "#6D5000",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 85,
+      "brand": "#6D5000",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 86,
+      "brand": "#6C5100",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 87,
+      "brand": "#6B5100",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 88,
+      "brand": "#6A5100",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 89,
+      "brand": "#6A5200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 90,
+      "brand": "#695200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 91,
+      "brand": "#685200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 92,
+      "brand": "#685300",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 93,
+      "brand": "#675300",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 12,
+      "adjusted": true
+    },
+    {
+      "hue": 94,
+      "brand": "#665400",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 9,
+      "adjusted": false
+    },
+    {
+      "hue": 95,
+      "brand": "#655400",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 96,
+      "brand": "#655400",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 97,
+      "brand": "#645500",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 9,
+      "adjusted": true
+    },
+    {
+      "hue": 98,
+      "brand": "#635500",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 99,
+      "brand": "#625500",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 100,
+      "brand": "#625600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 101,
+      "brand": "#615600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 102,
+      "brand": "#605600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 103,
+      "brand": "#5F5700",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 104,
+      "brand": "#5E5700",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 105,
+      "brand": "#5E5800",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 106,
+      "brand": "#5D5800",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 107,
+      "brand": "#5C5800",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 108,
+      "brand": "#5B5900",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 109,
+      "brand": "#5A5900",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 110,
+      "brand": "#595900",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 111,
+      "brand": "#585A00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 112,
+      "brand": "#575A00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 113,
+      "brand": "#565A00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 114,
+      "brand": "#555B00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 115,
+      "brand": "#545B00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 116,
+      "brand": "#535C00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 117,
+      "brand": "#525C00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 118,
+      "brand": "#515C00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 119,
+      "brand": "#4F5D00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 120,
+      "brand": "#4E5D00",
+      "rejected": true,
+      "error": "infeasible primary scale"
+    },
+    {
+      "hue": 121,
+      "brand": "#4D5E00",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 9,
+      "adjusted": true
+    },
+    {
+      "hue": 122,
+      "brand": "#4B5E00",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 9,
+      "adjusted": true
+    },
+    {
+      "hue": 123,
+      "brand": "#4A5E00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 124,
+      "brand": "#495F00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 125,
+      "brand": "#475F00",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 126,
+      "brand": "#456000",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 127,
+      "brand": "#446000",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 128,
+      "brand": "#426100",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 129,
+      "brand": "#406100",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 130,
+      "brand": "#3E6200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 131,
+      "brand": "#3C6200",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 132,
+      "brand": "#396300",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 133,
+      "brand": "#376300",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 134,
+      "brand": "#346400",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 135,
+      "brand": "#316400",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 136,
+      "brand": "#2E6500",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 137,
+      "brand": "#2A6500",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 138,
+      "brand": "#266600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 139,
+      "brand": "#216600",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 140,
+      "brand": "#1C6700",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 141,
+      "brand": "#146800",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 142,
+      "brand": "#0A6802",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 143,
+      "brand": "#016807",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 144,
+      "brand": "#006811",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 145,
+      "brand": "#006818",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 146,
+      "brand": "#00681E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 147,
+      "brand": "#006822",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 148,
+      "brand": "#006826",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 149,
+      "brand": "#006729",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 150,
+      "brand": "#00672D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 151,
+      "brand": "#00672F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 152,
+      "brand": "#006732",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 153,
+      "brand": "#006734",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 154,
+      "brand": "#006736",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 155,
+      "brand": "#006738",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 156,
+      "brand": "#00663A",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 9,
+      "adjusted": true
+    },
+    {
+      "hue": 157,
+      "brand": "#00663C",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 9,
+      "adjusted": true
+    },
+    {
+      "hue": 158,
+      "brand": "#00663E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 159,
+      "brand": "#006640",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 160,
+      "brand": "#006641",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 161,
+      "brand": "#006643",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 162,
+      "brand": "#006644",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 163,
+      "brand": "#006645",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 164,
+      "brand": "#006547",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 165,
+      "brand": "#006548",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 8,
+      "adjusted": false
+    },
+    {
+      "hue": 166,
+      "brand": "#006549",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 167,
+      "brand": "#00654A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 168,
+      "brand": "#00654B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 169,
+      "brand": "#00654D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 170,
+      "brand": "#00654E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 171,
+      "brand": "#00654F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 172,
+      "brand": "#006550",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 11,
+      "adjusted": true
+    },
+    {
+      "hue": 173,
+      "brand": "#006451",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 174,
+      "brand": "#006452",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 175,
+      "brand": "#006453",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 176,
+      "brand": "#006453",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 177,
+      "brand": "#006454",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 178,
+      "brand": "#006455",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 179,
+      "brand": "#006456",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 180,
+      "brand": "#006457",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 181,
+      "brand": "#006458",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 182,
+      "brand": "#006459",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 13,
+      "adjusted": true
+    },
+    {
+      "hue": 183,
+      "brand": "#006359",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 184,
+      "brand": "#00635A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 185,
+      "brand": "#00635B",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 14,
+      "adjusted": true
+    },
+    {
+      "hue": 186,
+      "brand": "#00635C",
+      "certifiable": false,
+      "blocking_failures": 3,
+      "warnings": 14,
+      "adjusted": true
+    },
+    {
+      "hue": 187,
+      "brand": "#00635D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 188,
+      "brand": "#00635D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 189,
+      "brand": "#00635E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 190,
+      "brand": "#00635F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 191,
+      "brand": "#006360",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 192,
+      "brand": "#006360",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 193,
+      "brand": "#006261",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 13,
+      "adjusted": true
+    },
+    {
+      "hue": 194,
+      "brand": "#006262",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 195,
+      "brand": "#006262",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 196,
+      "brand": "#006263",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 197,
+      "brand": "#006264",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 198,
+      "brand": "#006265",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 199,
+      "brand": "#006265",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 200,
+      "brand": "#006266",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 201,
+      "brand": "#006267",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 202,
+      "brand": "#006167",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 203,
+      "brand": "#006168",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 204,
+      "brand": "#006169",
+      "certifiable": false,
+      "blocking_failures": 4,
+      "warnings": 14,
+      "adjusted": true
+    },
+    {
+      "hue": 205,
+      "brand": "#006169",
+      "certifiable": false,
+      "blocking_failures": 4,
+      "warnings": 14,
+      "adjusted": true
+    },
+    {
+      "hue": 206,
+      "brand": "#00616A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 207,
+      "brand": "#00616B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 208,
+      "brand": "#00616C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 209,
+      "brand": "#00616C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 210,
+      "brand": "#00616D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 211,
+      "brand": "#00606E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 212,
+      "brand": "#00606E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 213,
+      "brand": "#00606F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 12,
+      "adjusted": false
+    },
+    {
+      "hue": 214,
+      "brand": "#006070",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 215,
+      "brand": "#006071",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 216,
+      "brand": "#006071",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 217,
+      "brand": "#006072",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 218,
+      "brand": "#006073",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 219,
+      "brand": "#005F74",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 220,
+      "brand": "#005F75",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 221,
+      "brand": "#005F75",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": false
+    },
+    {
+      "hue": 222,
+      "brand": "#005F76",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 223,
+      "brand": "#005F77",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 224,
+      "brand": "#005F78",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": true
+    },
+    {
+      "hue": 225,
+      "brand": "#005F79",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 226,
+      "brand": "#005E7A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": true
+    },
+    {
+      "hue": 227,
+      "brand": "#005E7A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 11,
+      "adjusted": true
+    },
+    {
+      "hue": 228,
+      "brand": "#005E7B",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 11,
+      "adjusted": true
+    },
+    {
+      "hue": 229,
+      "brand": "#005E7C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 10,
+      "adjusted": false
+    },
+    {
+      "hue": 230,
+      "brand": "#005E7D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 9,
+      "adjusted": false
+    },
+    {
+      "hue": 231,
+      "brand": "#005D7E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 9,
+      "adjusted": false
+    },
+    {
+      "hue": 232,
+      "brand": "#005D7F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 233,
+      "brand": "#005D80",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 234,
+      "brand": "#005D81",
+      "certifiable": false,
+      "blocking_failures": 2,
+      "warnings": 10,
+      "adjusted": true
+    },
+    {
+      "hue": 235,
+      "brand": "#005D82",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 236,
+      "brand": "#005C83",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 237,
+      "brand": "#005C85",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 238,
+      "brand": "#005C86",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 239,
+      "brand": "#005C87",
+      "certifiable": false,
+      "blocking_failures": 3,
+      "warnings": 8,
+      "adjusted": true
+    },
+    {
+      "hue": 240,
+      "brand": "#005B88",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 241,
+      "brand": "#005B89",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 242,
+      "brand": "#005B8B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 243,
+      "brand": "#005A8C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 244,
+      "brand": "#005A8E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 245,
+      "brand": "#00598F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 246,
+      "brand": "#005991",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 247,
+      "brand": "#005993",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 248,
+      "brand": "#005894",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 7,
+      "adjusted": false
+    },
+    {
+      "hue": 249,
+      "brand": "#005896",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 250,
+      "brand": "#005798",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 251,
+      "brand": "#00569A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 252,
+      "brand": "#00569D",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 253,
+      "brand": "#00559F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 254,
+      "brand": "#0054A2",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 255,
+      "brand": "#0053A5",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 256,
+      "brand": "#0553A6",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 257,
+      "brand": "#0D52A6",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 258,
+      "brand": "#1351A6",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 259,
+      "brand": "#1851A6",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 260,
+      "brand": "#1C50A7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 261,
+      "brand": "#1F50A7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 262,
+      "brand": "#224FA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 263,
+      "brand": "#264FA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 264,
+      "brand": "#284EA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 265,
+      "brand": "#2B4EA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 266,
+      "brand": "#2D4DA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 267,
+      "brand": "#304CA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 268,
+      "brand": "#324CA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 269,
+      "brand": "#344BA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 270,
+      "brand": "#364BA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 271,
+      "brand": "#384AA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 272,
+      "brand": "#3A4AA7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 273,
+      "brand": "#3C49A7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 274,
+      "brand": "#3E49A7",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 275,
+      "brand": "#4048A6",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 276,
+      "brand": "#4247A6",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 277,
+      "brand": "#4447A6",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 278,
+      "brand": "#4546A6",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 279,
+      "brand": "#4746A5",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 280,
+      "brand": "#4845A5",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 281,
+      "brand": "#4A45A5",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 282,
+      "brand": "#4C44A4",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 283,
+      "brand": "#4D44A4",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 284,
+      "brand": "#4F43A4",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 285,
+      "brand": "#5043A3",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 286,
+      "brand": "#5242A3",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 287,
+      "brand": "#5342A2",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 288,
+      "brand": "#5441A2",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 289,
+      "brand": "#5641A1",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 290,
+      "brand": "#5740A1",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 291,
+      "brand": "#583FA0",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 292,
+      "brand": "#5A3FA0",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 293,
+      "brand": "#5B3E9F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 294,
+      "brand": "#5C3E9F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 295,
+      "brand": "#5E3D9E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 296,
+      "brand": "#5F3D9D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 297,
+      "brand": "#603C9D",
+      "certifiable": false,
+      "blocking_failures": 1,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 298,
+      "brand": "#613C9C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 299,
+      "brand": "#623B9B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 300,
+      "brand": "#643B9A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 301,
+      "brand": "#653A9A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 302,
+      "brand": "#663A99",
+      "certifiable": false,
+      "blocking_failures": 2,
+      "warnings": 7,
+      "adjusted": true
+    },
+    {
+      "hue": 303,
+      "brand": "#673998",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 304,
+      "brand": "#683997",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 305,
+      "brand": "#693996",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 306,
+      "brand": "#6A3896",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 307,
+      "brand": "#6B3895",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 308,
+      "brand": "#6C3794",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 309,
+      "brand": "#6D3793",
+      "certifiable": false,
+      "blocking_failures": 2,
+      "warnings": 6,
+      "adjusted": true
+    },
+    {
+      "hue": 310,
+      "brand": "#6E3692",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 311,
+      "brand": "#6F3691",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 312,
+      "brand": "#703590",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 313,
+      "brand": "#71358F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 314,
+      "brand": "#72348E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 315,
+      "brand": "#73348D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 316,
+      "brand": "#74338C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 317,
+      "brand": "#75338B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 318,
+      "brand": "#76338A",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 319,
+      "brand": "#773289",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 320,
+      "brand": "#783288",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 321,
+      "brand": "#793187",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 322,
+      "brand": "#7A3185",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 323,
+      "brand": "#7B3084",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 324,
+      "brand": "#7C3083",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 325,
+      "brand": "#7C2F82",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 326,
+      "brand": "#7D2F81",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 327,
+      "brand": "#7E2F80",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 328,
+      "brand": "#7F2E7E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 329,
+      "brand": "#802E7D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 330,
+      "brand": "#802D7C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 331,
+      "brand": "#812D7B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 332,
+      "brand": "#822D79",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 333,
+      "brand": "#832C78",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 334,
+      "brand": "#832C77",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 335,
+      "brand": "#842B75",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 336,
+      "brand": "#852B74",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 337,
+      "brand": "#862B73",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 338,
+      "brand": "#862A72",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 339,
+      "brand": "#872A70",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 340,
+      "brand": "#88296F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 341,
+      "brand": "#88296D",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 342,
+      "brand": "#89296C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 343,
+      "brand": "#8A286B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 344,
+      "brand": "#8A2869",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 345,
+      "brand": "#8B2868",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 346,
+      "brand": "#8B2766",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 347,
+      "brand": "#8C2765",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 348,
+      "brand": "#8C2764",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 349,
+      "brand": "#8D2662",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 350,
+      "brand": "#8D2661",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 351,
+      "brand": "#8E265F",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 352,
+      "brand": "#8F265E",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 353,
+      "brand": "#8F255C",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 354,
+      "brand": "#8F255B",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 355,
+      "brand": "#902559",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 6,
+      "adjusted": false
+    },
+    {
+      "hue": 356,
+      "brand": "#902558",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 357,
+      "brand": "#912456",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 358,
+      "brand": "#912455",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    },
+    {
+      "hue": 359,
+      "brand": "#922453",
+      "certifiable": true,
+      "blocking_failures": 0,
+      "warnings": 5,
+      "adjusted": false
+    }
+  ]
+}
