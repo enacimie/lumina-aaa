@@ -80,7 +80,7 @@ const agg = (vs) => {
     mean_undefined_functions: mean('undefined_functions') };
 };
 const out = {
-  description: 'Recomputation audit of elicited specifications. terse = no inventory; complete = disclosed 12-role inventory + thresholds. All ratios re-derived from published hex. Two coverage constructs are reported: coverage_gap_pct (unaudited roles over the specimen own declared inventory) and coverage_gap_vs59_pct (role-definition gap over LUMINA 59-role grammar). Focus: focus_vs_fill_CR is the strict ring-vs-fill pair the specimens declare; focus_vs_page_CR is the normative ring-vs-page adjacency for an outer outline (SC 2.4.13). focus_invisible uses CR < 1.2; focus_below3 uses ring-vs-fill < 3.0.',
+  description: 'Recomputation audit of elicited specifications. terse = no inventory; complete = disclosed 12-role inventory + thresholds (protocol in elicited-prompts.md). All ratios re-derived from published hex. Coverage: coverage_gap_pct is unaudited roles over the specimen own declared inventory; coverage_gap_vs59_pct is role-definition completeness over the LUMINA 59-role grammar (a function of the role count, not audit coverage). Focus: the specimens do not declare a focus pair; focus_vs_fill_CR is the strict ring-vs-fill pair computed by the auditor from token names, and focus_vs_page_CR is the normative ring-vs-page adjacency for an outer outline (SC 2.4.13). focus_invisible uses CR < 1.2; focus_below3 uses ring-vs-fill < 3.0.',
   specimens,
   aggregate: { terse: agg(specimens.filter(s => s.variant === 'terse')), complete: agg(specimens.filter(s => s.variant === 'complete')) },
 };

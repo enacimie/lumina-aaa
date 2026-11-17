@@ -16,9 +16,9 @@ RUNS = 3
 PROMPT_TEXT = ('You are a WCAG accessibility expert. This image shows normal-size body text on a background. '
   'Estimate the contrast ratio between the text and its background, then judge compliance. '
   'Respond ONLY with JSON: {"estimated_ratio": <number>, "aa_pass": <bool at 4.5:1>, "aaa_pass": <bool at 7:1>, "reasoning": "<one sentence>"}')
-PROMPT_FOCUS = ('You are a WCAG accessibility expert. This image shows a focus ring (outer colour) around a button fill (inner colour). '
-  'Judge whether the focus indicator is visible per WCAG 1.4.11/2.4.13 (3:1 between the ring and the adjacent fill). '
-  'Estimate the ring-vs-fill contrast ratio. '
+PROMPT_FOCUS = ('You are a WCAG accessibility expert. This image shows a button with an outer focus ring (outline) on a page background. '
+  'Estimate the contrast ratio between the focus ring and the page background. '
+  'Judge whether the focus indicator is visible per WCAG 2.4.13 (at least 3:1 change of contrast between the focused and unfocused states of the indicator pixels; for an outer outline the unfocused pixels are the page background). '
   'Respond ONLY with JSON: {"estimated_ratio": <number>, "focus_visible": <bool at 3:1>, "aa_pass": <bool>, "aaa_pass": <bool>, "reasoning": "<one sentence>"}')
 
 def http(url, key, model, b64, prompt, mt, extra=None):

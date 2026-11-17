@@ -1,7 +1,8 @@
-// Emit the pair-matrix appendix (E4) and a replication JSON from the live
-// PAIR_MATRIX. The appendix gives the class -> normative-source mapping and the
-// full list of 116 pair kinds, so the instrument's coverage is auditable.
-import { PAIR_MATRIX, TOKEN_ROLES } from '../lib/architecture.js';
+// Emit the pair-matrix appendix (EN/ES) and a replication JSON from the live
+// PAIR_MATRIX. Policies are derived from the code (pair.policy ?? POLICY.MUST),
+// not hardcoded, so the appendix matches the auditor. The row number equals the
+// pair_id number (theme::NNN uses the matrix order), so numbering is unified.
+import { PAIR_MATRIX, TOKEN_ROLES, POLICY } from '../lib/architecture.js';
 import { writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -9,106 +10,88 @@ import { fileURLToPath } from 'url';
 const here = dirname(fileURLToPath(import.meta.url));
 const DATA = join(here, '..', 'docs', 'paper', 'data', 'pair-matrix.json');
 const TEX = join(here, '..', 'envio', 'paper', 'appendix-matrix.tex');
+const TEX_ES = join(here, '..', 'envio', 'paper', 'appendix-matrix-es.tex');
 
-// Normative source per class: WCAG success criterion (with level) or a LUMINA
-// design constant. Addresses the AA/AAA attribution and the derivation rule.
+const polLabel = (p) => {
+  const pol = p.policy ?? POLICY.MUST;
+  return pol === POLICY.MUST ? 'MUST' : pol === POLICY.SHOULD ? 'SHOULD' : 'MAY';
+};
+
+// Normative source and threshold per class. Policy is derived from the matrix.
 const CLASS_INFO = {
-  'text':          { src: 'SC 1.4.6 (AAA)', thr: 'CR $\\geq$ 7:1', policy: 'MUST' },
-  'text-large':    { src: 'SC 1.4.6 (AAA)', thr: 'CR $\\geq$ 4.5:1', policy: 'MUST' },
-  'advisory-text': { src: 'SC 1.4.6 exempt (disabled)', thr: 'advisory CR $\\geq$ 3:1', policy: 'MAY' },
-  'non-text':      { src: 'SC 1.4.11 (AA)', thr: 'CR $\\geq$ 3:1', policy: 'MUST' },
-  'focus':         { src: 'SC 1.4.11 (AA) + 2.4.13 (AAA)', thr: 'CR $\\geq$ 3:1', policy: 'MUST' },
-  'non-adjacent':  { src: 'LUM-FOC-005 (adjacency model)', thr: 'recorded, not scored', policy: 'MAY' },
-  'alias':         { src: 'LUM-STA (focused fill alias)', thr: 'alias declared', policy: 'MUST' },
-  'state-change':  { src: 'LUM-STA-002 (design constant)', thr: '\\dE{} $\\geq$ 5', policy: 'SHOULD' },
-  'distinct':      { src: 'LUM-SURF (design constant)', thr: '\\dE{} $\\geq$ 5', policy: 'SHOULD' },
-  'cvd':           { src: 'LUM-CVD-001 (design constant)', thr: '\\dE{} $\\geq$ 10', policy: 'SHOULD' },
+  'text':          { src: 'SC 1.4.6 (AAA)', thr: 'CR $\\geq$ 7:1' },
+  'text-large':    { src: 'SC 1.4.6 (AAA)', thr: 'CR $\\geq$ 4.5:1' },
+  'advisory-text': { src: 'SC 1.4.6 exempt (disabled)', thr: 'advisory CR $\\geq$ 3:1' },
+  'non-text':      { src: 'SC 1.4.11 (AA)', thr: 'CR $\\geq$ 3:1' },
+  'focus':         { src: 'SC 1.4.11 (AA) + 2.4.13 (AAA, contrast)', thr: 'CR $\\geq$ 3:1' },
+  'non-adjacent':  { src: 'LUM-FOC-005 (adjacency model)', thr: 'recorded, not scored' },
+  'alias':         { src: 'LUM-STA (focused fill alias)', thr: 'alias declared' },
+  'state-change':  { src: 'LUM-STA-002 (design constant)', thr: '\\dE{} $\\geq$ 5' },
+  'distinct':      { src: 'LUM-SURF (design constant)', thr: '\\dE{} $\\geq$ 5' },
+  'cvd':           { src: 'LUM-CVD-001 (design constant)', thr: '\\dE{} $\\geq$ 10' },
 };
 const ORDER = ['text', 'text-large', 'advisory-text', 'non-text', 'focus', 'non-adjacent', 'alias', 'state-change', 'distinct', 'cvd'];
 
-const counts = {};
-for (const p of PAIR_MATRIX) counts[p.class] = (counts[p.class] || 0) + 1;
+const counts = {}, policies = {};
+for (const p of PAIR_MATRIX) {
+  counts[p.class] = (counts[p.class] || 0) + 1;
+  const lab = polLabel(p);
+  policies[p.class] = policies[p.class] || new Set();
+  policies[p.class].add(lab);
+}
+const polSummary = (c) => ['MUST', 'SHOULD', 'MAY'].filter(x => policies[c].has(x)).join(' / ');
 
 writeFileSync(DATA, JSON.stringify({
-  description: 'The LUMINA pair matrix: 116 pair kinds over 59 mandatory roles. Each kind is a specification-based invariant. class -> normative source maps WCAG success criteria (with level) and LUMINA design constants.',
+  description: 'The LUMINA pair matrix: 116 pair kinds over 59 mandatory roles. Each kind is a specification-based invariant. class -> normative source maps WCAG success criteria (with level) and LUMINA design constants. Policy is derived from the code (pair.policy ?? MUST); the row number equals the pair_id number (theme::NNN).',
   rolesTotal: TOKEN_ROLES.length, pairKinds: PAIR_MATRIX.length,
-  classInfo: CLASS_INFO, counts,
-  pairs: PAIR_MATRIX.map((p, i) => ({ idx: i + 1, foreground: p.foreground, background: p.background, class: p.class, requirement: p.requirement, adjacent: p.adjacent !== false })),
+  classInfo: Object.fromEntries(ORDER.map(c => [c, { ...CLASS_INFO[c], policy: polSummary(c), count: counts[c] }])),
+  pairs: PAIR_MATRIX.map((p, i) => ({ idx: i + 1, foreground: p.foreground, background: p.background, class: p.class, requirement: p.requirement, policy: polLabel(p), adjacent: p.adjacent !== false })),
 }, null, 2));
 
 const esc = (s) => s.replace(/_/g, '\\_');
-let tex = '';
-tex += '% Auto-generated by tools/pair-matrix-appendix.mjs. Do not edit by hand.\n';
-tex += '\\section{Pair Matrix and Normative Sources}\\label{app:matrix}\n\n';
-tex += 'The auditor evaluates the ' + PAIR_MATRIX.length + ' pair kinds below over the ' + TOKEN_ROLES.length + ' mandatory roles. ';
-tex += 'Each kind is derived from a role group crossed with the criterion it models. ';
-tex += 'Table~\\ref{tab:matrix-classes} maps every class to its normative source: a WCAG success criterion (with conformance level) or a LUMINA design constant. ';
-tex += 'Text and non-text/focus contrast are WCAG criteria; state-change, surface distinctness and CVD separability are LUMINA design constants, not WCAG requirements. ';
-tex += 'The focus area of SC~2.4.13 is geometric and is not covered by the token-level certificate (Section~\\ref{sec:threats}). ';
-tex += 'The full matrix is released as \\texttt{docs/paper/data/pair-matrix.json}.\n\n';
 
-tex += '\\begin{table}[htbp]\n\\centering\n';
-tex += '\\caption{Pair classes, normative source, threshold and policy. WCAG levels are distinguished from LUMINA design constants.}\n';
-tex += '\\label{tab:matrix-classes}\n\\small\n';
-tex += '\\begin{tabular}{@{}lllcc@{}}\n\\toprule\n';
-tex += 'Class & Source & Threshold & Policy & Count \\\\\n\\midrule\n';
-for (const c of ORDER) {
-  const info = CLASS_INFO[c];
-  tex += `${esc(c)} & ${info.src} & ${info.thr} & ${info.policy} & ${counts[c] || 0} \\\\\n`;
-}
-tex += '\\bottomrule\n\\end{tabular}\n\\end{table}\n\n';
+function build(lang) {
+  const es = lang === 'es';
+  let t = '';
+  t += es ? '% Generado por tools/pair-matrix-appendix.mjs. No editar a mano.\n'
+          : '% Auto-generated by tools/pair-matrix-appendix.mjs. Do not edit by hand.\n';
+  t += es ? '\\section{Matriz de pares y fuentes normativas}\\label{app:matrix}\n\n'
+          : '\\section{Pair Matrix and Normative Sources}\\label{app:matrix}\n\n';
+  t += es
+    ? 'El auditor evalúa los ' + PAIR_MATRIX.length + ' tipos de par siguientes sobre los ' + TOKEN_ROLES.length + ' roles obligatorios. Cada tipo se deriva de un grupo de roles cruzado con el criterio que modela. La Tabla~\\ref{tab:matrix-classes} mapea cada clase a su fuente normativa: un criterio de éxito WCAG (con nivel) o una constante de diseño de LUMINA. El contraste de texto es AAA (SC~1.4.6). El mínimo no textual y de foco es AA (SC~1.4.11), el mayor nivel aplicable, que la conformidad AAA también exige. El área geométrica de foco de SC~2.4.13 (AAA) es una propiedad CSS fuera del certificado de tokens. Las constantes de diseño (cambio de estado, distinción, DVC) son requisitos LUMINA, no criterios WCAG; se aplican como MUST o SHOULD según la tabla y bloquean la certificación cuando son MUST. El número de fila coincide con el número de \\texttt{pair\\_id} (tema::NNN). La matriz completa se publica como \\texttt{docs/paper/data/pair-matrix.json}.\n\n'
+    : 'The auditor evaluates the ' + PAIR_MATRIX.length + ' pair kinds below over the ' + TOKEN_ROLES.length + ' mandatory roles. Each kind is derived from a role group crossed with the criterion it models. Table~\\ref{tab:matrix-classes} maps every class to its normative source: a WCAG success criterion (with conformance level) or a LUMINA design constant. Text contrast is AAA (SC~1.4.6). The non-text and focus minimum is AA (SC~1.4.11), the highest applicable level, which AAA conformance requires. The geometric focus area of SC~2.4.13 (AAA) is a CSS property outside the token certificate. The design constants (state change, distinctness, CVD) are LUMINA requirements, not WCAG criteria; they apply as MUST or SHOULD per the table and block certification when MUST. The row number equals the \\texttt{pair\\_id} number (theme::NNN). The full matrix is released as \\texttt{docs/paper/data/pair-matrix.json}.\n\n';
 
-tex += '\\begin{longtable}{@{}rlll@{}}\n';
-tex += '\\caption{The ' + PAIR_MATRIX.length + ' pair kinds, grouped by class. Foreground and background are LUMINA roles; the requirement identifier links to the specification.}\\label{tab:matrix-full}\\\\\n';
-tex += '\\toprule\n\\# & Foreground & Background & Requirement \\\\\n\\midrule\n\\endfirsthead\n';
-tex += '\\toprule\n\\# & Foreground & Background & Requirement \\\\\n\\midrule\n\\endhead\n';
-tex += '\\bottomrule\n\\endfoot\n';
-let idx = 0;
-for (const c of ORDER) {
-  tex += `\\multicolumn{4}{@{}l@{}}{\\emph{${esc(c)}}} \\\\\n`;
-  for (const p of PAIR_MATRIX.filter(p => p.class === c)) {
-    idx += 1;
-    tex += `${idx} & ${esc(p.foreground)} & ${esc(p.background)} & ${esc(p.requirement)} \\\\\n`;
+  t += '\\begin{table}[htbp]\n\\centering\n';
+  t += es ? '\\caption{Clases de par, fuente normativa, umbral y política (derivada del código). Los niveles WCAG se distinguen de las constantes de diseño de LUMINA.}\n'
+          : '\\caption{Pair classes, normative source, threshold and policy (derived from the code). WCAG levels are distinguished from LUMINA design constants.}\n';
+  t += '\\label{tab:matrix-classes}\n\\small\n';
+  t += '\\begin{tabular}{@{}lllcc@{}}\n\\toprule\n';
+  t += es ? 'Clase & Fuente & Umbral & Política & Count \\\\\n\\midrule\n'
+          : 'Class & Source & Threshold & Policy & Count \\\\\n\\midrule\n';
+  for (const c of ORDER) {
+    const info = CLASS_INFO[c];
+    t += `${esc(c)} & ${info.src} & ${info.thr} & ${polSummary(c)} & ${counts[c] || 0} \\\\\n`;
   }
-}
-tex += '\\end{longtable}\n';
-writeFileSync(TEX, tex);
+  t += '\\bottomrule\n\\end{tabular}\n\\end{table}\n\n';
 
-// Spanish reading version: same pair list (code identifiers), Spanish prose.
-const TEX_ES = join(here, '..', 'envio', 'paper', 'appendix-matrix-es.tex');
-let es = '';
-es += '% Generado por tools/pair-matrix-appendix.mjs. No editar a mano.\n';
-es += '\\section{Matriz de pares y fuentes normativas}\\label{app:matrix}\n\n';
-es += 'El auditor evalúa los ' + PAIR_MATRIX.length + ' tipos de par siguientes sobre los ' + TOKEN_ROLES.length + ' roles obligatorios. ';
-es += 'Cada tipo se deriva de un grupo de roles cruzado con el criterio que modela. ';
-es += 'La Tabla~\\ref{tab:matrix-classes} mapea cada clase a su fuente normativa: un criterio de éxito WCAG (con nivel) o una constante de diseño de LUMINA. ';
-es += 'El contraste de texto y no textual/foco son criterios WCAG; el cambio de estado, la distinción de superficies y la separabilidad DVC son constantes de diseño de LUMINA, no requisitos WCAG. ';
-es += 'El área de foco del SC~2.4.13 es geométrica y no la cubre el certificado de tokens (Sección~\\ref{sec:threats}). ';
-es += 'La matriz completa se publica como \\texttt{docs/paper/data/pair-matrix.json}.\n\n';
-es += '\\begin{table}[htbp]\n\\centering\n';
-es += '\\caption{Clases de par, fuente normativa, umbral y política. Los niveles WCAG se distinguen de las constantes de diseño de LUMINA.}\n';
-es += '\\label{tab:matrix-classes}\n\\small\n';
-es += '\\begin{tabular}{@{}lllcc@{}}\n\\toprule\n';
-es += 'Clase & Fuente & Umbral & Política & Count \\\\\n\\midrule\n';
-for (const c of ORDER) {
-  const info = CLASS_INFO[c];
-  es += `${esc(c)} & ${info.src} & ${info.thr} & ${info.policy} & ${counts[c] || 0} \\\\\n`;
+  t += '\\begin{longtable}{@{}rlllll@{}}\n';
+  t += es ? '\\caption{Los ' + PAIR_MATRIX.length + ' tipos de par en el orden de la matriz (el número coincide con el \\texttt{pair\\_id}). Foreground y background son roles LUMINA.}\\label{tab:matrix-full}\\\\\n'
+          : '\\caption{The ' + PAIR_MATRIX.length + ' pair kinds in matrix order (the number equals the \\texttt{pair\\_id}). Foreground and background are LUMINA roles.}\\label{tab:matrix-full}\\\\\n';
+  t += '\\toprule\n';
+  t += es ? '\\# & Foreground & Background & Clase & Requisito & Política \\\\\n\\midrule\n\\endfirsthead\n'
+          : '\\# & Foreground & Background & Class & Requirement & Policy \\\\\n\\midrule\n\\endfirsthead\n';
+  t += '\\toprule\n';
+  t += es ? '\\# & Foreground & Background & Clase & Requisito & Política \\\\\n\\midrule\n\\endhead\n'
+          : '\\# & Foreground & Background & Class & Requirement & Policy \\\\\n\\midrule\n\\endhead\n';
+  t += '\\bottomrule\n\\endfoot\n';
+  PAIR_MATRIX.forEach((p, i) => {
+    t += `${i + 1} & ${esc(p.foreground)} & ${esc(p.background)} & ${esc(p.class)} & ${esc(p.requirement)} & ${polLabel(p)} \\\\\n`;
+  });
+  t += '\\end{longtable}\n';
+  return t;
 }
-es += '\\bottomrule\n\\end{tabular}\n\\end{table}\n\n';
-es += '\\begin{longtable}{@{}rlll@{}}\n';
-es += '\\caption{Los ' + PAIR_MATRIX.length + ' tipos de par, agrupados por clase. Foreground y background son roles LUMINA; el identificador de requisito enlaza con la especificación.}\\label{tab:matrix-full}\\\\\n';
-es += '\\toprule\n\\# & Foreground & Background & Requisito \\\\\n\\midrule\n\\endfirsthead\n';
-es += '\\toprule\n\\# & Foreground & Background & Requisito \\\\\n\\midrule\n\\endhead\n';
-es += '\\bottomrule\n\\endfoot\n';
-idx = 0;
-for (const c of ORDER) {
-  es += `\\multicolumn{4}{@{}l@{}}{\\emph{${esc(c)}}} \\\\\n`;
-  for (const p of PAIR_MATRIX.filter(p => p.class === c)) {
-    idx += 1;
-    es += `${idx} & ${esc(p.foreground)} & ${esc(p.background)} & ${esc(p.requirement)} \\\\\n`;
-  }
-}
-es += '\\end{longtable}\n';
-writeFileSync(TEX_ES, es);
-console.log('pair-matrix.json + appendix-matrix.tex + appendix-matrix-es.tex written;', PAIR_MATRIX.length, 'pairs,', ORDER.length, 'classes');
-console.log('counts:', JSON.stringify(counts));
+
+writeFileSync(TEX, build('en'));
+writeFileSync(TEX_ES, build('es'));
+console.log('pair-matrix.json + appendix-matrix.tex + appendix-matrix-es.tex written;', PAIR_MATRIX.length, 'pairs');
+console.log('policies per class:', JSON.stringify(Object.fromEntries(ORDER.map(c => [c, polSummary(c)]))));

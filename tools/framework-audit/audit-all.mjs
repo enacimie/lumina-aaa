@@ -27,6 +27,12 @@ for (const f of frameworks) {
     const cp = cpFunctional.filter(scorable);
     const textPairs = cp.filter((p) => p.class === 'text' || p.class === 'text-large');
     const fails = cp.filter((p) => p.status === 'fail');
+    // Core headline pairs exclude interpretation-sensitive border/feedback roles;
+    // full functional counts are kept as a sensitivity analysis.
+    const isInterp = (p) => /^(border|feedback)\./.test(p.foreground_token) || /^(border|feedback)\./.test(p.background_token);
+    const core = cp.filter((p) => !isInterp(p));
+    const coreText = core.filter((p) => p.class === 'text' || p.class === 'text-large');
+    const coreFails = core.filter((p) => p.status === 'fail');
     const focusBg = pairs.find((p) => p.foreground_token === 'focus.ring' && p.background_token === 'background.default');
     const bodyBg = pairs.find((p) => p.foreground_token === 'text.primary' && p.background_token === 'background.default');
     entry.themes[tname] = {
@@ -42,6 +48,13 @@ for (const f of frameworks) {
       textPairs: textPairs.length,
       textAAA: textPairs.filter((p) => p.wcag_aaa).length,
       blockingFailures: fails.length,
+      coreContrastPairs: core.length,
+      coreAA: core.filter((p) => p.wcag_aa).length,
+      coreAAA: core.filter((p) => p.wcag_aaa).length,
+      coreTextPairs: coreText.length,
+      coreTextAAA: coreText.filter((p) => p.wcag_aaa).length,
+      coreBlockingFailures: coreFails.length,
+      interpretiveExcluded: cp.length - core.length,
       focusProxy: !!meta.focusProxy,
       bodyTextCR: bodyBg ? bodyBg.contrast_ratio_reported : null,
       focusRingCR: focusBg ? focusBg.contrast_ratio_reported : null,
@@ -53,19 +66,16 @@ for (const f of frameworks) {
 writeFileSync('../../docs/paper/data/framework-audit.json', JSON.stringify(out, null, 2));
 
 console.log(`Oracle: LUMINA verifyAllPairs | profile wcag-aaa | ${PAIR_MATRIX.length} pair kinds | ${TOKEN_ROLES.length} roles`);
-console.log('AA/AAA over functional scorable contrast pairs (decorative excluded, n/a+exception excluded). * = focus proxy.\n');
-console.log('FRAMEWORK'.padEnd(20), 'THEME'.padEnd(6), 'roles'.padEnd(7), 'resolved'.padEnd(9), 'denom'.padEnd(6), 'AA'.padEnd(5), 'AAA'.padEnd(5), 'textAAA'.padEnd(9), 'fails'.padEnd(6), 'bodyCR'.padEnd(8), 'focusCR');
+console.log('CORE = text + interactive non-text + focus (border/feedback excluded). Full functional in parentheses. * = focus proxy.\n');
+console.log('FRAMEWORK'.padEnd(20), 'THEME'.padEnd(6), 'coreN'.padEnd(6), 'coreAA'.padEnd(7), 'coreAAA'.padEnd(8), 'coreText'.padEnd(9), 'fullAA/AAA'.padEnd(11), 'focusCR');
 for (const f of out.frameworks) {
   for (const [t, x] of Object.entries(f.themes)) {
     console.log(
       f.name.padEnd(20), t.padEnd(6),
-      `${x.rolesProvided}/${out.rolesTotal}`.padEnd(7),
-      `${x.pairsResolved}/${out.pairKinds}`.padEnd(9),
-      `${x.contrastPairs}`.padEnd(6),
-      `${x.wcagAA}`.padEnd(5), `${x.wcagAAA}`.padEnd(5),
-      `${x.textAAA}/${x.textPairs}`.padEnd(9),
-      `${x.blockingFailures}`.padEnd(6),
-      `${x.bodyTextCR ?? '-'}`.padEnd(8),
+      `${x.coreContrastPairs}`.padEnd(6),
+      `${x.coreAA}`.padEnd(7), `${x.coreAAA}`.padEnd(8),
+      `${x.coreTextAAA}/${x.coreTextPairs}`.padEnd(9),
+      `${x.wcagAA}/${x.wcagAAA} (n=${x.contrastPairs})`.padEnd(11),
       `${x.focusRingCR ?? '-'}${x.focusProxy ? '*' : ''}`);
   }
 }

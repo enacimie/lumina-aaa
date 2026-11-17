@@ -8,8 +8,10 @@ LUMINA is the contribution; the VLM layer is validation.
 
 Controlled stimuli with KNOWN ground truth from the LUMINA oracle:
 
-- 10 text stimuli: gray text on white at target contrast ratios 1.5..20.
-- 6 focus stimuli: a ring colour against a fixed button fill at target ratios 1..8.
+- 11 text stimuli: gray text on white, dense around the 4.5:1 and 7:1 thresholds.
+- 8 focus stimuli: an outer focus ring (outline) on a white page, dense around
+  3:1. The pair is ring-vs-page (the normative SC 2.4.13 change of contrast for
+  an outer outline), not the non-normative ring-vs-fill pair.
 
 The actual ratio of each stimulus is recomputed by `lib/color.js` (ground truth).
 Three pure vision-language judges assess each stimulus image (estimate ratio +
@@ -54,18 +56,21 @@ MAE, intra-judge disagreement, pairwise agreement, majority-of-3 vs oracle).
 Intermediate files in `work/` (gitignored). `npm run all` runs the single-run
 variant (`judge.py` / `analyze.py`), kept for reference; the paper uses 3x3.
 
-## Result (16 stimuli, 3x3, thinking enabled)
+## Result (19 stimuli, 3x3, thinking enabled)
 
-- Stable per-judge accuracy vs oracle: LongCat 16/16, DeepSeek 15/16, Qwen 14/16.
-- Intra-judge disagreement: LongCat splits its runs on 1 stimulus (text-12);
-  its majority absorbs the outlier. The other judges are stable.
-- Pairwise agreement: 87.5-93.8%.
-- Cross-judge majority matches the oracle on 15/16; unanimous on 14/16.
-- The single majority miss is text-7, a swatch at exactly 7.00:1: two judges
-  place it just below the AAA threshold. Individual judges err at the compliance
-  thresholds (7:1 text, 3:1 focus). This motivates deterministic verification:
-  perception and model judgment are unreliable exactly at the boundary that
-  matters.
+- Stable per-judge accuracy vs oracle: Qwen 17/19, DeepSeek 15/19, LongCat 15/19.
+- Intra-judge disagreement: DeepSeek 4/19, LongCat 5/19, Qwen 0/19; each majority
+  absorbs the outliers.
+- Pairwise agreement: 78.9-89.5%.
+- Cross-judge majority matches the oracle on 16/19; unanimous on 13/19.
+- Errors cluster at the thresholds (text-6.5/7/7.5 around 7:1; focus near 3:1).
+  Majority misses: text-6.5 (6.48:1), text-7.5 (7.46:1), focus-1 (1.00:1).
+- focus-1 (white ring on a white page, invisible): Qwen estimates 1.0; DeepSeek
+  and LongCat estimate about 8:1 (the button fill, not the ring). Some VLMs
+  attend to the salient component, not the focus indicator.
+- This is a limits-of-tools study, not a validation of exact arithmetic (that
+  rests on reference vectors + the differential check) nor a claim about human
+  perception.
 
 ## Notes
 

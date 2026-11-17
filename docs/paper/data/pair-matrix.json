@@ -1,70 +1,68 @@
 {
-  "description": "The LUMINA pair matrix: 116 pair kinds over 59 mandatory roles. Each kind is a specification-based invariant. class -> normative source maps WCAG success criteria (with level) and LUMINA design constants.",
+  "description": "The LUMINA pair matrix: 116 pair kinds over 59 mandatory roles. Each kind is a specification-based invariant. class -> normative source maps WCAG success criteria (with level) and LUMINA design constants. Policy is derived from the code (pair.policy ?? MUST); the row number equals the pair_id number (theme::NNN).",
   "rolesTotal": 59,
   "pairKinds": 116,
   "classInfo": {
     "text": {
       "src": "SC 1.4.6 (AAA)",
       "thr": "CR $\\geq$ 7:1",
-      "policy": "MUST"
+      "policy": "MUST",
+      "count": 30
     },
     "text-large": {
       "src": "SC 1.4.6 (AAA)",
       "thr": "CR $\\geq$ 4.5:1",
-      "policy": "MUST"
+      "policy": "MUST",
+      "count": 4
     },
     "advisory-text": {
       "src": "SC 1.4.6 exempt (disabled)",
       "thr": "advisory CR $\\geq$ 3:1",
-      "policy": "MAY"
+      "policy": "SHOULD",
+      "count": 4
     },
     "non-text": {
       "src": "SC 1.4.11 (AA)",
       "thr": "CR $\\geq$ 3:1",
-      "policy": "MUST"
+      "policy": "MUST",
+      "count": 28
     },
     "focus": {
-      "src": "SC 1.4.11 (AA) + 2.4.13 (AAA)",
+      "src": "SC 1.4.11 (AA) + 2.4.13 (AAA, contrast)",
       "thr": "CR $\\geq$ 3:1",
-      "policy": "MUST"
+      "policy": "MUST",
+      "count": 8
     },
     "non-adjacent": {
       "src": "LUM-FOC-005 (adjacency model)",
       "thr": "recorded, not scored",
-      "policy": "MAY"
+      "policy": "MAY",
+      "count": 1
     },
     "alias": {
       "src": "LUM-STA (focused fill alias)",
       "thr": "alias declared",
-      "policy": "MUST"
+      "policy": "MUST",
+      "count": 2
     },
     "state-change": {
       "src": "LUM-STA-002 (design constant)",
       "thr": "\\dE{} $\\geq$ 5",
-      "policy": "SHOULD"
+      "policy": "MUST",
+      "count": 6
     },
     "distinct": {
       "src": "LUM-SURF (design constant)",
       "thr": "\\dE{} $\\geq$ 5",
-      "policy": "SHOULD"
+      "policy": "SHOULD",
+      "count": 14
     },
     "cvd": {
       "src": "LUM-CVD-001 (design constant)",
       "thr": "\\dE{} $\\geq$ 10",
-      "policy": "SHOULD"
+      "policy": "MUST / SHOULD",
+      "count": 19
     }
-  },
-  "counts": {
-    "text": 30,
-    "text-large": 4,
-    "advisory-text": 4,
-    "non-text": 28,
-    "distinct": 14,
-    "alias": 2,
-    "focus": 8,
-    "non-adjacent": 1,
-    "state-change": 6,
-    "cvd": 19
   },
   "pairs": [
     {
@@ -73,6 +71,7 @@
       "background": "background.default",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -81,6 +80,7 @@
       "background": "background.surface",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -89,6 +89,7 @@
       "background": "background.subtle",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -97,6 +98,7 @@
       "background": "background.raised",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -105,6 +107,7 @@
       "background": "background.default",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -113,6 +116,7 @@
       "background": "background.surface",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -121,6 +125,7 @@
       "background": "background.subtle",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -129,6 +134,7 @@
       "background": "background.raised",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -137,6 +143,7 @@
       "background": "background.surface",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -145,6 +152,7 @@
       "background": "background.raised",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -153,6 +161,7 @@
       "background": "interactive.primary.default",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -161,6 +170,7 @@
       "background": "interactive.primary.hover",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -169,6 +179,7 @@
       "background": "interactive.primary.active",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -177,6 +188,7 @@
       "background": "interactive.primary.focus",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -185,6 +197,7 @@
       "background": "background.default",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -193,6 +206,7 @@
       "background": "background.surface",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -201,6 +215,7 @@
       "background": "background.subtle",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -209,6 +224,7 @@
       "background": "background.raised",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -217,6 +233,7 @@
       "background": "interactive.secondary.default",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -225,6 +242,7 @@
       "background": "interactive.secondary.hover",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -233,6 +251,7 @@
       "background": "interactive.secondary.active",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -241,6 +260,7 @@
       "background": "interactive.ghost.default",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -249,6 +269,7 @@
       "background": "interactive.ghost.hover",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -257,6 +278,7 @@
       "background": "interactive.selected",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -265,6 +287,7 @@
       "background": "background.inverse",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -273,6 +296,7 @@
       "background": "feedback.success.background",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -281,6 +305,7 @@
       "background": "feedback.warning.background",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -289,6 +314,7 @@
       "background": "feedback.error.background",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -297,6 +323,7 @@
       "background": "feedback.info.background",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -305,6 +332,7 @@
       "background": "chart.background",
       "class": "text",
       "requirement": "LUM-TXT-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -313,6 +341,7 @@
       "background": "background.surface",
       "class": "text-large",
       "requirement": "LUM-TXT-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -321,6 +350,7 @@
       "background": "interactive.primary.default",
       "class": "text-large",
       "requirement": "LUM-TXT-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -329,6 +359,7 @@
       "background": "feedback.error.background",
       "class": "text-large",
       "requirement": "LUM-TXT-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -337,6 +368,7 @@
       "background": "chart.background",
       "class": "text-large",
       "requirement": "LUM-TXT-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -345,6 +377,7 @@
       "background": "background.default",
       "class": "advisory-text",
       "requirement": "LUM-TXT-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -353,6 +386,7 @@
       "background": "background.surface",
       "class": "advisory-text",
       "requirement": "LUM-TXT-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -361,6 +395,7 @@
       "background": "background.disabled",
       "class": "advisory-text",
       "requirement": "LUM-TXT-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -369,6 +404,7 @@
       "background": "interactive.disabled",
       "class": "advisory-text",
       "requirement": "LUM-TXT-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -377,6 +413,7 @@
       "background": "background.default",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -385,6 +422,7 @@
       "background": "background.surface",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -393,6 +431,7 @@
       "background": "background.subtle",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -401,6 +440,7 @@
       "background": "background.raised",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -409,6 +449,7 @@
       "background": "interactive.secondary.default",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -417,6 +458,7 @@
       "background": "background.surface",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -425,6 +467,7 @@
       "background": "background.default",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -433,6 +476,7 @@
       "background": "background.surface",
       "class": "non-text",
       "requirement": "LUM-NTX-003",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -441,6 +485,7 @@
       "background": "background.surface",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -449,6 +494,7 @@
       "background": "background.default",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -457,6 +503,7 @@
       "background": "background.surface",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -465,6 +512,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-NTX-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -473,6 +521,7 @@
       "background": "background.surface",
       "class": "alias",
       "requirement": "LUM-STA-003",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -481,6 +530,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-NTX-005",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -489,6 +539,7 @@
       "background": "background.default",
       "class": "distinct",
       "requirement": "LUM-NTX-006",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -497,6 +548,7 @@
       "background": "feedback.success.background",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -505,6 +557,7 @@
       "background": "feedback.success.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -513,6 +566,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-STA-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -521,6 +575,7 @@
       "background": "feedback.warning.background",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -529,6 +584,7 @@
       "background": "feedback.warning.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -537,6 +593,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-STA-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -545,6 +602,7 @@
       "background": "feedback.error.background",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -553,6 +611,7 @@
       "background": "feedback.error.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -561,6 +620,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-STA-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -569,6 +629,7 @@
       "background": "feedback.info.background",
       "class": "non-text",
       "requirement": "LUM-NTX-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -577,6 +638,7 @@
       "background": "feedback.info.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -585,6 +647,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-STA-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -593,6 +656,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -601,6 +665,7 @@
       "background": "chart.background",
       "class": "distinct",
       "requirement": "LUM-STA-004",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -609,6 +674,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-003",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -617,6 +683,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -625,6 +692,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -633,6 +701,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -641,6 +710,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -649,6 +719,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -657,6 +728,7 @@
       "background": "chart.background",
       "class": "non-text",
       "requirement": "LUM-NTX-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -665,6 +737,7 @@
       "background": "background.default",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -673,6 +746,7 @@
       "background": "background.surface",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -681,6 +755,7 @@
       "background": "focus.inner",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -689,6 +764,7 @@
       "background": "interactive.primary.default",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -697,6 +773,7 @@
       "background": "interactive.primary.hover",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -705,6 +782,7 @@
       "background": "interactive.primary.active",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -713,6 +791,7 @@
       "background": "interactive.primary.focus",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -721,6 +800,7 @@
       "background": "background.surface",
       "class": "focus",
       "requirement": "LUM-FOC-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -729,6 +809,7 @@
       "background": "border.default",
       "class": "non-text",
       "requirement": "LUM-FOC-004",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -737,6 +818,7 @@
       "background": "interactive.primary.default",
       "class": "non-adjacent",
       "requirement": "LUM-FOC-005",
+      "policy": "MAY",
       "adjacent": false
     },
     {
@@ -745,6 +827,7 @@
       "background": "interactive.primary.default",
       "class": "state-change",
       "requirement": "LUM-STA-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -753,6 +836,7 @@
       "background": "interactive.primary.default",
       "class": "state-change",
       "requirement": "LUM-STA-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -761,6 +845,7 @@
       "background": "interactive.primary.default",
       "class": "alias",
       "requirement": "LUM-STA-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -769,6 +854,7 @@
       "background": "interactive.primary.hover",
       "class": "state-change",
       "requirement": "LUM-STA-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -777,6 +863,7 @@
       "background": "interactive.secondary.default",
       "class": "state-change",
       "requirement": "LUM-STA-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -785,6 +872,7 @@
       "background": "interactive.secondary.default",
       "class": "state-change",
       "requirement": "LUM-STA-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -793,6 +881,7 @@
       "background": "interactive.ghost.default",
       "class": "state-change",
       "requirement": "LUM-STA-002",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -801,6 +890,7 @@
       "background": "chart.series.2",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -809,6 +899,7 @@
       "background": "chart.series.3",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -817,6 +908,7 @@
       "background": "chart.series.4",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -825,6 +917,7 @@
       "background": "chart.series.5",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -833,6 +926,7 @@
       "background": "chart.series.6",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -841,6 +935,7 @@
       "background": "chart.series.3",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -849,6 +944,7 @@
       "background": "chart.series.4",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -857,6 +953,7 @@
       "background": "chart.series.5",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -865,6 +962,7 @@
       "background": "chart.series.6",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -873,6 +971,7 @@
       "background": "chart.series.4",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -881,6 +980,7 @@
       "background": "chart.series.5",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -889,6 +989,7 @@
       "background": "chart.series.6",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -897,6 +998,7 @@
       "background": "chart.series.5",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -905,6 +1007,7 @@
       "background": "chart.series.6",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -913,6 +1016,7 @@
       "background": "chart.series.6",
       "class": "cvd",
       "requirement": "LUM-CVD-001",
+      "policy": "MUST",
       "adjacent": true
     },
     {
@@ -921,6 +1025,7 @@
       "background": "feedback.success.icon",
       "class": "cvd",
       "requirement": "LUM-CVD-002",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -929,6 +1034,7 @@
       "background": "feedback.error.icon",
       "class": "cvd",
       "requirement": "LUM-CVD-002",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -937,6 +1043,7 @@
       "background": "feedback.success.icon",
       "class": "cvd",
       "requirement": "LUM-CVD-002",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -945,6 +1052,7 @@
       "background": "background.surface",
       "class": "cvd",
       "requirement": "LUM-CVD-002",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -953,6 +1061,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-IDE-001",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -961,6 +1070,7 @@
       "background": "background.subtle",
       "class": "distinct",
       "requirement": "LUM-IDE-001",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -969,6 +1079,7 @@
       "background": "background.raised",
       "class": "distinct",
       "requirement": "LUM-IDE-001",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -977,6 +1088,7 @@
       "background": "background.disabled",
       "class": "distinct",
       "requirement": "LUM-IDE-001",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -985,6 +1097,7 @@
       "background": "background.default",
       "class": "distinct",
       "requirement": "LUM-IDE-001",
+      "policy": "SHOULD",
       "adjacent": true
     },
     {
@@ -993,6 +1106,7 @@
       "background": "background.surface",
       "class": "distinct",
       "requirement": "LUM-IDE-001",
+      "policy": "SHOULD",
       "adjacent": true
     }
   ]

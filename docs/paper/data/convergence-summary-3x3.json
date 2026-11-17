@@ -7,56 +7,64 @@
   ],
   "conditions": "pure VLM, image+prompt only, official API, no tools, thinking enabled, generous max_tokens",
   "ground_truth": "LUMINA deterministic oracle",
-  "n_stimuli": 16,
+  "n_stimuli": 19,
   "per_judge": {
     "qwen4-max-preview": {
-      "stable_correct": 14,
-      "total": 16,
-      "stable_accuracy": 0.875,
-      "ratio_mae": 0.775,
+      "stable_correct": 17,
+      "total": 19,
+      "stable_accuracy": 0.895,
+      "ratio_mae": 0.842,
       "misjudged": [
         "text-7",
-        "focus-3"
+        "text-7.5"
       ],
       "runs_disagree": 0
     },
     "deepseek-flash": {
       "stable_correct": 15,
-      "total": 16,
-      "stable_accuracy": 0.938,
-      "ratio_mae": 0.615,
+      "total": 19,
+      "stable_accuracy": 0.789,
+      "ratio_mae": 0.914,
       "misjudged": [
-        "text-7"
+        "text-6.5",
+        "text-7.5",
+        "focus-1",
+        "focus-3"
       ],
-      "runs_disagree": 0
+      "runs_disagree": 4
     },
     "LongCat-2.5": {
-      "stable_correct": 16,
-      "total": 16,
-      "stable_accuracy": 1.0,
-      "ratio_mae": 0.884,
-      "misjudged": [],
-      "runs_disagree": 1
+      "stable_correct": 15,
+      "total": 19,
+      "stable_accuracy": 0.789,
+      "ratio_mae": 1.099,
+      "misjudged": [
+        "text-6.5",
+        "text-7.5",
+        "focus-1",
+        "focus-3.5"
+      ],
+      "runs_disagree": 5
     }
   },
   "pairwise_agreement": {
     "qwen4-max-preview|deepseek-flash": {
       "agree": 15,
-      "total": 16,
-      "rate": 0.938
+      "total": 19,
+      "rate": 0.789
     },
     "qwen4-max-preview|LongCat-2.5": {
-      "agree": 14,
-      "total": 16,
-      "rate": 0.875
+      "agree": 15,
+      "total": 19,
+      "rate": 0.789
     },
     "deepseek-flash|LongCat-2.5": {
-      "agree": 15,
-      "total": 16,
-      "rate": 0.938
+      "agree": 17,
+      "total": 19,
+      "rate": 0.895
     }
   },
-  "majority_of_3_matches_oracle": 15,
-  "unanimous_3_matches_oracle": 14,
-  "unanimous_3_total": 16
+  "majority_of_3_matches_oracle": 16,
+  "unanimous_3_matches_oracle": 13,
+  "unanimous_3_total": 19
 }
