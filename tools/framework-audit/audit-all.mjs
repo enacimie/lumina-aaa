@@ -11,25 +11,38 @@ const CONTRAST = ['text', 'text-large', 'non-text', 'focus', 'advisory-text'];
 const out = { oracle: 'LUMINA verifyAllPairs (lib/audit.js)', profile: 'wcag-aaa', pairKinds: PAIR_MATRIX.length, rolesTotal: TOKEN_ROLES.length, frameworks: [] };
 
 for (const f of frameworks) {
-  const entry = { name: f.name, version: f.version, source: f.source, kind: f.kind, themes: {} };
+  const meta = f.meta || { decorative: [], focusProxy: false };
+  const deco = new Set(meta.decorative || []);
+  const isDeco = (p) => deco.has(p.foreground_token) || deco.has(p.background_token);
+  const scorable = (p) => p.status === 'pass' || p.status === 'fail' || p.status === 'warning';
+  const entry = { name: f.name, version: f.version, source: f.source, kind: f.kind, meta, themes: {} };
   for (const [tname, values] of Object.entries(f.themes)) {
     const pairs = verifyAllPairs({ name: tname, values }, profile);
     const resolved = pairs.filter((p) => p.status !== 'pending');
-    const cp = resolved.filter((p) => CONTRAST.includes(p.class));
+    const cpAll = resolved.filter((p) => CONTRAST.includes(p.class));
+    // Functional contrast pairs exclude roles the crosswalk marks decorative
+    // (WCAG 1.4.11 exempts decorative elements). The scorable denominator also
+    // excludes not_applicable / exception pairs, so rates are comparable.
+    const cpFunctional = cpAll.filter((p) => !isDeco(p));
+    const cp = cpFunctional.filter(scorable);
     const textPairs = cp.filter((p) => p.class === 'text' || p.class === 'text-large');
-    const fails = resolved.filter((p) => p.status === 'fail');
+    const fails = cp.filter((p) => p.status === 'fail');
     const focusBg = pairs.find((p) => p.foreground_token === 'focus.ring' && p.background_token === 'background.default');
     const bodyBg = pairs.find((p) => p.foreground_token === 'text.primary' && p.background_token === 'background.default');
     entry.themes[tname] = {
       rolesProvided: Object.keys(values).length,
       pairsResolved: resolved.length,
       pairsPending: pairs.length - resolved.length,
+      contrastPairsAll: cpAll.length,
+      decorativeExcluded: cpAll.filter(isDeco).length,
+      notApplicableException: cpFunctional.length - cp.length,
       contrastPairs: cp.length,
       wcagAA: cp.filter((p) => p.wcag_aa).length,
       wcagAAA: cp.filter((p) => p.wcag_aaa).length,
       textPairs: textPairs.length,
       textAAA: textPairs.filter((p) => p.wcag_aaa).length,
       blockingFailures: fails.length,
+      focusProxy: !!meta.focusProxy,
       bodyTextCR: bodyBg ? bodyBg.contrast_ratio_reported : null,
       focusRingCR: focusBg ? focusBg.contrast_ratio_reported : null,
       failures: fails.map((p) => ({ pair: `${p.foreground_token} / ${p.background_token}`, class: p.class, cr: p.contrast_ratio_reported ?? p.measured_delta_e2000, required: p.required_ratio ?? p.required_delta_e2000 })),
@@ -39,19 +52,20 @@ for (const f of frameworks) {
 }
 writeFileSync('../../docs/paper/data/framework-audit.json', JSON.stringify(out, null, 2));
 
-console.log(`Oracle: LUMINA verifyAllPairs | profile wcag-aaa | ${PAIR_MATRIX.length} pair kinds | ${TOKEN_ROLES.length} roles\n`);
-console.log('FRAMEWORK'.padEnd(20), 'THEME'.padEnd(6), 'roles'.padEnd(7), 'pairs'.padEnd(9), 'contrast'.padEnd(9), 'AA'.padEnd(5), 'AAA'.padEnd(5), 'textAAA'.padEnd(9), 'fails'.padEnd(6), 'bodyCR'.padEnd(8), 'focusCR');
+console.log(`Oracle: LUMINA verifyAllPairs | profile wcag-aaa | ${PAIR_MATRIX.length} pair kinds | ${TOKEN_ROLES.length} roles`);
+console.log('AA/AAA over functional scorable contrast pairs (decorative excluded, n/a+exception excluded). * = focus proxy.\n');
+console.log('FRAMEWORK'.padEnd(20), 'THEME'.padEnd(6), 'roles'.padEnd(7), 'resolved'.padEnd(9), 'denom'.padEnd(6), 'AA'.padEnd(5), 'AAA'.padEnd(5), 'textAAA'.padEnd(9), 'fails'.padEnd(6), 'bodyCR'.padEnd(8), 'focusCR');
 for (const f of out.frameworks) {
   for (const [t, x] of Object.entries(f.themes)) {
     console.log(
       f.name.padEnd(20), t.padEnd(6),
       `${x.rolesProvided}/${out.rolesTotal}`.padEnd(7),
       `${x.pairsResolved}/${out.pairKinds}`.padEnd(9),
-      `${x.contrastPairs}`.padEnd(9),
+      `${x.contrastPairs}`.padEnd(6),
       `${x.wcagAA}`.padEnd(5), `${x.wcagAAA}`.padEnd(5),
       `${x.textAAA}/${x.textPairs}`.padEnd(9),
       `${x.blockingFailures}`.padEnd(6),
       `${x.bodyTextCR ?? '-'}`.padEnd(8),
-      `${x.focusRingCR ?? '-'}`);
+      `${x.focusRingCR ?? '-'}${x.focusProxy ? '*' : ''}`);
   }
 }

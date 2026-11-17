@@ -5,6 +5,7 @@
 // Every declared quantity is re-derived from the published hex values.
 // Output: docs/paper/data/elicited-audit.json
 import { relativeLuminance } from '../lib/color.js';
+import { TOKEN_ROLES } from '../lib/architecture.js';
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -38,6 +39,9 @@ for (const f of readdirSync(DIR).filter(f => f.endsWith('.json')).sort()) {
     const focusKey = ['focus.ring', 'focus', 'focus.indicator', 'focus.halo', 'focus-ring'].find(k => s.tokens[k]);
     const fillKey = ['interactive.primary.default', 'action.primary', 'accent', 'accent.default', 'brand'].find(k => s.tokens[k]);
     const focusCR = (focusKey && fillKey) ? r2(contrast(s.tokens[focusKey], s.tokens[fillKey])) : null;
+    // Normative adjacency for an outer focus outline is ring vs page background
+    // (SC 2.4.13 state change of the indicator pixels), not ring vs component fill.
+    const pageCR = (focusKey && s.tokens['background.default']) ? r2(contrast(s.tokens[focusKey], s.tokens['background.default'])) : null;
     let conf = null;
     if (variant === 'complete') {
       const t = s.tokens;
@@ -54,8 +58,10 @@ for (const f of readdirSync(DIR).filter(f => f.endsWith('.json')).sort()) {
       conservative: wrong.filter(x => x.conservative).length, anti: wrong.filter(x => x.anti).length,
       max_anti_delta: Math.max(0, ...wrong.filter(x => x.anti).map(x => x.delta)),
       uncovered: uncovered.length, coverage_gap_pct: r2(100 * uncovered.length / roles.length),
+      coverage_gap_vs59_pct: r2(100 * (TOKEN_ROLES.length - roles.length) / TOKEN_ROLES.length),
       focus_vs_fill_CR: focusCR, focus_invisible: focusCR !== null && focusCR < 1.2,
       focus_below3: focusCR !== null && focusCR < 3.0,
+      focus_vs_page_CR: pageCR, focus_page_below3: pageCR !== null && pageCR < 3.0,
       undefined_functions: (s.pseudocode_functions || []).length, conformance: conf });
   }
 }
@@ -63,13 +69,18 @@ for (const f of readdirSync(DIR).filter(f => f.endsWith('.json')).sort()) {
 const agg = (vs) => {
   const n = vs.length;
   const mean = (k) => r2(vs.reduce((a, x) => a + x[k], 0) / n);
-  return { n, mean_wrong_over_01: mean('wrong_over_01'), mean_coverage_gap_pct: mean('coverage_gap_pct'),
+  const median = (k) => { const s = vs.map(x => x[k]).sort((a, b) => a - b); const m = Math.floor(n / 2); return r2(n % 2 ? s[m] : (s[m - 1] + s[m]) / 2); };
+  const range = (k) => [Math.min(...vs.map(x => x[k])), Math.max(...vs.map(x => x[k]))];
+  return { n, mean_wrong_over_01: mean('wrong_over_01'),
+    mean_coverage_gap_pct: mean('coverage_gap_pct'), median_coverage_gap_pct: median('coverage_gap_pct'), range_coverage_gap_pct: range('coverage_gap_pct'),
+    mean_coverage_gap_vs59_pct: mean('coverage_gap_vs59_pct'),
     focus_invisible_count: vs.filter(x => x.focus_invisible).length,
     focus_below3_count: vs.filter(x => x.focus_below3).length,
+    focus_page_below3_count: vs.filter(x => x.focus_page_below3).length,
     mean_undefined_functions: mean('undefined_functions') };
 };
 const out = {
-  description: 'Recomputation audit of elicited specifications. terse = no inventory; complete = disclosed 12-role inventory + thresholds. All ratios re-derived from published hex.',
+  description: 'Recomputation audit of elicited specifications. terse = no inventory; complete = disclosed 12-role inventory + thresholds. All ratios re-derived from published hex. Two coverage constructs are reported: coverage_gap_pct (unaudited roles over the specimen own declared inventory) and coverage_gap_vs59_pct (role-definition gap over LUMINA 59-role grammar). Focus: focus_vs_fill_CR is the strict ring-vs-fill pair the specimens declare; focus_vs_page_CR is the normative ring-vs-page adjacency for an outer outline (SC 2.4.13). focus_invisible uses CR < 1.2; focus_below3 uses ring-vs-fill < 3.0.',
   specimens,
   aggregate: { terse: agg(specimens.filter(s => s.variant === 'terse')), complete: agg(specimens.filter(s => s.variant === 'complete')) },
 };

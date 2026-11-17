@@ -1,8 +1,10 @@
 // Mutation / fault-injection study: does the auditor DETECT seeded defects?
 // Addresses reviewer M2/M4 (verifier never validated as a detector).
 // Ground truth: each mutant injects one known defect into a named relation.
-// Detection = the targeted relation is reported non-pass (MUST-fail or
-// SHOULD-warning) after mutation. False positives measured on clean palettes.
+// Detection = a NEW non-pass on the targeted relation (MUST-fail or
+// SHOULD-warning) relative to the unmutated baseline. A relation already
+// non-pass before mutation is flagged pre_existing, not counted as detection.
+// False positives measured on clean palettes.
 // Output: docs/paper/data/mutation-study.json
 import { buildPalette, auditPalette } from '../lib/index.js';
 import { writeFileSync } from 'fs';
@@ -49,19 +51,27 @@ const mutants = [
 ];
 
 const nonpass = (arr) => (arr || []).filter(x => x.status === 'fail' || x.status === 'warning');
+const idOf = (x) => x.check_id ?? x.pair_id;
+const allOf = (rep) => [...rep.pairs, ...rep.distinctness_checks, ...rep.token_checks, ...rep.structure_checks, ...rep.primitive_checks];
+const baseNonpass = new Set(nonpass(allOf(base)).map(idOf));
 const results = [];
 for (const m of mutants) {
   const p = clone(ref);
   m.apply(p);
   const rep = auditPalette(p);
-  const all = [...rep.pairs, ...rep.distinctness_checks, ...rep.token_checks, ...rep.structure_checks, ...rep.primitive_checks];
-  const targeted = nonpass(all).filter(x => m.roles.some(r => JSON.stringify(x).includes(r)));
+  const targeted = nonpass(allOf(rep)).filter(x => m.roles.some(r => JSON.stringify(x).includes(r)));
+  // Detection = a NEW non-pass on the targeted relation, relative to the
+  // unmutated baseline. A relation already non-pass before mutation is not
+  // evidence of detection; it is flagged pre_existing.
+  const targetedNew = targeted.filter(x => !baseNonpass.has(idOf(x)));
   const newFails = rep.certification.failure_ids.filter(x => !baseFails.has(x));
   const newWarns = rep.certification.warning_ids.filter(x => !baseWarns.has(x));
   results.push({ id: m.id, cls: m.cls, desc: m.desc, expected: m.verdict,
-    detected: targeted.length > 0, targeted_nonpass: targeted.length,
+    detected: targetedNew.length > 0, targeted_nonpass: targeted.length,
+    new_targeted_nonpass: targetedNew.length,
+    pre_existing: targeted.length > 0 && targetedNew.length === 0,
     new_failures: newFails.length, new_warnings: newWarns.length,
-    sample_ids: targeted.slice(0, 3).map(x => x.check_id ?? x.pair_id) });
+    sample_ids: targeted.slice(0, 3).map(idOf) });
 }
 
 const fp = [];
@@ -79,10 +89,11 @@ for (const r of results) {
 const detectedTotal = results.filter(r => r.detected).length;
 
 const out = {
-  description: 'Fault-injection study on the integral reference palette. Each mutant injects one known defect into a named relation; detection = that relation reported non-pass (MUST-fail or SHOULD-warning). False-positive controls are clean palettes.',
+  description: 'Fault-injection study on the integral reference palette. Each mutant injects one known defect into a named relation; detection = a NEW non-pass on that relation relative to the unmutated baseline (MUST-fail or SHOULD-warning). A relation already non-pass before mutation is flagged pre_existing. False-positive controls are clean palettes.',
   baseline: { blocking_failures: base.certification.blocking_failures, warnings: base.certification.warning_ids.length },
   mutants: results,
   per_class: byClass,
+  classes: Object.keys(byClass).length,
   recall: detectedTotal / results.length,
   false_positive_controls: fp,
 };

@@ -33,10 +33,15 @@ for (const [name, theme] of Object.entries(palette.themes)) {
   const C = budget.reduce((a, b) => a + b.C, 0) / 6;
   const H = hexToOklch(theme.values['interactive.primary.default']).H;
   const golden = Array.from({ length: 6 }, (_, i) => oklchToHex({ L, C, H: (H + i * 137.5) % 360 }));
+  // Fair baseline: golden-angle hues but with the solver's OWN per-series L and C
+  // (same degrees of freedom in lightness/chroma). Isolates hue selection from L/C
+  // optimisation, so the comparison is not confounded by search budget.
+  const goldenSameLC = solved.map((s, i) => { const lc = hexToOklch(s); return oklchToHex({ L: lc.L, C: lc.C, H: (H + i * 137.5) % 360 }); });
   out.themes[name] = {
     budget: { L: +L.toFixed(4), C: +C.toFixed(4), brandHue: +H.toFixed(2) },
     lumina: { series: solved, minDeltaE2000: report(solved, bg) },
     goldenAngle: { series: golden, minDeltaE2000: report(golden, bg) },
+    goldenAngleSameLC: { series: goldenSameLC, minDeltaE2000: report(goldenSameLC, bg) },
   };
   if (V02_CATEGORICAL[name]) {
     const v02 = V02_CATEGORICAL[name];

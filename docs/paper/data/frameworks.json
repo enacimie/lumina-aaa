@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17T11:08:48.943Z",
+  "generated": "2026-11-17T17:45:32.327Z",
   "oracle": "LUMINA verifyAllPairs (lib/audit.js), profile wcag-aaa",
   "frameworks": [
     {
@@ -48,6 +48,12 @@
           "feedback.info.text": "#6edff6",
           "feedback.info.background": "#032830"
         }
+      },
+      "meta": {
+        "decorative": [
+          "border.default"
+        ],
+        "focusProxy": false
       }
     },
     {
@@ -88,6 +94,10 @@
           "feedback.warning.text": "#f1c21b",
           "feedback.info.text": "#4589ff"
         }
+      },
+      "meta": {
+        "decorative": [],
+        "focusProxy": false
       }
     },
     {
@@ -134,6 +144,10 @@
           "feedback.info.text": "#479ef5",
           "feedback.info.background": "#082338"
         }
+      },
+      "meta": {
+        "decorative": [],
+        "focusProxy": true
       }
     },
     {
@@ -170,6 +184,10 @@
           "feedback.error.text": "#ffdad6",
           "feedback.error.background": "#93000a"
         }
+      },
+      "meta": {
+        "decorative": [],
+        "focusProxy": true
       }
     },
     {
@@ -220,6 +238,11 @@
           "feedback.info.text": "#1668dc",
           "feedback.info.background": "#111a2c"
         }
+      },
+      "meta": {
+        "decorative": [],
+        "focusProxy": true,
+        "feedbackText": "colorXText is Ant feedback-message text; interpretation-sensitive"
       }
     },
     {
@@ -248,6 +271,12 @@
           "feedback.info.text": "#00bde3",
           "feedback.info.background": "#e7f6f8"
         }
+      },
+      "meta": {
+        "decorative": [
+          "border.default"
+        ],
+        "focusProxy": false
       }
     },
     {
@@ -288,6 +317,10 @@
           "feedback.warning.text": "#fbbf24",
           "feedback.info.text": "#60a5fa"
         }
+      },
+      "meta": {
+        "decorative": [],
+        "focusProxy": false
       }
     }
   ]

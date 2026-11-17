@@ -9,17 +9,27 @@
       "version": "5.3.3",
       "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
       "kind": "semantic",
+      "meta": {
+        "decorative": [
+          "border.default"
+        ],
+        "focusProxy": false
+      },
       "themes": {
         "light": {
           "rolesProvided": 18,
           "pairsResolved": 33,
           "pairsPending": 83,
-          "contrastPairs": 26,
+          "contrastPairsAll": 26,
+          "decorativeExcluded": 4,
+          "notApplicableException": 2,
+          "contrastPairs": 20,
           "wcagAA": 16,
-          "wcagAAA": 10,
+          "wcagAAA": 11,
           "textPairs": 17,
-          "textAAA": 9,
-          "blockingFailures": 12,
+          "textAAA": 10,
+          "blockingFailures": 9,
+          "focusProxy": false,
           "bodyTextCR": 15.43,
           "focusRingCR": 1.41,
           "failures": [
@@ -66,24 +76,6 @@
               "required": 7
             },
             {
-              "pair": "border.default / background.default",
-              "class": "non-text",
-              "cr": 1.3,
-              "required": 3
-            },
-            {
-              "pair": "border.default / background.surface",
-              "class": "non-text",
-              "cr": 1.1,
-              "required": 3
-            },
-            {
-              "pair": "border.default / background.subtle",
-              "class": "non-text",
-              "cr": 1.24,
-              "required": 3
-            },
-            {
               "pair": "focus.ring / background.default",
               "class": "focus",
               "cr": 1.41,
@@ -101,12 +93,16 @@
           "rolesProvided": 18,
           "pairsResolved": 33,
           "pairsPending": 83,
-          "contrastPairs": 26,
+          "contrastPairsAll": 26,
+          "decorativeExcluded": 4,
+          "notApplicableException": 2,
+          "contrastPairs": 20,
           "wcagAA": 17,
-          "wcagAAA": 10,
+          "wcagAAA": 11,
           "textPairs": 17,
-          "textAAA": 10,
-          "blockingFailures": 12,
+          "textAAA": 11,
+          "blockingFailures": 9,
+          "focusProxy": false,
           "bodyTextCR": 11.85,
           "focusRingCR": 1.29,
           "failures": [
@@ -147,24 +143,6 @@
               "required": 7
             },
             {
-              "pair": "border.default / background.default",
-              "class": "non-text",
-              "cr": 1.89,
-              "required": 3
-            },
-            {
-              "pair": "border.default / background.surface",
-              "class": "non-text",
-              "cr": 1.41,
-              "required": 3
-            },
-            {
-              "pair": "border.default / background.subtle",
-              "class": "non-text",
-              "cr": 1.63,
-              "required": 3
-            },
-            {
               "pair": "interactive.primary.default / background.surface",
               "class": "non-text",
               "cr": 2.56,
@@ -191,17 +169,25 @@
       "version": "11.85.0",
       "source": "npm @carbon/themes (white, g100)",
       "kind": "semantic",
+      "meta": {
+        "decorative": [],
+        "focusProxy": false
+      },
       "themes": {
         "light": {
           "rolesProvided": 14,
           "pairsResolved": 24,
           "pairsPending": 92,
-          "contrastPairs": 21,
+          "contrastPairsAll": 21,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 18,
           "wcagAA": 18,
-          "wcagAAA": 13,
+          "wcagAAA": 14,
           "textPairs": 12,
-          "textAAA": 7,
+          "textAAA": 8,
           "blockingFailures": 4,
+          "focusProxy": false,
           "bodyTextCR": 18.1,
           "focusRingCR": 5,
           "failures": [
@@ -235,12 +221,16 @@
           "rolesProvided": 14,
           "pairsResolved": 24,
           "pairsPending": 92,
-          "contrastPairs": 21,
-          "wcagAA": 15,
+          "contrastPairsAll": 21,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 18,
+          "wcagAA": 16,
           "wcagAAA": 12,
           "textPairs": 12,
           "textAAA": 7,
           "blockingFailures": 6,
+          "focusProxy": false,
           "bodyTextCR": 16.45,
           "focusRingCR": 18.1,
           "failures": [
@@ -289,17 +279,25 @@
       "version": "1.0.0-alpha.24",
       "source": "npm @fluentui/tokens (webLightTheme, webDarkTheme)",
       "kind": "semantic",
+      "meta": {
+        "decorative": [],
+        "focusProxy": true
+      },
       "themes": {
         "light": {
           "rolesProvided": 17,
           "pairsResolved": 29,
           "pairsPending": 87,
-          "contrastPairs": 23,
+          "contrastPairsAll": 23,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 20,
           "wcagAA": 17,
-          "wcagAAA": 9,
+          "wcagAAA": 10,
           "textPairs": 15,
-          "textAAA": 7,
+          "textAAA": 8,
           "blockingFailures": 10,
+          "focusProxy": true,
           "bodyTextCR": 15.52,
           "focusRingCR": 5.38,
           "failures": [
@@ -369,12 +367,16 @@
           "rolesProvided": 17,
           "pairsResolved": 29,
           "pairsPending": 87,
-          "contrastPairs": 23,
+          "contrastPairsAll": 23,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 20,
           "wcagAA": 18,
-          "wcagAAA": 11,
+          "wcagAAA": 12,
           "textPairs": 15,
-          "textAAA": 8,
+          "textAAA": 9,
           "blockingFailures": 8,
+          "focusProxy": true,
           "bodyTextCR": 14.55,
           "focusRingCR": 5.18,
           "failures": [
@@ -435,17 +437,25 @@
       "version": "0.4.0",
       "source": "npm @material/material-color-utilities, SchemeTonalSpot(seed #6750A4, contrast 0)",
       "kind": "semantic",
+      "meta": {
+        "decorative": [],
+        "focusProxy": true
+      },
       "themes": {
         "light": {
           "rolesProvided": 12,
           "pairsResolved": 27,
           "pairsPending": 89,
-          "contrastPairs": 23,
+          "contrastPairsAll": 23,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 20,
           "wcagAA": 20,
-          "wcagAAA": 15,
+          "wcagAAA": 16,
           "textPairs": 14,
-          "textAAA": 9,
+          "textAAA": 10,
           "blockingFailures": 4,
+          "focusProxy": true,
           "bodyTextCR": 16.2,
           "focusRingCR": 6.13,
           "failures": [
@@ -479,12 +489,16 @@
           "rolesProvided": 12,
           "pairsResolved": 27,
           "pairsPending": 89,
-          "contrastPairs": 23,
+          "contrastPairsAll": 23,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 20,
           "wcagAA": 20,
           "wcagAAA": 20,
           "textPairs": 14,
           "textAAA": 14,
           "blockingFailures": 0,
+          "focusProxy": true,
           "bodyTextCR": 14.35,
           "focusRingCR": 10.95,
           "failures": []
@@ -496,17 +510,26 @@
       "version": "6.7.1",
       "source": "npm antd theme.getDesignToken(defaultSeed[, darkAlgorithm])",
       "kind": "semantic",
+      "meta": {
+        "decorative": [],
+        "focusProxy": true,
+        "feedbackText": "colorXText is Ant feedback-message text; interpretation-sensitive"
+      },
       "themes": {
         "light": {
           "rolesProvided": 19,
           "pairsResolved": 33,
           "pairsPending": 83,
-          "contrastPairs": 24,
-          "wcagAA": 9,
+          "contrastPairsAll": 24,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 21,
+          "wcagAA": 10,
           "wcagAAA": 7,
           "textPairs": 16,
           "textAAA": 4,
           "blockingFailures": 14,
+          "focusProxy": true,
           "bodyTextCR": 15.12,
           "focusRingCR": 3.76,
           "failures": [
@@ -600,12 +623,16 @@
           "rolesProvided": 19,
           "pairsResolved": 33,
           "pairsPending": 83,
-          "contrastPairs": 24,
-          "wcagAA": 13,
-          "wcagAAA": 9,
+          "contrastPairsAll": 24,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 21,
+          "wcagAA": 14,
+          "wcagAAA": 10,
           "textPairs": 16,
-          "textAAA": 6,
+          "textAAA": 7,
           "blockingFailures": 11,
+          "focusProxy": true,
           "bodyTextCR": 15.31,
           "focusRingCR": 4.05,
           "failures": [
@@ -684,17 +711,27 @@
       "version": "3.14.0",
       "source": "npm @uswds/uswds dist/css/uswds.min.css (semantic utilities); light only, no default dark theme",
       "kind": "semantic",
+      "meta": {
+        "decorative": [
+          "border.default"
+        ],
+        "focusProxy": false
+      },
       "themes": {
         "light": {
           "rolesProvided": 18,
           "pairsResolved": 33,
           "pairsPending": 83,
-          "contrastPairs": 26,
-          "wcagAA": 12,
-          "wcagAAA": 6,
+          "contrastPairsAll": 26,
+          "decorativeExcluded": 4,
+          "notApplicableException": 2,
+          "contrastPairs": 20,
+          "wcagAA": 13,
+          "wcagAAA": 7,
           "textPairs": 17,
-          "textAAA": 4,
-          "blockingFailures": 16,
+          "textAAA": 5,
+          "blockingFailures": 13,
+          "focusProxy": false,
           "bodyTextCR": 17.22,
           "focusRingCR": 3.2,
           "failures": [
@@ -771,24 +808,6 @@
               "required": 4.5
             },
             {
-              "pair": "border.default / background.default",
-              "class": "non-text",
-              "cr": 2.24,
-              "required": 3
-            },
-            {
-              "pair": "border.default / background.surface",
-              "class": "non-text",
-              "cr": 1.97,
-              "required": 3
-            },
-            {
-              "pair": "border.default / background.subtle",
-              "class": "non-text",
-              "cr": 1.97,
-              "required": 3
-            },
-            {
               "pair": "focus.ring / background.surface",
               "class": "focus",
               "cr": 2.81,
@@ -803,17 +822,25 @@
       "version": "3.4.19",
       "source": "npm tailwindcss/colors.js (primitive scales; typical-usage interpretation, disclosed)",
       "kind": "primitive-comparator",
+      "meta": {
+        "decorative": [],
+        "focusProxy": false
+      },
       "themes": {
         "light": {
           "rolesProvided": 14,
           "pairsResolved": 24,
           "pairsPending": 92,
-          "contrastPairs": 21,
+          "contrastPairsAll": 21,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 18,
           "wcagAA": 15,
-          "wcagAAA": 9,
+          "wcagAAA": 10,
           "textPairs": 12,
-          "textAAA": 6,
+          "textAAA": 7,
           "blockingFailures": 8,
+          "focusProxy": false,
           "bodyTextCR": 17.74,
           "focusRingCR": 3.68,
           "failures": [
@@ -871,12 +898,16 @@
           "rolesProvided": 14,
           "pairsResolved": 24,
           "pairsPending": 92,
-          "contrastPairs": 21,
-          "wcagAA": 11,
+          "contrastPairsAll": 21,
+          "decorativeExcluded": 0,
+          "notApplicableException": 3,
+          "contrastPairs": 18,
+          "wcagAA": 12,
           "wcagAAA": 7,
           "textPairs": 12,
           "textAAA": 4,
           "blockingFailures": 11,
+          "focusProxy": false,
           "bodyTextCR": 16.12,
           "focusRingCR": 6.98,
           "failures": [

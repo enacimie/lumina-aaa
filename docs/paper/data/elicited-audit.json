@@ -1,5 +1,5 @@
 {
-  "description": "Recomputation audit of elicited specifications. terse = no inventory; complete = disclosed 12-role inventory + thresholds. All ratios re-derived from published hex.",
+  "description": "Recomputation audit of elicited specifications. terse = no inventory; complete = disclosed 12-role inventory + thresholds. All ratios re-derived from published hex. Two coverage constructs are reported: coverage_gap_pct (unaudited roles over the specimen own declared inventory) and coverage_gap_vs59_pct (role-definition gap over LUMINA 59-role grammar). Focus: focus_vs_fill_CR is the strict ring-vs-fill pair the specimens declare; focus_vs_page_CR is the normative ring-vs-page adjacency for an outer outline (SC 2.4.13). focus_invisible uses CR < 1.2; focus_below3 uses ring-vs-fill < 3.0.",
   "specimens": [
     {
       "model": "beam",
@@ -12,9 +12,12 @@
       "max_anti_delta": 0,
       "uncovered": 4,
       "coverage_gap_pct": 50,
+      "coverage_gap_vs59_pct": 86.44,
       "focus_vs_fill_CR": 1.3,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": null,
+      "focus_page_below3": false,
       "undefined_functions": 4,
       "conformance": null
     },
@@ -29,9 +32,12 @@
       "max_anti_delta": 0,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 1.3,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": 5.17,
+      "focus_page_below3": false,
       "undefined_functions": 2,
       "conformance": {
         "checks": [
@@ -66,9 +72,12 @@
       "max_anti_delta": 0.88,
       "uncovered": 7,
       "coverage_gap_pct": 58.33,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 1.31,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": null,
+      "focus_page_below3": false,
       "undefined_functions": 4,
       "conformance": null
     },
@@ -83,9 +92,12 @@
       "max_anti_delta": 0.78,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 1.21,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": 6.61,
+      "focus_page_below3": false,
       "undefined_functions": 5,
       "conformance": {
         "checks": [
@@ -120,9 +132,12 @@
       "max_anti_delta": 0.93,
       "uncovered": 10,
       "coverage_gap_pct": 62.5,
+      "coverage_gap_vs59_pct": 72.88,
       "focus_vs_fill_CR": null,
       "focus_invisible": false,
       "focus_below3": false,
+      "focus_vs_page_CR": null,
+      "focus_page_below3": false,
       "undefined_functions": 5,
       "conformance": null
     },
@@ -137,9 +152,12 @@
       "max_anti_delta": 0.59,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 1.13,
       "focus_invisible": true,
       "focus_below3": true,
+      "focus_vs_page_CR": 6.7,
+      "focus_page_below3": false,
       "undefined_functions": 6,
       "conformance": {
         "checks": [
@@ -174,9 +192,12 @@
       "max_anti_delta": 0,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": null,
       "focus_invisible": false,
       "focus_below3": false,
+      "focus_vs_page_CR": null,
+      "focus_page_below3": false,
       "undefined_functions": 4,
       "conformance": null
     },
@@ -191,9 +212,12 @@
       "max_anti_delta": 0,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 2.93,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": 4.31,
+      "focus_page_below3": false,
       "undefined_functions": 4,
       "conformance": {
         "checks": [
@@ -228,9 +252,12 @@
       "max_anti_delta": 1.21,
       "uncovered": 13,
       "coverage_gap_pct": 61.9,
+      "coverage_gap_vs59_pct": 64.41,
       "focus_vs_fill_CR": 1,
       "focus_invisible": true,
       "focus_below3": true,
+      "focus_vs_page_CR": null,
+      "focus_page_below3": false,
       "undefined_functions": 6,
       "conformance": null
     },
@@ -245,9 +272,12 @@
       "max_anti_delta": 0.87,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 1,
       "focus_invisible": true,
       "focus_below3": true,
+      "focus_vs_page_CR": 8.59,
+      "focus_page_below3": false,
       "undefined_functions": 6,
       "conformance": {
         "checks": [
@@ -282,9 +312,12 @@
       "max_anti_delta": 0.96,
       "uncovered": 8,
       "coverage_gap_pct": 42.11,
+      "coverage_gap_vs59_pct": 67.8,
       "focus_vs_fill_CR": 1.23,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": null,
+      "focus_page_below3": false,
       "undefined_functions": 4,
       "conformance": null
     },
@@ -299,9 +332,12 @@
       "max_anti_delta": 0,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 1.49,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": 6.2,
+      "focus_page_below3": false,
       "undefined_functions": 0,
       "conformance": {
         "checks": [
@@ -336,9 +372,12 @@
       "max_anti_delta": 0,
       "uncovered": 4,
       "coverage_gap_pct": 36.36,
+      "coverage_gap_vs59_pct": 81.36,
       "focus_vs_fill_CR": 1.74,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": null,
+      "focus_page_below3": false,
       "undefined_functions": 4,
       "conformance": null
     },
@@ -353,9 +392,12 @@
       "max_anti_delta": 0,
       "uncovered": 0,
       "coverage_gap_pct": 0,
+      "coverage_gap_vs59_pct": 79.66,
       "focus_vs_fill_CR": 1.74,
       "focus_invisible": false,
       "focus_below3": true,
+      "focus_vs_page_CR": 5,
+      "focus_page_below3": false,
       "undefined_functions": 4,
       "conformance": {
         "checks": [
@@ -385,16 +427,30 @@
       "n": 7,
       "mean_wrong_over_01": 6.71,
       "mean_coverage_gap_pct": 44.46,
+      "median_coverage_gap_pct": 50,
+      "range_coverage_gap_pct": [
+        0,
+        62.5
+      ],
+      "mean_coverage_gap_vs59_pct": 76.03,
       "focus_invisible_count": 1,
       "focus_below3_count": 5,
+      "focus_page_below3_count": 0,
       "mean_undefined_functions": 4.43
     },
     "complete": {
       "n": 7,
       "mean_wrong_over_01": 10.43,
       "mean_coverage_gap_pct": 0,
+      "median_coverage_gap_pct": 0,
+      "range_coverage_gap_pct": [
+        0,
+        0
+      ],
+      "mean_coverage_gap_vs59_pct": 79.66,
       "focus_invisible_count": 2,
       "focus_below3_count": 7,
+      "focus_page_below3_count": 0,
       "mean_undefined_functions": 3.86
     }
   }

@@ -39,6 +39,22 @@
           "tritanopia": 4.96
         }
       },
+      "goldenAngleSameLC": {
+        "series": [
+          "#2E53BC",
+          "#C96133",
+          "#00907F",
+          "#6F427D",
+          "#9D8400",
+          "#338CB7"
+        ],
+        "minDeltaE2000": {
+          "normal": 19.39,
+          "deuteranopia": 3.35,
+          "protanopia": 9.25,
+          "tritanopia": 4.65
+        }
+      },
       "v02Categorical": {
         "series": [
           "#1E40AF",
@@ -94,6 +110,22 @@
           "tritanopia": 3.87
         }
       },
+      "goldenAngleSameLC": {
+        "series": [
+          "#BFD3FF",
+          "#CB7B5A",
+          "#65A599",
+          "#EBB6FC",
+          "#A38D33",
+          "#A1D7F5"
+        ],
+        "minDeltaE2000": {
+          "normal": 11.28,
+          "deuteranopia": 1.47,
+          "protanopia": 2.31,
+          "tritanopia": 7.75
+        }
+      },
       "v02Categorical": {
         "series": [
           "#93C5FD",
@@ -147,6 +179,22 @@
           "deuteranopia": 0.72,
           "protanopia": 5.54,
           "tritanopia": 3.98
+        }
+      },
+      "goldenAngleSameLC": {
+        "series": [
+          "#193AB0",
+          "#CE5000",
+          "#148677",
+          "#633072",
+          "#8D7600",
+          "#1D5570"
+        ],
+        "minDeltaE2000": {
+          "normal": 13.05,
+          "deuteranopia": 2.28,
+          "protanopia": 5.24,
+          "tritanopia": 9.57
         }
       }
     }

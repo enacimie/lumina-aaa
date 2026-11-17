@@ -1,0 +1,999 @@
+{
+  "description": "The LUMINA pair matrix: 116 pair kinds over 59 mandatory roles. Each kind is a specification-based invariant. class -> normative source maps WCAG success criteria (with level) and LUMINA design constants.",
+  "rolesTotal": 59,
+  "pairKinds": 116,
+  "classInfo": {
+    "text": {
+      "src": "SC 1.4.6 (AAA)",
+      "thr": "CR $\\geq$ 7:1",
+      "policy": "MUST"
+    },
+    "text-large": {
+      "src": "SC 1.4.6 (AAA)",
+      "thr": "CR $\\geq$ 4.5:1",
+      "policy": "MUST"
+    },
+    "advisory-text": {
+      "src": "SC 1.4.6 exempt (disabled)",
+      "thr": "advisory CR $\\geq$ 3:1",
+      "policy": "MAY"
+    },
+    "non-text": {
+      "src": "SC 1.4.11 (AA)",
+      "thr": "CR $\\geq$ 3:1",
+      "policy": "MUST"
+    },
+    "focus": {
+      "src": "SC 1.4.11 (AA) + 2.4.13 (AAA)",
+      "thr": "CR $\\geq$ 3:1",
+      "policy": "MUST"
+    },
+    "non-adjacent": {
+      "src": "LUM-FOC-005 (adjacency model)",
+      "thr": "recorded, not scored",
+      "policy": "MAY"
+    },
+    "alias": {
+      "src": "LUM-STA (focused fill alias)",
+      "thr": "alias declared",
+      "policy": "MUST"
+    },
+    "state-change": {
+      "src": "LUM-STA-002 (design constant)",
+      "thr": "\\dE{} $\\geq$ 5",
+      "policy": "SHOULD"
+    },
+    "distinct": {
+      "src": "LUM-SURF (design constant)",
+      "thr": "\\dE{} $\\geq$ 5",
+      "policy": "SHOULD"
+    },
+    "cvd": {
+      "src": "LUM-CVD-001 (design constant)",
+      "thr": "\\dE{} $\\geq$ 10",
+      "policy": "SHOULD"
+    }
+  },
+  "counts": {
+    "text": 30,
+    "text-large": 4,
+    "advisory-text": 4,
+    "non-text": 28,
+    "distinct": 14,
+    "alias": 2,
+    "focus": 8,
+    "non-adjacent": 1,
+    "state-change": 6,
+    "cvd": 19
+  },
+  "pairs": [
+    {
+      "idx": 1,
+      "foreground": "text.primary",
+      "background": "background.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 2,
+      "foreground": "text.primary",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 3,
+      "foreground": "text.primary",
+      "background": "background.subtle",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 4,
+      "foreground": "text.primary",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 5,
+      "foreground": "text.secondary",
+      "background": "background.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 6,
+      "foreground": "text.secondary",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 7,
+      "foreground": "text.secondary",
+      "background": "background.subtle",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 8,
+      "foreground": "text.secondary",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 9,
+      "foreground": "text.on-surface",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 10,
+      "foreground": "text.on-surface",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 11,
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 12,
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.hover",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 13,
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.active",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 14,
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.focus",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 15,
+      "foreground": "text.link",
+      "background": "background.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 16,
+      "foreground": "text.link",
+      "background": "background.surface",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 17,
+      "foreground": "text.link",
+      "background": "background.subtle",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 18,
+      "foreground": "text.link",
+      "background": "background.raised",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 19,
+      "foreground": "text.link",
+      "background": "interactive.secondary.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 20,
+      "foreground": "text.link",
+      "background": "interactive.secondary.hover",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 21,
+      "foreground": "text.link",
+      "background": "interactive.secondary.active",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 22,
+      "foreground": "text.link",
+      "background": "interactive.ghost.default",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 23,
+      "foreground": "text.link",
+      "background": "interactive.ghost.hover",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 24,
+      "foreground": "text.primary",
+      "background": "interactive.selected",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 25,
+      "foreground": "text.inverse",
+      "background": "background.inverse",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 26,
+      "foreground": "feedback.success.text",
+      "background": "feedback.success.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 27,
+      "foreground": "feedback.warning.text",
+      "background": "feedback.warning.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 28,
+      "foreground": "feedback.error.text",
+      "background": "feedback.error.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 29,
+      "foreground": "feedback.info.text",
+      "background": "feedback.info.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 30,
+      "foreground": "chart.label",
+      "background": "chart.background",
+      "class": "text",
+      "requirement": "LUM-TXT-001",
+      "adjacent": true
+    },
+    {
+      "idx": 31,
+      "foreground": "text.primary",
+      "background": "background.surface",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "adjacent": true
+    },
+    {
+      "idx": 32,
+      "foreground": "text.on-primary",
+      "background": "interactive.primary.default",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "adjacent": true
+    },
+    {
+      "idx": 33,
+      "foreground": "feedback.error.text",
+      "background": "feedback.error.background",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "adjacent": true
+    },
+    {
+      "idx": 34,
+      "foreground": "chart.label",
+      "background": "chart.background",
+      "class": "text-large",
+      "requirement": "LUM-TXT-002",
+      "adjacent": true
+    },
+    {
+      "idx": 35,
+      "foreground": "text.disabled",
+      "background": "background.default",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "adjacent": true
+    },
+    {
+      "idx": 36,
+      "foreground": "text.disabled",
+      "background": "background.surface",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "adjacent": true
+    },
+    {
+      "idx": 37,
+      "foreground": "text.disabled",
+      "background": "background.disabled",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "adjacent": true
+    },
+    {
+      "idx": 38,
+      "foreground": "text.disabled",
+      "background": "interactive.disabled",
+      "class": "advisory-text",
+      "requirement": "LUM-TXT-004",
+      "adjacent": true
+    },
+    {
+      "idx": 39,
+      "foreground": "border.default",
+      "background": "background.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 40,
+      "foreground": "border.default",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 41,
+      "foreground": "border.default",
+      "background": "background.subtle",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 42,
+      "foreground": "border.default",
+      "background": "background.raised",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 43,
+      "foreground": "border.default",
+      "background": "interactive.secondary.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 44,
+      "foreground": "border.strong",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 45,
+      "foreground": "border.strong",
+      "background": "background.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 46,
+      "foreground": "border.subtle",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-003",
+      "adjacent": true
+    },
+    {
+      "idx": 47,
+      "foreground": "border.error",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 48,
+      "foreground": "border.error",
+      "background": "background.default",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 49,
+      "foreground": "interactive.primary.default",
+      "background": "background.surface",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 50,
+      "foreground": "interactive.selected",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-NTX-004",
+      "adjacent": true
+    },
+    {
+      "idx": 51,
+      "foreground": "interactive.secondary.default",
+      "background": "background.surface",
+      "class": "alias",
+      "requirement": "LUM-STA-003",
+      "adjacent": true
+    },
+    {
+      "idx": 52,
+      "foreground": "interactive.disabled",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-NTX-005",
+      "adjacent": true
+    },
+    {
+      "idx": 53,
+      "foreground": "background.overlay",
+      "background": "background.default",
+      "class": "distinct",
+      "requirement": "LUM-NTX-006",
+      "adjacent": true
+    },
+    {
+      "idx": 54,
+      "foreground": "feedback.success.border",
+      "background": "feedback.success.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 55,
+      "foreground": "feedback.success.icon",
+      "background": "feedback.success.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 56,
+      "foreground": "feedback.success.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "adjacent": true
+    },
+    {
+      "idx": 57,
+      "foreground": "feedback.warning.border",
+      "background": "feedback.warning.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 58,
+      "foreground": "feedback.warning.icon",
+      "background": "feedback.warning.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 59,
+      "foreground": "feedback.warning.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "adjacent": true
+    },
+    {
+      "idx": 60,
+      "foreground": "feedback.error.border",
+      "background": "feedback.error.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 61,
+      "foreground": "feedback.error.icon",
+      "background": "feedback.error.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 62,
+      "foreground": "feedback.error.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "adjacent": true
+    },
+    {
+      "idx": 63,
+      "foreground": "feedback.info.border",
+      "background": "feedback.info.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-001",
+      "adjacent": true
+    },
+    {
+      "idx": 64,
+      "foreground": "feedback.info.icon",
+      "background": "feedback.info.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 65,
+      "foreground": "feedback.info.background",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "adjacent": true
+    },
+    {
+      "idx": 66,
+      "foreground": "chart.axis",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 67,
+      "foreground": "chart.surface",
+      "background": "chart.background",
+      "class": "distinct",
+      "requirement": "LUM-STA-004",
+      "adjacent": true
+    },
+    {
+      "idx": 68,
+      "foreground": "chart.grid",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-003",
+      "adjacent": true
+    },
+    {
+      "idx": 69,
+      "foreground": "chart.series.1",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 70,
+      "foreground": "chart.series.2",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 71,
+      "foreground": "chart.series.3",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 72,
+      "foreground": "chart.series.4",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 73,
+      "foreground": "chart.series.5",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 74,
+      "foreground": "chart.series.6",
+      "background": "chart.background",
+      "class": "non-text",
+      "requirement": "LUM-NTX-002",
+      "adjacent": true
+    },
+    {
+      "idx": 75,
+      "foreground": "focus.ring",
+      "background": "background.default",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 76,
+      "foreground": "focus.ring",
+      "background": "background.surface",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 77,
+      "foreground": "focus.ring",
+      "background": "focus.inner",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 78,
+      "foreground": "focus.inner",
+      "background": "interactive.primary.default",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 79,
+      "foreground": "focus.inner",
+      "background": "interactive.primary.hover",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 80,
+      "foreground": "focus.inner",
+      "background": "interactive.primary.active",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 81,
+      "foreground": "focus.inner",
+      "background": "interactive.primary.focus",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 82,
+      "foreground": "border.focus",
+      "background": "background.surface",
+      "class": "focus",
+      "requirement": "LUM-FOC-002",
+      "adjacent": true
+    },
+    {
+      "idx": 83,
+      "foreground": "border.focus",
+      "background": "border.default",
+      "class": "non-text",
+      "requirement": "LUM-FOC-004",
+      "adjacent": true
+    },
+    {
+      "idx": 84,
+      "foreground": "focus.ring",
+      "background": "interactive.primary.default",
+      "class": "non-adjacent",
+      "requirement": "LUM-FOC-005",
+      "adjacent": false
+    },
+    {
+      "idx": 85,
+      "foreground": "interactive.primary.hover",
+      "background": "interactive.primary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002",
+      "adjacent": true
+    },
+    {
+      "idx": 86,
+      "foreground": "interactive.primary.active",
+      "background": "interactive.primary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002",
+      "adjacent": true
+    },
+    {
+      "idx": 87,
+      "foreground": "interactive.primary.focus",
+      "background": "interactive.primary.default",
+      "class": "alias",
+      "requirement": "LUM-STA-002",
+      "adjacent": true
+    },
+    {
+      "idx": 88,
+      "foreground": "interactive.primary.active",
+      "background": "interactive.primary.hover",
+      "class": "state-change",
+      "requirement": "LUM-STA-002",
+      "adjacent": true
+    },
+    {
+      "idx": 89,
+      "foreground": "interactive.secondary.hover",
+      "background": "interactive.secondary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002",
+      "adjacent": true
+    },
+    {
+      "idx": 90,
+      "foreground": "interactive.secondary.active",
+      "background": "interactive.secondary.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002",
+      "adjacent": true
+    },
+    {
+      "idx": 91,
+      "foreground": "interactive.ghost.hover",
+      "background": "interactive.ghost.default",
+      "class": "state-change",
+      "requirement": "LUM-STA-002",
+      "adjacent": true
+    },
+    {
+      "idx": 92,
+      "foreground": "chart.series.1",
+      "background": "chart.series.2",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 93,
+      "foreground": "chart.series.1",
+      "background": "chart.series.3",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 94,
+      "foreground": "chart.series.1",
+      "background": "chart.series.4",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 95,
+      "foreground": "chart.series.1",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 96,
+      "foreground": "chart.series.1",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 97,
+      "foreground": "chart.series.2",
+      "background": "chart.series.3",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 98,
+      "foreground": "chart.series.2",
+      "background": "chart.series.4",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 99,
+      "foreground": "chart.series.2",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 100,
+      "foreground": "chart.series.2",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 101,
+      "foreground": "chart.series.3",
+      "background": "chart.series.4",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 102,
+      "foreground": "chart.series.3",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 103,
+      "foreground": "chart.series.3",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 104,
+      "foreground": "chart.series.4",
+      "background": "chart.series.5",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 105,
+      "foreground": "chart.series.4",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 106,
+      "foreground": "chart.series.5",
+      "background": "chart.series.6",
+      "class": "cvd",
+      "requirement": "LUM-CVD-001",
+      "adjacent": true
+    },
+    {
+      "idx": 107,
+      "foreground": "feedback.error.icon",
+      "background": "feedback.success.icon",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "adjacent": true
+    },
+    {
+      "idx": 108,
+      "foreground": "feedback.warning.icon",
+      "background": "feedback.error.icon",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "adjacent": true
+    },
+    {
+      "idx": 109,
+      "foreground": "feedback.info.icon",
+      "background": "feedback.success.icon",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "adjacent": true
+    },
+    {
+      "idx": 110,
+      "foreground": "interactive.selected",
+      "background": "background.surface",
+      "class": "cvd",
+      "requirement": "LUM-CVD-002",
+      "adjacent": true
+    },
+    {
+      "idx": 111,
+      "foreground": "background.default",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "adjacent": true
+    },
+    {
+      "idx": 112,
+      "foreground": "background.surface",
+      "background": "background.subtle",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "adjacent": true
+    },
+    {
+      "idx": 113,
+      "foreground": "background.surface",
+      "background": "background.raised",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "adjacent": true
+    },
+    {
+      "idx": 114,
+      "foreground": "background.default",
+      "background": "background.disabled",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "adjacent": true
+    },
+    {
+      "idx": 115,
+      "foreground": "background.inverse",
+      "background": "background.default",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "adjacent": true
+    },
+    {
+      "idx": 116,
+      "foreground": "background.overlay",
+      "background": "background.surface",
+      "class": "distinct",
+      "requirement": "LUM-IDE-001",
+      "adjacent": true
+    }
+  ]
+}

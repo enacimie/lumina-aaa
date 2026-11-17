@@ -1,8 +1,11 @@
 // Generates the paper's empirical data files from the live library.
-import { buildPalette } from '/home/x/Escritorio/Code/lumina-aaa/lib/index.js';
+import { buildPalette } from '../lib/index.js';
 import { writeFileSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-const OUT = '/home/x/Escritorio/Code/lumina-aaa/docs/paper/data';
+const here = dirname(fileURLToPath(import.meta.url));
+const OUT = join(here, '..', 'docs', 'paper', 'data');
 mkdirSync(OUT, { recursive: true });
 
 /* ---- 1. robustness sweep: 25 brands x 3 profiles ---- */
@@ -68,7 +71,7 @@ writeFileSync(`${OUT}/reference-palette.json`, JSON.stringify({
 console.log('reference: roles', palette.roleCount, 'pairs', report.pairs.length, 'statuses', JSON.stringify(pairCounts));
 
 /* ---- 3. chart series separability (normal vs CVD) ---- */
-const { simulateCvd, deltaE2000 } = await import('/home/x/Escritorio/Code/lumina-aaa/lib/color.js');
+const { simulateCvd, deltaE2000 } = await import('../lib/color.js');
 const themes = {};
 for (const [name, theme] of Object.entries(palette.themes)) {
   const series = Array.from({ length: 6 }, (_, i) => theme.values[`chart.series.${i + 1}`]);

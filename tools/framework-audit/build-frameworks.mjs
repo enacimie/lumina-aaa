@@ -62,7 +62,7 @@ const frameworks = [];
   };
   // dark theme inherits light variables not overridden in the dark block
   const light = data.themes.light, dark = { ...light, ...data.themes.dark };
-  frameworks.push({ name: 'Bootstrap', version: data.version, source: data.source, kind: 'semantic', themes: { light: cw(light), dark: cw(dark) } });
+  frameworks.push({ name: 'Bootstrap', version: data.version, source: data.source, kind: 'semantic', themes: { light: cw(light), dark: cw(dark) }, meta: { decorative: ['border.default'], focusProxy: false } });
 }
 
 /* ---- Carbon (IBM) @carbon/themes: white (light) + g100 (dark) ---- */
@@ -84,7 +84,7 @@ const frameworks = [];
     'feedback.warning.text': hex6(t.supportWarning),
     'feedback.info.text': hex6(t.supportInfo),
   });
-  frameworks.push({ name: 'Carbon', version: ver('@carbon/themes'), source: 'npm @carbon/themes (white, g100)', kind: 'semantic', themes: { light: cw(carbon.white), dark: cw(carbon.g100) } });
+  frameworks.push({ name: 'Carbon', version: ver('@carbon/themes'), source: 'npm @carbon/themes (white, g100)', kind: 'semantic', themes: { light: cw(carbon.white), dark: cw(carbon.g100) }, meta: { decorative: [], focusProxy: false } });
 }
 
 /* ---- Fluent (Microsoft) @fluentui/tokens: webLightTheme + webDarkTheme ---- */
@@ -110,7 +110,7 @@ const frameworks = [];
     'feedback.info.text': hex6(t.colorBrandForeground1),
     'feedback.info.background': hex6(t.colorBrandBackground2),
   });
-  frameworks.push({ name: 'Fluent', version: ver('@fluentui/tokens'), source: 'npm @fluentui/tokens (webLightTheme, webDarkTheme)', kind: 'semantic', themes: { light: cw(fluent.webLightTheme), dark: cw(fluent.webDarkTheme) } });
+  frameworks.push({ name: 'Fluent', version: ver('@fluentui/tokens'), source: 'npm @fluentui/tokens (webLightTheme, webDarkTheme)', kind: 'semantic', themes: { light: cw(fluent.webLightTheme), dark: cw(fluent.webDarkTheme) }, meta: { decorative: [], focusProxy: true } });
 }
 
 /* ---- Material Design 3: tonal-spot scheme from baseline seed #6750A4 ---- */
@@ -135,7 +135,7 @@ const frameworks = [];
       'feedback.error.background': h('errorContainer'),
     });
   };
-  frameworks.push({ name: 'Material Design 3', version: ver('@material/material-color-utilities'), source: 'npm @material/material-color-utilities, SchemeTonalSpot(seed #6750A4, contrast 0)', kind: 'semantic', themes: { light: cw(false), dark: cw(true) } });
+  frameworks.push({ name: 'Material Design 3', version: ver('@material/material-color-utilities'), source: 'npm @material/material-color-utilities, SchemeTonalSpot(seed #6750A4, contrast 0)', kind: 'semantic', themes: { light: cw(false), dark: cw(true) }, meta: { decorative: [], focusProxy: true } });
 }
 
 /* ---- Ant Design 5: antd default design token (light + dark algorithm) ---- */
@@ -170,7 +170,7 @@ const frameworks = [];
   const dark = theme.getDesignToken({ algorithm: theme.darkAlgorithm });
   const themes = { light: cw(light) };
   if (dark) themes.dark = cw(dark);
-  frameworks.push({ name: 'Ant Design', version: ver('antd'), source: 'npm antd theme.getDesignToken(defaultSeed[, darkAlgorithm])', kind: 'semantic', themes });
+  frameworks.push({ name: 'Ant Design', version: ver('antd'), source: 'npm antd theme.getDesignToken(defaultSeed[, darkAlgorithm])', kind: 'semantic', themes, meta: { decorative: [], focusProxy: true, feedbackText: 'colorXText is Ant feedback-message text; interpretation-sensitive' } });
 }
 
 /* ---- USWDS 3: resolved semantic utilities from official compiled CSS (light only) ---- */
@@ -202,7 +202,7 @@ const frameworks = [];
     'feedback.info.text': util('info'),
     'feedback.info.background': util('info-lighter'),
   });
-  frameworks.push({ name: 'USWDS', version: ver('@uswds/uswds'), source: 'npm @uswds/uswds dist/css/uswds.min.css (semantic utilities); light only, no default dark theme', kind: 'semantic', themes: { light } });
+  frameworks.push({ name: 'USWDS', version: ver('@uswds/uswds'), source: 'npm @uswds/uswds dist/css/uswds.min.css (semantic utilities); light only, no default dark theme', kind: 'semantic', themes: { light }, meta: { decorative: ['border.default'], focusProxy: false } });
 }
 
 /* ---- Tailwind CSS 3: primitive scales (NOT semantic roles) -> comparator ---- */
@@ -243,7 +243,7 @@ const frameworks = [];
     'feedback.warning.text': hex6(tw.amber[400]),
     'feedback.info.text': hex6(tw.blue[400]),
   });
-  frameworks.push({ name: 'Tailwind CSS', version: ver('tailwindcss'), source: 'npm tailwindcss/colors.js (primitive scales; typical-usage interpretation, disclosed)', kind: 'primitive-comparator', themes: { light, dark } });
+  frameworks.push({ name: 'Tailwind CSS', version: ver('tailwindcss'), source: 'npm tailwindcss/colors.js (primitive scales; typical-usage interpretation, disclosed)', kind: 'primitive-comparator', themes: { light, dark }, meta: { decorative: [], focusProxy: false } });
 }
 
 writeFileSync('../../docs/paper/data/frameworks.json', JSON.stringify({ generated: new Date().toISOString(), oracle: 'LUMINA verifyAllPairs (lib/audit.js), profile wcag-aaa', frameworks }, null, 2));
