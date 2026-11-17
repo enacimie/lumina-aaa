@@ -1,0 +1,1544 @@
+[
+  {
+    "id": "text-1.5",
+    "type": "text",
+    "ground_truth_cr": 1.5,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 1.4,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Light gray text on a near-white background yields a very low contrast ratio (~1.4:1), far below the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 1.4,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Light gray text on a near-white background yields a very low contrast ratio (~1.4:1), far below the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 1.4,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text on a near-white background yields a very low contrast ratio (~1.4:1), far below the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 1.5,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text on a white background has very low luminance contrast, well below the 4.5:1 and 7:1 thresholds."
+          },
+          {
+            "estimated_ratio": 1.4,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text on an off-white background has very low contrast, approximately 1.4:1, which is well below both the 4.5:1 AA and 7:1 AAA thresholds."
+          },
+          {
+            "estimated_ratio": 1.4,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text is only slightly darker than the near-white background, giving a very low contrast ratio well below both thresholds."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 1.6,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The body text is a very pale light gray on a near-white background, producing roughly 1.6:1 luminance contrast, far below the 4.5:1 AA and 7:1 AAA thresholds."
+          },
+          {
+            "estimated_ratio": 1.7,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray body text on a near-white background produces a very low contrast ratio, far below the 4.5:1 AA threshold."
+          },
+          {
+            "estimated_ratio": 1.8,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light-gray body text on a white background is well below the 4.5:1 AA minimum (and 7:1 AAA), so normal-size text fails both levels."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "text-2",
+    "type": "text",
+    "ground_truth_cr": 2.01,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 1.6,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Light gray text on a near-white background yields a very low contrast ratio (~1.6:1), far below the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 1.7,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text on a near-white background yields a very low contrast ratio (~1.7:1), far below the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 1.7,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Light gray text on a near-white background yields a very low contrast ratio well below the 4.5:1 AA threshold for normal body text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 2.1,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text on white has an estimated contrast ratio of about 2.1:1, well below the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 2.1,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text on a white background has only about a 2.1:1 contrast ratio, well below both the 4.5:1 AA and 7:1 AAA thresholds for normal-size body text."
+          },
+          {
+            "estimated_ratio": 2.1,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text on an off-white background provides roughly 2.1:1 contrast, well below both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 2.6,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light-gray normal-size body text on a white background is only about 2.6:1, far below the 4.5:1 AA minimum and the 7:1 AAA minimum."
+          },
+          {
+            "estimated_ratio": 2.6,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The body text is a light gray on a near-white background, yielding roughly a 2.6:1 contrast ratio, which is well below the 4.5:1 AA and 7:1 AAA thresholds for normal text."
+          },
+          {
+            "estimated_ratio": 2.9,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The body text is a medium-light gray on a white background, roughly a 2.9:1 contrast, which is below the 4.5:1 WCAG AA minimum for normal-size text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "text-3",
+    "type": "text",
+    "ground_truth_cr": 3,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 2.5,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Light gray text (approx #9CA0A4) on a near-white background (approx #F8FAFC) yields a low contrast ratio around 2.5:1, below both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 2.5,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray text (~#A0A4A8) on the near-white background (~#F8FAFC) yields roughly 2.5:1, below both the 4.5:1 AA and 7:1 AAA thresholds for normal-size body text."
+          },
+          {
+            "estimated_ratio": 2.6,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Light gray text (~#a2a6aa) on a near-white background (~#f8fafc) yields roughly 2.6:1, below the 4.5:1 AA threshold for normal body text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 2.8,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on the near-white background has an approximate contrast of 2.8:1, well below both the 4.5:1 AA and 7:1 AAA thresholds for normal text."
+          },
+          {
+            "estimated_ratio": 3.3,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on a near-white background has insufficient luminance contrast for normal-size body text, failing both AA (4.5:1) and AAA (7:1)."
+          },
+          {
+            "estimated_ratio": 3.0,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on the near-white background appears to provide only about a 3:1 contrast ratio, which is below both the 4.5:1 AA and 7:1 AAA thresholds for normal-size body text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 3.0,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The normal-size body text is a medium-light gray on a white background, roughly 3:1, which is below the 4.5:1 AA minimum (and far below 7:1 AAA)."
+          },
+          {
+            "estimated_ratio": 3.0,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray body text on a near-white background is visibly low contrast, falling well short of the 4.5:1 AA threshold and the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 3.1,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The normal-size secondary body text is a light gray on a white background, yielding roughly a 3:1 contrast that falls well below the 4.5:1 AA threshold."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "text-4.5",
+    "type": "text",
+    "ground_truth_cr": 4.48,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 3.4,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text (~#8A8D91) on the near-white background (~#F8F9FC) yields roughly 3.4:1, below the 4.5:1 AA threshold for normal-size body text."
+          },
+          {
+            "estimated_ratio": 3.3,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Medium gray text (~#8a8a8a) on a near-white background (~#f8fafc) yields roughly 3.3:1, below the 4.5:1 AA threshold for normal-size text."
+          },
+          {
+            "estimated_ratio": 3.3,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Medium-gray text (~#8a8d91) on a near-white background yields roughly 3.3:1, below the 4.5:1 AA threshold for normal-size body text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 3.5,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The light gray normal-size body text against the white background is approximately 3.5:1, below both the 4.5:1 AA and 7:1 AAA thresholds."
+          },
+          {
+            "estimated_ratio": 4.48,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium gray text on white is approximately 4.48:1, just below the 4.5:1 threshold for normal-size text, so it fails AA and AAA."
+          },
+          {
+            "estimated_ratio": 4.3,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on a white background gives roughly 4.3:1 contrast, below the 4.5:1 AA threshold for normal body text and below 7:1 for AAA."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 4.6,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on a white background yields roughly 4.5\u20134.7:1, which clears the 4.5:1 AA threshold for normal body text but falls well short of the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 4.0,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The gray text is roughly #808080 on a white background (~4:1), which may suffice for large text but is below the 4.5:1 required for normal-size body text, so it fails both AA and AAA."
+          },
+          {
+            "estimated_ratio": 5.4,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium-dark gray text on a near-white background is roughly a 5:1 contrast, clearing the 4.5:1 AA threshold for normal text but falling short of the 7:1 AAA threshold."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "text-5",
+    "type": "text",
+    "ground_truth_cr": 5.02,
+    "gt_aa": true,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 3.9,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Medium gray text (approx #828282) on a near-white background yields roughly 3.9:1, below the 4.5:1 AA threshold for normal-size body text."
+          },
+          {
+            "estimated_ratio": 3.9,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "Medium gray text on a near-white background yields a contrast ratio around 3.9:1, which falls below the 4.5:1 AA threshold for normal-size body text."
+          },
+          {
+            "estimated_ratio": 3.8,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text (~#828282) on the near-white background (~#F8F9FB) yields roughly 3.8:1, below the 4.5:1 AA threshold for normal-size body text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 4.6,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium gray text on a white background is approximately 4.6:1, meeting AA for normal text but not AAA."
+          },
+          {
+            "estimated_ratio": 5.1,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on white is approximately #6E6E6E, yielding a contrast ratio near 5.1:1, which passes AA for normal text but fails AAA."
+          },
+          {
+            "estimated_ratio": 5.4,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on the white background has roughly 5.4:1 contrast, exceeding the 4.5:1 AA threshold for normal text but below the 7:1 AAA threshold."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 5.5,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray body text on a white background is roughly 5-6:1, clearing the 4.5:1 AA minimum for normal text but falling short of the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 4.6,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray body text (about #737373\u2013#767676) on white yields roughly 4.5\u20134.6:1, clearing the AA 4.5:1 threshold for normal text but falling short of AAA's 7:1."
+          },
+          {
+            "estimated_ratio": 4.6,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The text is a medium gray (approximately #767676) on a white background, yielding roughly 4.5-4.7:1, which meets the AA threshold for normal text but falls short of the 7:1 AAA threshold."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "text-7",
+    "type": "text",
+    "ground_truth_cr": 7,
+    "gt_aa": true,
+    "gt_aaa": true,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 5.1,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "Medium-gray text (~#666a6d) on a near-white background (~#f8fafc) yields roughly 5:1 contrast, meeting AA for normal text but falling short of the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 5.0,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "Medium-gray text (around #6b6b6b) on a near-white background yields roughly 5:1 contrast, meeting AA for normal text but falling short of the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 5.5,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "Medium-gray text (approx #666-#6e6e6e) on a near-white background yields roughly 5.5:1, exceeding the 4.5:1 AA threshold for normal text but falling short of the 7:1 AAA requirement."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 6.4,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray text on white is approximately #5f5f5f, giving about 6.4:1 contrast, which meets AA but not AAA for normal-size body text."
+          },
+          {
+            "estimated_ratio": 5.7,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The lighter secondary body text is approximately 5.7:1 against white, so it passes AA but not AAA."
+          },
+          {
+            "estimated_ratio": 5.7,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The gray secondary body text on white is roughly 5.7:1, meeting AA but not AAA for normal-size text."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 8.2,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark-gray body text on a near-white background appears to be around #4a4a4a\u2013#555555, giving roughly 8:1 contrast, which clears both the 4.5:1 AA and 7:1 AAA thresholds for normal text."
+          },
+          {
+            "estimated_ratio": 8.0,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark charcoal-gray text on a near-white background is visibly much darker than mid-gray, yielding a high contrast comfortably above both 4.5:1 and 7:1."
+          },
+          {
+            "estimated_ratio": 7.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text is a dark charcoal gray on a clean white background, giving high contrast comfortably above 4.5:1 and slightly above the 7:1 AAA threshold for normal-size text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      }
+    }
+  },
+  {
+    "id": "text-9",
+    "type": "text",
+    "ground_truth_cr": 9,
+    "gt_aa": true,
+    "gt_aaa": true,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 8.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark gray text (approx #4a4a4a) on a near-white background (approx #f8f9fb) yields a contrast ratio around 8.5:1, exceeding both the 4.5:1 AA and 7:1 AAA thresholds for normal-size body text."
+          },
+          {
+            "estimated_ratio": 8.0,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark gray text (~#4d4d4d) on a near-white background (~#f8f9fb) yields roughly 8:1 contrast, exceeding both the 4.5:1 AA and 7:1 AAA thresholds for normal text."
+          },
+          {
+            "estimated_ratio": 7.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark gray text (approx #4d4d4d) on a near-white background (approx #f8f9fb) yields a contrast ratio around 7.5:1, exceeding both the 4.5:1 AA and 7:1 AAA thresholds for normal text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 7.0,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark gray text on a white background has approximately a 7:1 contrast ratio, meeting AA and AAA thresholds for normal-size text."
+          },
+          {
+            "estimated_ratio": 8.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray text on the near-white background provides strong contrast well above both 4.5:1 and 7:1 thresholds."
+          },
+          {
+            "estimated_ratio": 8.7,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray text has roughly 8.7:1 contrast against the near-white background, exceeding both the 4.5:1 and 7:1 thresholds for normal-size body text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 8.2,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark charcoal-gray body text (roughly #444\u2013#555) on a near-white background produces a contrast ratio well above 4.5:1 and approximately at or above 7:1, so it comfortably satisfies AA and likely AAA for normal-size text."
+          },
+          {
+            "estimated_ratio": 12.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text is a dark charcoal gray (approximately #333333) on a near-white background, producing a contrast ratio far above both the 4.5:1 and 7:1 thresholds."
+          },
+          {
+            "estimated_ratio": 11.2,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text is a dark charcoal gray on a near-white background, giving a high luminance contrast comfortably above both the 4.5:1 and 7:1 thresholds."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      }
+    }
+  },
+  {
+    "id": "text-12",
+    "type": "text",
+    "ground_truth_cr": 12.08,
+    "gt_aa": true,
+    "gt_aaa": true,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 10.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark gray text (approx #3a3a3a) on a near-white background (approx #f9fafb) yields a contrast ratio around 10.5:1, exceeding both the 4.5:1 AA and 7:1 AAA thresholds for normal text."
+          },
+          {
+            "estimated_ratio": 12.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark charcoal text (approx #333) on a near-white background (approx #f8f9fb) yields a high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 12.0,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark charcoal text (approx #333) on a near-white background (approx #f8f9fb) yields a high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal-size body text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 11.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray body text on the near-white background has a high contrast ratio well above both WCAG AA and AAA thresholds."
+          },
+          {
+            "estimated_ratio": 12.3,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray body text on a white background has a contrast ratio well above 7:1, satisfying both AA and AAA for normal text."
+          },
+          {
+            "estimated_ratio": 10.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray text on the near-white background has a high contrast ratio well above the 7:1 AAA threshold for normal-size body text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 12.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text is a dark charcoal gray (approximately #333) on a white background, yielding roughly a 12\u201313:1 contrast ratio, comfortably above both the 4.5:1 AA and 7:1 AAA thresholds."
+          },
+          {
+            "estimated_ratio": 5.7,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The normal-size secondary text is a medium gray (about #666) on a white background, yielding roughly 5.7:1, which clears the 4.5:1 AA threshold but falls short of the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 15.0,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The near-black body text on a clean white background produces a very high contrast ratio, comfortably exceeding both the 4.5:1 AA and 7:1 AAA thresholds."
+          }
+        ],
+        "verdicts": [
+          true,
+          false,
+          true
+        ],
+        "stable_verdict": true
+      }
+    }
+  },
+  {
+    "id": "text-15",
+    "type": "text",
+    "ground_truth_cr": 14.94,
+    "gt_aa": true,
+    "gt_aaa": true,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 12.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark charcoal text (~#2d3436) on a near-white background (~#f8f9fb) yields a high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 12.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark charcoal text on a near-white background yields a high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 12.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Dark charcoal text on a near-white background yields a high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 12.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray text on a white background has very high contrast, well above both AA and AAA thresholds."
+          },
+          {
+            "estimated_ratio": 12.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray text on a near-white background has strong contrast, estimated around 12.6:1, exceeding both AA and AAA thresholds for normal-size body text."
+          },
+          {
+            "estimated_ratio": 12.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The dark gray text has strong contrast against the white background, estimated around 12.6:1, exceeding both AA and AAA thresholds for normal-size text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 12.6,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text is a dark charcoal/near-black on a clean white background, producing a high contrast ratio well above the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 16.1,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text is a near-black dark gray on a clean white background, giving a very high contrast well above the 7:1 AAA threshold."
+          },
+          {
+            "estimated_ratio": 17.4,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The near-black body text on a white background yields a very high contrast ratio, well above both the 4.5:1 AA and 7:1 AAA thresholds."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      }
+    }
+  },
+  {
+    "id": "text-20",
+    "type": "text",
+    "ground_truth_cr": 20.03,
+    "gt_aa": true,
+    "gt_aaa": true,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 18.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Near-black text on a near-white background yields a very high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 18.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Near-black text on a near-white background yields a very high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          },
+          {
+            "estimated_ratio": 18.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "Near-black text on a near-white background yields a very high contrast ratio well above both the 4.5:1 AA and 7:1 AAA thresholds for normal body text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 18.5,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The text is essentially black on a white background, giving a very high contrast ratio well above both 4.5:1 and 7:1 thresholds."
+          },
+          {
+            "estimated_ratio": 21,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text appears essentially black on a white background, producing a very high contrast ratio well above both AA and AAA thresholds."
+          },
+          {
+            "estimated_ratio": 21,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The text appears near-black on a white background, giving a very high contrast ratio well above both WCAG AA and AAA thresholds for normal-size body text."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 21,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The text appears to be near-pure black on a pure white background, yielding the maximum WCAG contrast ratio of about 21:1, which far exceeds both AA and AAA thresholds."
+          },
+          {
+            "estimated_ratio": 21,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text appears essentially black on a pure white background, yielding a near-maximum contrast ratio around 21:1, well above both AA and AAA thresholds."
+          },
+          {
+            "estimated_ratio": 21,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The body text appears essentially black on a white background, giving a contrast ratio near 21:1, which exceeds both the 4.5:1 AA and 7:1 AAA thresholds."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      }
+    }
+  },
+  {
+    "id": "focus-1",
+    "type": "focus",
+    "ground_truth_cr": 1.01,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 1.05,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The dark gray ring (~#4d4d4d) and the blue fill (~#1e46b4) have nearly identical relative luminance, yielding a contrast ratio of about 1.05:1, far below the 3:1 required by WCAG 1.4.11/2.4.13."
+          },
+          {
+            "estimated_ratio": 1.1,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The dark gray ring (~#555) and blue fill (~#2244BB) have nearly equal relative luminance, yielding only about 1.1:1 contrast, far below the 3:1 required by WCAG 1.4.11/2.4.13."
+          },
+          {
+            "estimated_ratio": 1.1,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The dark gray ring (~#555) and the blue fill (~#2244BB) have nearly equal relative luminance, yielding about 1.1:1 contrast, far below the 3:1 required by WCAG 1.4.11/2.4.13."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 1.1,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The dark gray ring and dark blue fill have nearly identical luminance, yielding roughly 1.1:1 contrast, well below the 3:1 threshold."
+          },
+          {
+            "estimated_ratio": 1.1,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The dark gray focus ring and blue button fill have very similar luminance, yielding an estimated contrast near 1.1:1, well below the 3:1 requirement."
+          },
+          {
+            "estimated_ratio": 1.15,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The dark gray ring and the blue button fill have very similar luminance, giving a contrast ratio well below the required 3:1."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 1.8,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The dark gray ring (\u2248#4a4a4a) against the medium blue fill (\u2248#3b5bdb) yields only roughly 1.6\u20131.9:1, well below the required 3:1, so the focus indicator is not visible."
+          },
+          {
+            "estimated_ratio": 1.5,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The charcoal focus ring (~L 0.05) and royal-blue fill (~L 0.10) differ only modestly in relative luminance, giving roughly 1.5:1, well below the required 3:1."
+          },
+          {
+            "estimated_ratio": 1.3,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The charcoal ring (~#3d3d3d) against the medium-blue fill (~#2e449e) yields only ~1.3:1, far below 3:1; even a pure-black ring would reach only ~2.4:1 against this fill."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "focus-1.5",
+    "type": "focus",
+    "ground_truth_cr": 1.5,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 1.55,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The mid-gray ring (~#6E6E6E) against the blue fill (~#1F47B8) yields only about 1.5:1 contrast, well below the 3:1 required by WCAG 1.4.11/2.4.13."
+          },
+          {
+            "estimated_ratio": 1.6,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The mid-gray ring (~#707070) against the blue fill (~#1F47B0) yields only about 1.6:1 contrast, below the 3:1 minimum required for a visible focus indicator."
+          },
+          {
+            "estimated_ratio": 1.6,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The mid-gray ring (~#707070) against the blue fill (~#2244BB) yields only about 1.6:1 contrast, below the 3:1 minimum required by WCAG 1.4.11/2.4.13."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 1.4,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The grey focus ring has an estimated contrast of about 1.4:1 against the blue button fill, well below the 3:1 threshold."
+          },
+          {
+            "estimated_ratio": 1.5,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The gray focus ring and blue button fill have similar luminance, yielding a contrast ratio far below the 3:1 required for a visible focus indicator."
+          },
+          {
+            "estimated_ratio": 1.4,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium gray ring against the blue fill produces about 1.4:1 contrast, well below the 3:1 threshold."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 2.0,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray ring is only slightly lighter in luminance than the deep blue fill, giving roughly a 2:1 contrast, which is below the required 3:1."
+          },
+          {
+            "estimated_ratio": 1.7,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray ring (~#5f6368) against the dark indigo fill (~#2e3a87) yields only about 1.7:1, well below the required 3:1, so the focus indicator is not adequately visible."
+          },
+          {
+            "estimated_ratio": 1.8,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The gray focus ring is only about 1.8:1 against the dark blue button fill, below the required 3:1, so the focus indicator is not sufficiently visible."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "focus-2",
+    "type": "focus",
+    "ground_truth_cr": 2,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 2.1,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The mid-gray ring (~#808080) against the blue fill (~#2046B0) yields only about 2.1:1 contrast, below the 3:1 minimum required by WCAG 1.4.11/2.4.13 for a visible focus indicator."
+          },
+          {
+            "estimated_ratio": 2.0,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The mid-gray ring (~#808080) against the blue fill (~#1F47B8) yields only about 2:1 contrast, below the 3:1 minimum required by WCAG 1.4.11/2.4.13."
+          },
+          {
+            "estimated_ratio": 2.1,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The mid-gray ring (~#808080) against the blue fill (~#2046B0) yields only about 2.1:1 contrast, below the 3:1 minimum required for a visible focus indicator."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 1.7,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The gray focus ring and blue button fill have similar luminance, giving roughly 1.7:1 contrast, below the required 3:1."
+          },
+          {
+            "estimated_ratio": 1.5,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The gray focus ring and blue button fill have similar luminance, producing roughly 1.5:1 contrast, well below the 3:1 requirement."
+          },
+          {
+            "estimated_ratio": 1.8,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium gray focus ring against the blue button fill is approximately 1.8:1, well below the required 3:1 contrast."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 1.8,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray ring (~#777) is close in relative luminance to the dark blue fill (~#2B44B8), yielding roughly 1.8:1, well below the required 3:1 against the adjacent fill."
+          },
+          {
+            "estimated_ratio": 2.4,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray ring has only about 2.4:1 luminance contrast against the dark blue button fill, which is below the 3:1 minimum required by WCAG 1.4.11 and 2.4.13."
+          },
+          {
+            "estimated_ratio": 1.8,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray ring (~#787878) is close in luminance to the royal-blue fill (~#2E4AA3), yielding only ~1.8:1, well under the 3:1 needed for a visible focus indicator."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "focus-3",
+    "type": "focus",
+    "ground_truth_cr": 2.99,
+    "gt_aa": false,
+    "gt_aaa": false,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 3.46,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The mid-gray ring (~#A9A9A9, L\u22480.40) against the blue fill (~#1F47B0, L\u22480.08) yields roughly 3.5:1, exceeding the 3:1 non-text contrast threshold required by 1.4.11 and 2.4.13."
+          },
+          {
+            "estimated_ratio": 3.5,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The mid-gray ring (~#A9A9A9) against the blue fill (~#2244B0) yields roughly 3.5:1 contrast, exceeding the 3:1 threshold required by WCAG 1.4.11 and 2.4.13."
+          },
+          {
+            "estimated_ratio": 3.45,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The light gray ring (~#A9A9A9) against the blue fill (~#1F47B0) yields roughly 3.4:1 contrast, exceeding the 3:1 minimum for a visible focus indicator under 1.4.11/2.4.13."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 2.3,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The gray focus ring against the blue button fill is approximately 2.3:1, below the required 3:1 contrast threshold."
+          },
+          {
+            "estimated_ratio": 2.5,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The grey focus ring against the blue fill is approximately 2.5:1, below the 3:1 minimum for visible focus/non-text contrast."
+          },
+          {
+            "estimated_ratio": 2.6,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium gray ring against the royal blue fill is only about 2.6:1, below the 3:1 threshold."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 2.3,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray ring (~#8d8d8d, relative luminance ~0.26) against the blue fill (~#2e4fa0, luminance ~0.085) gives only about 2.3:1, below the required 3:1 with the adjacent fill."
+          },
+          {
+            "estimated_ratio": 2.9,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The gray ring (~#9E9E9E, L\u22480.34) against the blue fill (~#2C4CA9, L\u22480.09) is about (0.39/0.14) \u2248 2.9:1, below the required 3:1."
+          },
+          {
+            "estimated_ratio": 2.4,
+            "focus_visible": false,
+            "aa_pass": false,
+            "aaa_pass": false,
+            "reasoning": "The medium-gray ring (~#8f8f8f) is only about 2.4:1 against the dark blue fill (~#2f4ca6), below the required 3:1, even though it is distinguishable from the light page background."
+          }
+        ],
+        "verdicts": [
+          false,
+          false,
+          false
+        ],
+        "stable_verdict": false
+      }
+    }
+  },
+  {
+    "id": "focus-5",
+    "type": "focus",
+    "ground_truth_cr": 4.98,
+    "gt_aa": true,
+    "gt_aaa": true,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 5.4,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray ring (~#D3D3D3) against the blue fill (~#1E46B4) yields roughly 5.4:1 contrast, exceeding the 3:1 minimum for non-text focus indicators."
+          },
+          {
+            "estimated_ratio": 5.7,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray ring (~#D9D9D9) against the dark blue fill (~#1E46B4) yields roughly 5.7:1 contrast, well above the 3:1 minimum required for a visible focus indicator."
+          },
+          {
+            "estimated_ratio": 5.5,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray ring (~#D3D3D3) against the dark blue fill (~#2244B0) yields roughly 5.5:1 contrast, comfortably exceeding the 3:1 minimum for focus indicators under WCAG 1.4.11/2.4.13."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 3.9,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray focus ring is sufficiently distinct from the blue button fill, with an estimated contrast ratio near 3.9:1, exceeding the 3:1 threshold."
+          },
+          {
+            "estimated_ratio": 3.2,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray ring against the blue fill has approximately 3.2:1 contrast, meeting the 3:1 focus-indicator threshold."
+          },
+          {
+            "estimated_ratio": 4.3,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray focus ring contrasts strongly with the dark blue button fill, exceeding the 3:1 requirement for focus visibility and focus appearance."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 6.3,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": false,
+            "reasoning": "The light gray ring versus the dark blue fill is about 6.3:1, clearly above the 3:1 AA focus/non-text threshold; no separate AAA threshold applies to 1.4.11/2.4.13."
+          },
+          {
+            "estimated_ratio": 4.0,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray ring (~#BFBFBF, relative luminance ~0.53) against the dark indigo fill (~#3F51B5, luminance ~0.10) gives roughly 4:1, exceeding the 3:1 minimum."
+          },
+          {
+            "estimated_ratio": 4.3,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The light gray focus ring is substantially lighter than the dark blue button fill, giving roughly 4.3:1 contrast, above the 3:1 threshold."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      }
+    }
+  },
+  {
+    "id": "focus-8",
+    "type": "focus",
+    "ground_truth_cr": 8,
+    "gt_aa": true,
+    "gt_aaa": true,
+    "judges": {
+      "qwen4-max-preview": {
+        "runs": [
+          {
+            "estimated_ratio": 8.7,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The white focus ring against the deep blue button fill yields a high contrast ratio (~8.7:1), well above the 3:1 minimum required by WCAG 1.4.11/2.4.13."
+          },
+          {
+            "estimated_ratio": 8.7,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The white focus ring against the dark blue button fill yields roughly 8.7:1 contrast, well above the 3:1 minimum required by WCAG 1.4.11/2.4.13."
+          },
+          {
+            "estimated_ratio": 8.0,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The white focus ring against the dark blue button fill yields roughly an 8:1 contrast ratio, well above the 3:1 minimum required by WCAG 1.4.11/2.4.13."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "deepseek-flash": {
+        "runs": [
+          {
+            "estimated_ratio": 8.3,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The near-white focus ring against the dark blue button fill has approximately 8.3:1 contrast, exceeding the 3:1 focus-indicator threshold."
+          },
+          {
+            "estimated_ratio": 8.8,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The white focus ring against the dark blue button fill has approximately 8.8:1 contrast, well above the 3:1 minimum for a visible focus indicator."
+          },
+          {
+            "estimated_ratio": 7.9,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The white focus ring has strong contrast against the blue button fill, approximately 7.9:1, exceeding the 3:1 threshold."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      },
+      "LongCat-2.5": {
+        "runs": [
+          {
+            "estimated_ratio": 7.6,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The near-white focus ring against the deep blue button fill is roughly 7.5:1, well above the 3:1 minimum for visible focus/non-text contrast."
+          },
+          {
+            "estimated_ratio": 7.4,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The white focus ring against the medium-blue button fill yields roughly 7.4:1, well above the 3:1 minimum required by WCAG 1.4.11 and 2.4.13."
+          },
+          {
+            "estimated_ratio": 8.0,
+            "focus_visible": true,
+            "aa_pass": true,
+            "aaa_pass": true,
+            "reasoning": "The white focus ring is about 8:1 against the blue button fill, exceeding the required 3:1 and making the indicator clearly visible."
+          }
+        ],
+        "verdicts": [
+          true,
+          true,
+          true
+        ],
+        "stable_verdict": true
+      }
+    }
+  }
+]

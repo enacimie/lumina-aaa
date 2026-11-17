@@ -1,0 +1,62 @@
+{
+  "method": "3x3 (3 judges x 3 runs; per-judge majority, then cross-judge majority)",
+  "panel": [
+    "qwen4-max-preview",
+    "deepseek-flash",
+    "LongCat-2.5"
+  ],
+  "conditions": "pure VLM, image+prompt only, official API, no tools, thinking enabled, generous max_tokens",
+  "ground_truth": "LUMINA deterministic oracle",
+  "n_stimuli": 16,
+  "per_judge": {
+    "qwen4-max-preview": {
+      "stable_correct": 14,
+      "total": 16,
+      "stable_accuracy": 0.875,
+      "ratio_mae": 0.775,
+      "misjudged": [
+        "text-7",
+        "focus-3"
+      ],
+      "runs_disagree": 0
+    },
+    "deepseek-flash": {
+      "stable_correct": 15,
+      "total": 16,
+      "stable_accuracy": 0.938,
+      "ratio_mae": 0.615,
+      "misjudged": [
+        "text-7"
+      ],
+      "runs_disagree": 0
+    },
+    "LongCat-2.5": {
+      "stable_correct": 16,
+      "total": 16,
+      "stable_accuracy": 1.0,
+      "ratio_mae": 0.884,
+      "misjudged": [],
+      "runs_disagree": 1
+    }
+  },
+  "pairwise_agreement": {
+    "qwen4-max-preview|deepseek-flash": {
+      "agree": 15,
+      "total": 16,
+      "rate": 0.938
+    },
+    "qwen4-max-preview|LongCat-2.5": {
+      "agree": 14,
+      "total": 16,
+      "rate": 0.875
+    },
+    "deepseek-flash|LongCat-2.5": {
+      "agree": 15,
+      "total": 16,
+      "rate": 0.938
+    }
+  },
+  "majority_of_3_matches_oracle": 15,
+  "unanimous_3_matches_oracle": 14,
+  "unanimous_3_total": 16
+}

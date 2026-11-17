@@ -1,0 +1,954 @@
+{
+  "oracle": "LUMINA verifyAllPairs (lib/audit.js)",
+  "profile": "wcag-aaa",
+  "pairKinds": 116,
+  "rolesTotal": 59,
+  "frameworks": [
+    {
+      "name": "Bootstrap",
+      "version": "5.3.3",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "rolesProvided": 18,
+          "pairsResolved": 33,
+          "pairsPending": 83,
+          "contrastPairs": 26,
+          "wcagAA": 16,
+          "wcagAAA": 10,
+          "textPairs": 17,
+          "textAAA": 9,
+          "blockingFailures": 12,
+          "bodyTextCR": 15.43,
+          "focusRingCR": 1.41,
+          "failures": [
+            {
+              "pair": "text.secondary / background.default",
+              "class": "text",
+              "cr": 6.73,
+              "required": 7
+            },
+            {
+              "pair": "text.secondary / background.surface",
+              "class": "text",
+              "cr": 5.67,
+              "required": 7
+            },
+            {
+              "pair": "text.secondary / background.subtle",
+              "class": "text",
+              "cr": 6.38,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 4.5,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 4.5,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 3.8,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 4.27,
+              "required": 7
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 1.3,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.1,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.subtle",
+              "class": "non-text",
+              "cr": 1.24,
+              "required": 3
+            },
+            {
+              "pair": "focus.ring / background.default",
+              "class": "focus",
+              "cr": 1.41,
+              "required": 3
+            },
+            {
+              "pair": "focus.ring / background.surface",
+              "class": "focus",
+              "cr": 1.19,
+              "required": 3
+            }
+          ]
+        },
+        "dark": {
+          "rolesProvided": 18,
+          "pairsResolved": 33,
+          "pairsPending": 83,
+          "contrastPairs": 26,
+          "wcagAA": 17,
+          "wcagAAA": 10,
+          "textPairs": 17,
+          "textAAA": 10,
+          "blockingFailures": 12,
+          "bodyTextCR": 11.85,
+          "focusRingCR": 1.29,
+          "failures": [
+            {
+              "pair": "text.secondary / background.surface",
+              "class": "text",
+              "cr": 5.45,
+              "required": 7
+            },
+            {
+              "pair": "text.secondary / background.subtle",
+              "class": "text",
+              "cr": 6.31,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 4.5,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 6.39,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 4.76,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 5.51,
+              "required": 7
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 1.89,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.41,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.subtle",
+              "class": "non-text",
+              "cr": 1.63,
+              "required": 3
+            },
+            {
+              "pair": "interactive.primary.default / background.surface",
+              "class": "non-text",
+              "cr": 2.56,
+              "required": 3
+            },
+            {
+              "pair": "focus.ring / background.default",
+              "class": "focus",
+              "cr": 1.29,
+              "required": 3
+            },
+            {
+              "pair": "focus.ring / background.surface",
+              "class": "focus",
+              "cr": 1.04,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Carbon",
+      "version": "11.85.0",
+      "source": "npm @carbon/themes (white, g100)",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "rolesProvided": 14,
+          "pairsResolved": 24,
+          "pairsPending": 92,
+          "contrastPairs": 21,
+          "wcagAA": 18,
+          "wcagAAA": 13,
+          "textPairs": 12,
+          "textAAA": 7,
+          "blockingFailures": 4,
+          "bodyTextCR": 18.1,
+          "focusRingCR": 5,
+          "failures": [
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 5,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 5,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 4.55,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 5,
+              "required": 7
+            }
+          ]
+        },
+        "dark": {
+          "rolesProvided": 14,
+          "pairsResolved": 24,
+          "pairsPending": 92,
+          "contrastPairs": 21,
+          "wcagAA": 15,
+          "wcagAAA": 12,
+          "textPairs": 12,
+          "textAAA": 7,
+          "blockingFailures": 6,
+          "bodyTextCR": 16.45,
+          "focusRingCR": 18.1,
+          "failures": [
+            {
+              "pair": "text.secondary / background.subtle",
+              "class": "text",
+              "cr": 6.76,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 3.35,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 6.43,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 4.9,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text-large",
+              "cr": 3.35,
+              "required": 4.5
+            },
+            {
+              "pair": "border.default / background.subtle",
+              "class": "non-text",
+              "cr": 2.3,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Fluent",
+      "version": "1.0.0-alpha.24",
+      "source": "npm @fluentui/tokens (webLightTheme, webDarkTheme)",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "rolesProvided": 17,
+          "pairsResolved": 29,
+          "pairsPending": 87,
+          "contrastPairs": 23,
+          "wcagAA": 17,
+          "wcagAAA": 9,
+          "textPairs": 15,
+          "textAAA": 7,
+          "blockingFailures": 10,
+          "bodyTextCR": 15.52,
+          "focusRingCR": 5.38,
+          "failures": [
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 5.38,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 5.16,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 4.94,
+              "required": 7
+            },
+            {
+              "pair": "feedback.success.text / feedback.success.background",
+              "class": "text",
+              "cr": 5.89,
+              "required": 7
+            },
+            {
+              "pair": "feedback.warning.text / feedback.warning.background",
+              "class": "text",
+              "cr": 4.68,
+              "required": 7
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text",
+              "cr": 5.48,
+              "required": 7
+            },
+            {
+              "pair": "feedback.info.text / feedback.info.background",
+              "class": "text",
+              "cr": 4.81,
+              "required": 7
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 1.53,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.46,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.subtle",
+              "class": "non-text",
+              "cr": 1.4,
+              "required": 3
+            }
+          ]
+        },
+        "dark": {
+          "rolesProvided": 17,
+          "pairsResolved": 29,
+          "pairsPending": 87,
+          "contrastPairs": 23,
+          "wcagAA": 18,
+          "wcagAAA": 11,
+          "textPairs": 15,
+          "textAAA": 8,
+          "blockingFailures": 8,
+          "bodyTextCR": 14.55,
+          "focusRingCR": 5.18,
+          "failures": [
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 5.18,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 5.87,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 6.56,
+              "required": 7
+            },
+            {
+              "pair": "feedback.success.text / feedback.success.background",
+              "class": "text",
+              "cr": 6.06,
+              "required": 7
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text",
+              "cr": 5.81,
+              "required": 7
+            },
+            {
+              "pair": "feedback.info.text / feedback.info.background",
+              "class": "text",
+              "cr": 5.72,
+              "required": 7
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 2.53,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 2.87,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Material Design 3",
+      "version": "0.4.0",
+      "source": "npm @material/material-color-utilities, SchemeTonalSpot(seed #6750A4, contrast 0)",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "rolesProvided": 12,
+          "pairsResolved": 27,
+          "pairsPending": 89,
+          "contrastPairs": 23,
+          "wcagAA": 20,
+          "wcagAAA": 15,
+          "textPairs": 14,
+          "textAAA": 9,
+          "blockingFailures": 4,
+          "bodyTextCR": 16.2,
+          "focusRingCR": 6.13,
+          "failures": [
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 6.46,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 6.13,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 5.87,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 5.27,
+              "required": 7
+            }
+          ]
+        },
+        "dark": {
+          "rolesProvided": 12,
+          "pairsResolved": 27,
+          "pairsPending": 89,
+          "contrastPairs": 23,
+          "wcagAA": 20,
+          "wcagAAA": 20,
+          "textPairs": 14,
+          "textAAA": 14,
+          "blockingFailures": 0,
+          "bodyTextCR": 14.35,
+          "focusRingCR": 10.95,
+          "failures": []
+        }
+      }
+    },
+    {
+      "name": "Ant Design",
+      "version": "6.7.1",
+      "source": "npm antd theme.getDesignToken(defaultSeed[, darkAlgorithm])",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "rolesProvided": 19,
+          "pairsResolved": 33,
+          "pairsPending": 83,
+          "contrastPairs": 24,
+          "wcagAA": 9,
+          "wcagAAA": 7,
+          "textPairs": 16,
+          "textAAA": 4,
+          "blockingFailures": 14,
+          "bodyTextCR": 15.12,
+          "focusRingCR": 3.76,
+          "failures": [
+            {
+              "pair": "text.secondary / background.default",
+              "class": "text",
+              "cr": 6.42,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 4.1,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.hover",
+              "class": "text",
+              "cr": 2.99,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.active",
+              "class": "text",
+              "cr": 6.16,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 3.76,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 4.1,
+              "required": 7
+            },
+            {
+              "pair": "feedback.success.text / feedback.success.background",
+              "class": "text",
+              "cr": 2.21,
+              "required": 7
+            },
+            {
+              "pair": "feedback.warning.text / feedback.warning.background",
+              "class": "text",
+              "cr": 1.83,
+              "required": 7
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text",
+              "cr": 2.99,
+              "required": 7
+            },
+            {
+              "pair": "feedback.info.text / feedback.info.background",
+              "class": "text",
+              "cr": 3.66,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text-large",
+              "cr": 4.1,
+              "required": 4.5
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text-large",
+              "cr": 2.99,
+              "required": 4.5
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 1.29,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.41,
+              "required": 3
+            }
+          ]
+        },
+        "dark": {
+          "rolesProvided": 19,
+          "pairsResolved": 33,
+          "pairsPending": 83,
+          "contrastPairs": 24,
+          "wcagAA": 13,
+          "wcagAAA": 9,
+          "textPairs": 16,
+          "textAAA": 6,
+          "blockingFailures": 11,
+          "bodyTextCR": 15.31,
+          "focusRingCR": 4.05,
+          "failures": [
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 5.19,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.hover",
+              "class": "text",
+              "cr": 3.54,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 4.05,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 3.55,
+              "required": 7
+            },
+            {
+              "pair": "feedback.success.text / feedback.success.background",
+              "class": "text",
+              "cr": 5.49,
+              "required": 7
+            },
+            {
+              "pair": "feedback.warning.text / feedback.warning.background",
+              "class": "text",
+              "cr": 6.24,
+              "required": 7
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text",
+              "cr": 4.01,
+              "required": 7
+            },
+            {
+              "pair": "feedback.info.text / feedback.info.background",
+              "class": "text",
+              "cr": 3.35,
+              "required": 7
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text-large",
+              "cr": 4.01,
+              "required": 4.5
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 2.09,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.83,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "USWDS",
+      "version": "3.14.0",
+      "source": "npm @uswds/uswds dist/css/uswds.min.css (semantic utilities); light only, no default dark theme",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "rolesProvided": 18,
+          "pairsResolved": 33,
+          "pairsPending": 83,
+          "contrastPairs": 26,
+          "wcagAA": 12,
+          "wcagAAA": 6,
+          "textPairs": 17,
+          "textAAA": 4,
+          "blockingFailures": 16,
+          "bodyTextCR": 17.22,
+          "focusRingCR": 3.2,
+          "failures": [
+            {
+              "pair": "text.secondary / background.default",
+              "class": "text",
+              "cr": 4.59,
+              "required": 7
+            },
+            {
+              "pair": "text.secondary / background.surface",
+              "class": "text",
+              "cr": 4.03,
+              "required": 7
+            },
+            {
+              "pair": "text.secondary / background.subtle",
+              "class": "text",
+              "cr": 4.03,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 6.72,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 6.72,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 5.9,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 5.9,
+              "required": 7
+            },
+            {
+              "pair": "feedback.success.text / feedback.success.background",
+              "class": "text",
+              "cr": 2.78,
+              "required": 7
+            },
+            {
+              "pair": "feedback.warning.text / feedback.warning.background",
+              "class": "text",
+              "cr": 1.49,
+              "required": 7
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text",
+              "cr": 3.64,
+              "required": 7
+            },
+            {
+              "pair": "feedback.info.text / feedback.info.background",
+              "class": "text",
+              "cr": 2.02,
+              "required": 7
+            },
+            {
+              "pair": "feedback.error.text / feedback.error.background",
+              "class": "text-large",
+              "cr": 3.64,
+              "required": 4.5
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 2.24,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.97,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.subtle",
+              "class": "non-text",
+              "cr": 1.97,
+              "required": 3
+            },
+            {
+              "pair": "focus.ring / background.surface",
+              "class": "focus",
+              "cr": 2.81,
+              "required": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Tailwind CSS",
+      "version": "3.4.19",
+      "source": "npm tailwindcss/colors.js (primitive scales; typical-usage interpretation, disclosed)",
+      "kind": "primitive-comparator",
+      "themes": {
+        "light": {
+          "rolesProvided": 14,
+          "pairsResolved": 24,
+          "pairsPending": 92,
+          "contrastPairs": 21,
+          "wcagAA": 15,
+          "wcagAAA": 9,
+          "textPairs": 12,
+          "textAAA": 6,
+          "blockingFailures": 8,
+          "bodyTextCR": 17.74,
+          "focusRingCR": 3.68,
+          "failures": [
+            {
+              "pair": "text.secondary / background.subtle",
+              "class": "text",
+              "cr": 6.87,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 5.17,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 5.17,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 4.95,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 4.7,
+              "required": 7
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 1.47,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.41,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.subtle",
+              "class": "non-text",
+              "cr": 1.34,
+              "required": 3
+            }
+          ]
+        },
+        "dark": {
+          "rolesProvided": 14,
+          "pairsResolved": 24,
+          "pairsPending": 92,
+          "contrastPairs": 21,
+          "wcagAA": 11,
+          "wcagAAA": 7,
+          "textPairs": 12,
+          "textAAA": 4,
+          "blockingFailures": 11,
+          "bodyTextCR": 16.12,
+          "focusRingCR": 6.98,
+          "failures": [
+            {
+              "pair": "text.secondary / background.default",
+              "class": "text",
+              "cr": 6.99,
+              "required": 7
+            },
+            {
+              "pair": "text.secondary / background.surface",
+              "class": "text",
+              "cr": 5.78,
+              "required": 7
+            },
+            {
+              "pair": "text.secondary / background.subtle",
+              "class": "text",
+              "cr": 4.06,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text",
+              "cr": 3.68,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.default",
+              "class": "text",
+              "cr": 6.98,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.surface",
+              "class": "text",
+              "cr": 5.77,
+              "required": 7
+            },
+            {
+              "pair": "text.link / background.subtle",
+              "class": "text",
+              "cr": 4.05,
+              "required": 7
+            },
+            {
+              "pair": "text.on-primary / interactive.primary.default",
+              "class": "text-large",
+              "cr": 3.68,
+              "required": 4.5
+            },
+            {
+              "pair": "border.default / background.default",
+              "class": "non-text",
+              "cr": 2.35,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.surface",
+              "class": "non-text",
+              "cr": 1.94,
+              "required": 3
+            },
+            {
+              "pair": "border.default / background.subtle",
+              "class": "non-text",
+              "cr": 1.36,
+              "required": 3
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

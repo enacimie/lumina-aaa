@@ -34,6 +34,16 @@ exactly as returned by the verification APIs.
   `npm run serve`, then open http://localhost:8123/demo/)
 - `docs/paper/data/`: machine-generated empirical data for the evaluation
   (`tools/paper-data.mjs` regenerates it)
+- `docs/gallery/`: static gallery of 33 rendered pages (8 brands x 3 themes,
+  profiles, controlled defects) with an axe-core layer and a navigable index;
+  served at `https://enacimie.github.io/lumina-aaa/gallery/`
+- `tools/framework-audit/`: crosswalks published design-system tokens to the
+  role matrix and audits them at WCAG AAA (`npm run all`)
+- `tools/static-gallery/`: regenerates the gallery, its index and the axe-core
+  results (`npm run all`, needs Chrome)
+- `tools/convergence/`: 16 controlled stimuli with oracle ground truth, judged
+  by three pure vision-language models under a 3x3 protocol (3 runs per judge,
+  majority verdicts, thinking enabled; `npm run all3x3`, needs API keys)
 - `archive/`: the original v0.2 chat export, kept as evidence
 
 ## Usage

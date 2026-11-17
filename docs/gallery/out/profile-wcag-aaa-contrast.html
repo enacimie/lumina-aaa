@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUMINA gallery — profile-wcag-aaa-contrast</title>
+<style>
+:root {
+  --lum-background-subtle: #DEDEDE;
+  --lum-background-default: #FFFFFF;
+  --lum-background-surface: #FFFFFF;
+  --lum-background-raised: #FFFFFF;
+  --lum-background-disabled: #DEDEDE;
+  --lum-background-inverse: #000000;
+  --lum-text-primary: #000000;
+  --lum-text-secondary: #000000;
+  --lum-text-disabled: #464646;
+  --lum-text-on-surface: #000000;
+  --lum-text-inverse: #FFFFFF;
+  --lum-interactive-secondary-default: #FFFFFF;
+  --lum-interactive-secondary-hover: #E4E4E4;
+  --lum-interactive-secondary-active: #CACACA;
+  --lum-interactive-ghost-default: #FFFFFF;
+  --lum-interactive-ghost-hover: #E6E6E6;
+  --lum-focus-ring: #000000;
+  --lum-text-link: #060285;
+  --lum-text-on-primary: #FFFFFF;
+  --lum-interactive-primary-default: #1534AA;
+  --lum-interactive-primary-hover: #07158F;
+  --lum-interactive-primary-active: #030067;
+  --lum-interactive-primary-focus: #1534AA;
+  --lum-focus-inner: #FFFFFF;
+  --lum-interactive-selected: #AFBEE0;
+  --lum-interactive-disabled: #B3B3B3;
+  --lum-feedback-success-background: #D3F9E3;
+  --lum-feedback-success-text: #00482D;
+  --lum-feedback-success-border: #007F52;
+  --lum-feedback-success-icon: #007F52;
+  --lum-feedback-warning-background: #FFEBD5;
+  --lum-feedback-warning-text: #583500;
+  --lum-feedback-warning-border: #9A6100;
+  --lum-feedback-warning-icon: #9A6100;
+  --lum-feedback-error-background: #FFE8E8;
+  --lum-feedback-error-text: #7F0023;
+  --lum-feedback-error-border: #C42744;
+  --lum-feedback-error-icon: #C42744;
+  --lum-feedback-info-background: #E7EFFF;
+  --lum-feedback-info-text: #0A2098;
+  --lum-feedback-info-border: #3159D1;
+  --lum-feedback-info-icon: #3159D1;
+  --lum-border-default: #3E3E3E;
+  --lum-border-strong: #000000;
+  --lum-border-subtle: #626262;
+  --lum-border-focus: #3159D1;
+  --lum-border-error: #8F0028;
+  --lum-chart-background: #FFFFFF;
+  --lum-chart-surface: #FFFFFF;
+  --lum-chart-label: #000000;
+  --lum-chart-axis: #515151;
+  --lum-chart-grid: #959595;
+  --lum-chart-series-1: #5026A8;
+  --lum-chart-series-2: #D34900;
+  --lum-chart-series-3: #008680;
+  --lum-chart-series-4: #7D272E;
+  --lum-chart-series-5: #7A5BDE;
+  --lum-chart-series-6: #005A5E;
+  --lum-background-overlay: #333333;
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, Arial, sans-serif; background: var(--lum-background-default); color: var(--lum-text-primary); }
+header { padding:16px 24px; background: var(--lum-background-surface); border-bottom:1px solid var(--lum-border-default); display:flex; gap:16px; align-items:center; }
+header h1 { font-size:18px; margin:0; }
+a { color: var(--lum-text-link); }
+nav a { margin-right:14px; }
+main { padding:24px; max-width:900px; margin:0 auto; }
+section { margin-bottom:28px; }
+h2 { font-size:15px; color: var(--lum-text-secondary); }
+.row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.btn { padding:10px 18px; border-radius:8px; font-size:15px; border:1px solid transparent; cursor:pointer; }
+.btn-primary { background: var(--lum-interactive-primary-default); color: var(--lum-text-on-primary); }
+.btn-secondary { background: var(--lum-interactive-secondary-default); color: var(--lum-text-primary); border-color: var(--lum-border-default); }
+.btn-ghost { background: var(--lum-interactive-ghost-default); color: var(--lum-text-link); }
+.btn:focus-visible { outline:none; box-shadow: 0 0 0 2px var(--lum-focus-inner), 0 0 0 4px var(--lum-focus-ring); }
+label { display:block; margin:8px 0 4px; color: var(--lum-text-secondary); font-size:14px; }
+input[type=text] { padding:10px 12px; border-radius:8px; border:1px solid var(--lum-border-default); background: var(--lum-background-surface); color: var(--lum-text-primary); font-size:15px; width:280px; }
+input[type=text]:focus { outline:none; box-shadow: 0 0 0 2px var(--lum-focus-inner), 0 0 0 4px var(--lum-focus-ring); border-color: var(--lum-border-focus); }
+.alert { padding:12px 16px; border-radius:8px; border:1px solid; margin:8px 0; }
+.alert-success { background: var(--lum-feedback-success-background); color: var(--lum-feedback-success-text); border-color: var(--lum-feedback-success-border); }
+.alert-warning { background: var(--lum-feedback-warning-background); color: var(--lum-feedback-warning-text); border-color: var(--lum-feedback-warning-border); }
+.alert-error { background: var(--lum-feedback-error-background); color: var(--lum-feedback-error-text); border-color: var(--lum-feedback-error-border); }
+.alert-info { background: var(--lum-feedback-info-background); color: var(--lum-feedback-info-text); border-color: var(--lum-feedback-info-border); }
+.card { background: var(--lum-background-surface); border:1px solid var(--lum-border-subtle); border-radius:12px; padding:16px; }
+.card p { color: var(--lum-text-secondary); }
+.muted { color: var(--lum-text-disabled); }
+.chart { display:flex; gap:8px; }
+.sw { width:48px; height:48px; border-radius:8px; }
+small { color: var(--lum-text-secondary); }
+</style></head><body>
+<header><h1>LUMINA gallery — profile-wcag-aaa-contrast</h1><nav><a href="#">Home</a><a href="#">Docs</a><a href="#">Settings</a></nav></header>
+<main>
+<section><h2>Buttons</h2><div class="row">
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-ghost">Ghost</button>
+<button class="btn btn-primary" disabled>Disabled</button>
+</div></section>
+<section><h2>Form</h2>
+<label for="q">Search query</label>
+<input type="text" id="q" placeholder="Type to search...">
+</section>
+<section><h2>Alerts</h2>
+<div class="alert alert-success">Success: changes saved.</div>
+<div class="alert alert-warning">Warning: check your input.</div>
+<div class="alert alert-error">Error: something went wrong.</div>
+<div class="alert alert-info">Info: a new version is available.</div>
+</section>
+<section><h2>Card</h2><div class="card"><strong>Card title</strong>
+<p>Secondary body text on a raised surface, with a <a href="#">link</a>.</p>
+<p class="muted">Disabled / muted text.</p></div></section>
+<section><h2>Chart series</h2><div class="chart">
+<div class="sw" style="background:var(--lum-chart-series-1)"></div>
+<div class="sw" style="background:var(--lum-chart-series-2)"></div>
+<div class="sw" style="background:var(--lum-chart-series-3)"></div>
+<div class="sw" style="background:var(--lum-chart-series-4)"></div>
+<div class="sw" style="background:var(--lum-chart-series-5)"></div>
+<div class="sw" style="background:var(--lum-chart-series-6)"></div>
+</div><small>Six categorical series.</small></section>
+</main></body></html>

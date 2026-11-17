@@ -1,0 +1,20 @@
+{
+  "name": "lumina-convergence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "VLM validation layer for LUMINA-AAA: three pure vision-language judges (official APIs, identical image-only conditions) corroborating the deterministic oracle on controlled contrast/focus stimuli.",
+  "scripts": {
+    "stimuli": "node stimuli.mjs",
+    "render": "node render.mjs",
+    "judge": "python3 judge.py",
+    "analyze": "python3 analyze.py",
+    "judge3x3": "python3 judge3x3.py",
+    "analyze3x3": "python3 analyze3x3.py",
+    "all": "npm run stimuli && npm run render && npm run judge && npm run analyze",
+    "all3x3": "npm run stimuli && npm run render && npm run judge3x3 && npm run analyze3x3"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "lumina-framework-audit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reproducible WCAG AAA audit of published design-system tokens using the LUMINA pair-matrix oracle (lib/audit.js).",
+  "scripts": {
+    "extract:bootstrap": "node extract-bootstrap.mjs",
+    "bundle:mcu": "esbuild node_modules/@material/material-color-utilities/index.js --bundle --format=esm --outfile=mcu.bundle.mjs",
+    "build": "node build-frameworks.mjs",
+    "audit": "node audit-all.mjs",
+    "all": "npm run extract:bootstrap && npm run bundle:mcu && npm run build && npm run audit"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^8.0.1",
+    "@carbon/themes": "^11.85.0",
+    "@fluentui/tokens": "^1.0.0-alpha.24",
+    "@material/material-color-utilities": "^0.4.0",
+    "@uswds/uswds": "^3.14.0",
+    "antd": "^6.7.1",
+    "tailwindcss": "^3.4.19"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

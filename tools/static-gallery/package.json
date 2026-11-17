@@ -1,0 +1,17 @@
+{
+  "name": "lumina-static-gallery",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static HTML gallery of LUMINA colour-token variants (brands/profiles/themes + controlled defects) and an axe-core accessibility layer, for convergence validation against the LUMINA oracle.",
+  "scripts": {
+    "generate": "node generate.mjs",
+    "index": "node make-index.mjs",
+    "axe": "node axe-run.mjs",
+    "all": "npm run generate && npm run index && npm run axe"
+  },
+  "dependencies": {
+    "axe-core": "^4.12.1",
+    "puppeteer-core": "^23.0.0"
+  }
+}

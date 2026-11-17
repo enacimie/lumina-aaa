@@ -1,0 +1,294 @@
+{
+  "generated": "2026-11-17T11:08:48.943Z",
+  "oracle": "LUMINA verifyAllPairs (lib/audit.js), profile wcag-aaa",
+  "frameworks": [
+    {
+      "name": "Bootstrap",
+      "version": "5.3.3",
+      "source": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "background.default": "#ffffff",
+          "background.surface": "#e9ecef",
+          "background.subtle": "#f8f9fa",
+          "text.primary": "#212529",
+          "text.secondary": "#595c5f",
+          "text.link": "#0d6efd",
+          "interactive.primary.default": "#0d6efd",
+          "text.on-primary": "#ffffff",
+          "border.default": "#dee2e6",
+          "focus.ring": "#c3dbff",
+          "feedback.success.text": "#0a3622",
+          "feedback.success.background": "#d1e7dd",
+          "feedback.warning.text": "#664d03",
+          "feedback.warning.background": "#fff3cd",
+          "feedback.error.text": "#58151c",
+          "feedback.error.background": "#f8d7da",
+          "feedback.info.text": "#055160",
+          "feedback.info.background": "#cff4fc"
+        },
+        "dark": {
+          "background.default": "#212529",
+          "background.surface": "#343a40",
+          "background.subtle": "#2b3035",
+          "text.primary": "#dee2e6",
+          "text.secondary": "#afb3b7",
+          "text.link": "#6ea8fe",
+          "interactive.primary.default": "#0d6efd",
+          "text.on-primary": "#ffffff",
+          "border.default": "#495057",
+          "focus.ring": "#1c375e",
+          "feedback.success.text": "#75b798",
+          "feedback.success.background": "#051b11",
+          "feedback.warning.text": "#ffda6a",
+          "feedback.warning.background": "#332701",
+          "feedback.error.text": "#ea868f",
+          "feedback.error.background": "#2c0b0e",
+          "feedback.info.text": "#6edff6",
+          "feedback.info.background": "#032830"
+        }
+      }
+    },
+    {
+      "name": "Carbon",
+      "version": "11.85.0",
+      "source": "npm @carbon/themes (white, g100)",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "background.default": "#ffffff",
+          "background.surface": "#f4f4f4",
+          "background.subtle": "#ffffff",
+          "text.primary": "#161616",
+          "text.secondary": "#525252",
+          "text.link": "#0f62fe",
+          "interactive.primary.default": "#0f62fe",
+          "text.on-primary": "#ffffff",
+          "border.default": "#8d8d8d",
+          "focus.ring": "#0f62fe",
+          "feedback.error.text": "#da1e28",
+          "feedback.success.text": "#24a148",
+          "feedback.warning.text": "#f1c21b",
+          "feedback.info.text": "#0043ce"
+        },
+        "dark": {
+          "background.default": "#161616",
+          "background.surface": "#262626",
+          "background.subtle": "#393939",
+          "text.primary": "#f4f4f4",
+          "text.secondary": "#c6c6c6",
+          "text.link": "#78a9ff",
+          "interactive.primary.default": "#4589ff",
+          "text.on-primary": "#ffffff",
+          "border.default": "#6f6f6f",
+          "focus.ring": "#ffffff",
+          "feedback.error.text": "#fa4d56",
+          "feedback.success.text": "#42be65",
+          "feedback.warning.text": "#f1c21b",
+          "feedback.info.text": "#4589ff"
+        }
+      }
+    },
+    {
+      "name": "Fluent",
+      "version": "1.0.0-alpha.24",
+      "source": "npm @fluentui/tokens (webLightTheme, webDarkTheme)",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "background.default": "#ffffff",
+          "background.surface": "#fafafa",
+          "background.subtle": "#f5f5f5",
+          "text.primary": "#242424",
+          "text.secondary": "#424242",
+          "text.link": "#0f6cbd",
+          "text.on-primary": "#ffffff",
+          "border.default": "#d1d1d1",
+          "focus.ring": "#0f6cbd",
+          "feedback.error.text": "#bc2f32",
+          "feedback.error.background": "#fdf6f6",
+          "feedback.success.text": "#0e700e",
+          "feedback.success.background": "#f1faf1",
+          "feedback.warning.text": "#817400",
+          "feedback.warning.background": "#fffef5",
+          "feedback.info.text": "#0f6cbd",
+          "feedback.info.background": "#ebf3fc"
+        },
+        "dark": {
+          "background.default": "#292929",
+          "background.surface": "#1f1f1f",
+          "background.subtle": "#141414",
+          "text.primary": "#ffffff",
+          "text.secondary": "#d6d6d6",
+          "text.link": "#479ef5",
+          "text.on-primary": "#ffffff",
+          "border.default": "#666666",
+          "focus.ring": "#479ef5",
+          "feedback.error.text": "#e37d80",
+          "feedback.error.background": "#3f1011",
+          "feedback.success.text": "#54b054",
+          "feedback.success.background": "#052505",
+          "feedback.warning.text": "#feee66",
+          "feedback.warning.background": "#4c4400",
+          "feedback.info.text": "#479ef5",
+          "feedback.info.background": "#082338"
+        }
+      }
+    },
+    {
+      "name": "Material Design 3",
+      "version": "0.4.0",
+      "source": "npm @material/material-color-utilities, SchemeTonalSpot(seed #6750A4, contrast 0)",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "background.default": "#fdf7ff",
+          "background.surface": "#f8f2fa",
+          "background.subtle": "#ece6ee",
+          "text.primary": "#1d1b20",
+          "text.secondary": "#49454e",
+          "text.link": "#65558f",
+          "interactive.primary.default": "#65558f",
+          "text.on-primary": "#ffffff",
+          "border.default": "#7a757f",
+          "focus.ring": "#65558f",
+          "feedback.error.text": "#93000a",
+          "feedback.error.background": "#ffdad6"
+        },
+        "dark": {
+          "background.default": "#141218",
+          "background.surface": "#1d1b20",
+          "background.subtle": "#2b292f",
+          "text.primary": "#e6e0e9",
+          "text.secondary": "#cac4cf",
+          "text.link": "#cfbdfe",
+          "interactive.primary.default": "#cfbdfe",
+          "text.on-primary": "#36275d",
+          "border.default": "#948f99",
+          "focus.ring": "#cfbdfe",
+          "feedback.error.text": "#ffdad6",
+          "feedback.error.background": "#93000a"
+        }
+      }
+    },
+    {
+      "name": "Ant Design",
+      "version": "6.7.1",
+      "source": "npm antd theme.getDesignToken(defaultSeed[, darkAlgorithm])",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "background.default": "#f5f5f5",
+          "background.surface": "#ffffff",
+          "text.primary": "#1f1f1f",
+          "text.secondary": "#595959",
+          "text.link": "#1677ff",
+          "interactive.primary.default": "#1677ff",
+          "interactive.primary.hover": "#4096ff",
+          "interactive.primary.active": "#0958d9",
+          "text.on-primary": "#ffffff",
+          "border.default": "#d9d9d9",
+          "focus.ring": "#1677ff",
+          "feedback.error.text": "#ff4d4f",
+          "feedback.error.background": "#fff2f0",
+          "feedback.success.text": "#52c41a",
+          "feedback.success.background": "#f6ffed",
+          "feedback.warning.text": "#faad14",
+          "feedback.warning.background": "#fffbe6",
+          "feedback.info.text": "#1677ff",
+          "feedback.info.background": "#e6f4ff"
+        },
+        "dark": {
+          "background.default": "#000000",
+          "background.surface": "#141414",
+          "text.primary": "#dcdcdc",
+          "text.secondary": "#adadad",
+          "text.link": "#1668dc",
+          "interactive.primary.default": "#1668dc",
+          "interactive.primary.hover": "#3c89e8",
+          "interactive.primary.active": "#1554ad",
+          "text.on-primary": "#ffffff",
+          "border.default": "#424242",
+          "focus.ring": "#1668dc",
+          "feedback.error.text": "#dc4446",
+          "feedback.error.background": "#2c1618",
+          "feedback.success.text": "#49aa19",
+          "feedback.success.background": "#162312",
+          "feedback.warning.text": "#d89614",
+          "feedback.warning.background": "#2b2111",
+          "feedback.info.text": "#1668dc",
+          "feedback.info.background": "#111a2c"
+        }
+      }
+    },
+    {
+      "name": "USWDS",
+      "version": "3.14.0",
+      "source": "npm @uswds/uswds dist/css/uswds.min.css (semantic utilities); light only, no default dark theme",
+      "kind": "semantic",
+      "themes": {
+        "light": {
+          "background.default": "#ffffff",
+          "background.surface": "#f0f0f0",
+          "background.subtle": "#f0f0f0",
+          "text.primary": "#1b1b1b",
+          "text.secondary": "#71767a",
+          "text.link": "#005ea2",
+          "interactive.primary.default": "#005ea2",
+          "text.on-primary": "#ffffff",
+          "border.default": "#a9aeb1",
+          "focus.ring": "#2491ff",
+          "feedback.error.text": "#d54309",
+          "feedback.error.background": "#f4e3db",
+          "feedback.success.text": "#00a91c",
+          "feedback.success.background": "#ecf3ec",
+          "feedback.warning.text": "#ffbe2e",
+          "feedback.warning.background": "#faf3d1",
+          "feedback.info.text": "#00bde3",
+          "feedback.info.background": "#e7f6f8"
+        }
+      }
+    },
+    {
+      "name": "Tailwind CSS",
+      "version": "3.4.19",
+      "source": "npm tailwindcss/colors.js (primitive scales; typical-usage interpretation, disclosed)",
+      "kind": "primitive-comparator",
+      "themes": {
+        "light": {
+          "background.default": "#ffffff",
+          "background.surface": "#f9fafb",
+          "background.subtle": "#f3f4f6",
+          "text.primary": "#111827",
+          "text.secondary": "#4b5563",
+          "text.link": "#2563eb",
+          "interactive.primary.default": "#2563eb",
+          "text.on-primary": "#ffffff",
+          "border.default": "#d1d5db",
+          "focus.ring": "#3b82f6",
+          "feedback.error.text": "#dc2626",
+          "feedback.success.text": "#16a34a",
+          "feedback.warning.text": "#d97706",
+          "feedback.info.text": "#2563eb"
+        },
+        "dark": {
+          "background.default": "#111827",
+          "background.surface": "#1f2937",
+          "background.subtle": "#374151",
+          "text.primary": "#f3f4f6",
+          "text.secondary": "#9ca3af",
+          "text.link": "#60a5fa",
+          "interactive.primary.default": "#3b82f6",
+          "text.on-primary": "#ffffff",
+          "border.default": "#4b5563",
+          "focus.ring": "#60a5fa",
+          "feedback.error.text": "#f87171",
+          "feedback.success.text": "#4ade80",
+          "feedback.warning.text": "#fbbf24",
+          "feedback.info.text": "#60a5fa"
+        }
+      }
+    }
+  ]
+}

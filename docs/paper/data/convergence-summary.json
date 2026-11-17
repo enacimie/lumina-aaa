@@ -1,0 +1,60 @@
+{
+  "panel": [
+    "qwen4-max-preview",
+    "deepseek-flash",
+    "LongCat-2.5"
+  ],
+  "conditions": "pure VLM, image+prompt only, official API, no tools",
+  "ground_truth": "LUMINA deterministic oracle",
+  "n_stimuli": 16,
+  "per_judge": {
+    "qwen4-max-preview": {
+      "correct": 14,
+      "total": 16,
+      "accuracy": 0.875,
+      "ratio_mae": 0.695,
+      "misjudged": [
+        "text-7",
+        "focus-3"
+      ]
+    },
+    "deepseek-flash": {
+      "correct": 15,
+      "total": 16,
+      "accuracy": 0.938,
+      "ratio_mae": 0.694,
+      "misjudged": [
+        "focus-5"
+      ]
+    },
+    "LongCat-2.5": {
+      "correct": 15,
+      "total": 16,
+      "accuracy": 0.938,
+      "ratio_mae": 1.044,
+      "misjudged": [
+        "text-12"
+      ]
+    }
+  },
+  "pairwise_agreement": {
+    "qwen4-max-preview|deepseek-flash": {
+      "agree": 13,
+      "total": 16,
+      "rate": 0.812
+    },
+    "qwen4-max-preview|LongCat-2.5": {
+      "agree": 13,
+      "total": 16,
+      "rate": 0.812
+    },
+    "deepseek-flash|LongCat-2.5": {
+      "agree": 14,
+      "total": 16,
+      "rate": 0.875
+    }
+  },
+  "majority_of_3_matches_oracle": 16,
+  "unanimous_3_matches_oracle": 12,
+  "unanimous_3_total": 16
+}

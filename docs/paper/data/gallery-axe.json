@@ -1,0 +1,273 @@
+[
+  {
+    "id": "brand-blue-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-blue-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-blue-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-red-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-red-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-red-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-green-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-green-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-green-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-purple-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-purple-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-purple-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-orange-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-orange-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-orange-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-teal-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-teal-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-teal-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-pink-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-pink-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-pink-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-slate-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-slate-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "brand-slate-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "profile-wcag-aaa-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "profile-wcag-aaa-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "profile-wcag-aaa-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "profile-aaa-plus-light",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "profile-aaa-plus-dark",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "profile-aaa-plus-contrast",
+    "kind": "pass",
+    "oracle_block": 0,
+    "oracle_cert": true,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "defect-invisible-focus-light",
+    "kind": "defect",
+    "oracle_block": 10,
+    "oracle_cert": false,
+    "axe_violations": 0,
+    "violations": []
+  },
+  {
+    "id": "defect-low-contrast-text-light",
+    "kind": "defect",
+    "oracle_block": 10,
+    "oracle_cert": false,
+    "axe_violations": 1,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 12,
+        "help": "Elements must meet minimum color contrast ratio thresholds"
+      }
+    ]
+  },
+  {
+    "id": "defect-invisible-focus-dark",
+    "kind": "defect",
+    "oracle_block": 10,
+    "oracle_cert": false,
+    "axe_violations": 0,
+    "violations": []
+  }
+]
