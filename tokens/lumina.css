@@ -270,7 +270,7 @@
  * focus.ring contrasts with the page, focus.inner with the component fill.
  * SC 2.4.13 measures the indicator, not the component fill. */
 :where(:focus-visible) {
-  outline: 3px solid var(--lum-focus-ring);
+  outline: 2px solid var(--lum-focus-ring);
   outline-offset: 2px;
   box-shadow: inset 0 0 0 2px var(--lum-focus-inner);
 }

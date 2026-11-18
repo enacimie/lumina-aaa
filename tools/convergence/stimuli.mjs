@@ -7,6 +7,11 @@ import { writeFileSync, mkdirSync } from 'fs';
 mkdirSync('work', { recursive: true });
 
 const r2 = (x) => +x.toFixed(2);
+// actualCR is rounded to 2 decimals for display only. The AA/AAA verdict is
+// computed from the UNROUNDED ratio, so a threshold stimulus can display a
+// rounded value at the threshold yet fail (e.g. focus-3: exact 2.9953 < 3,
+// displayed 3.00, verdict fail). ground_truth_cr in the released data carries
+// this same 2-decimal display rounding.
 // sRGB inverse transfer (gray): luminance Y -> 8-bit gray hex
 const grayForY = (Y) => {
   const c = Y <= 0.0031308 ? 12.92 * Y : 1.055 * Math.pow(Y, 1 / 2.4) - 0.055;

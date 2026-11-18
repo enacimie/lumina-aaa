@@ -166,6 +166,11 @@ test('alpha composition follows gamma-encoded sRGB, as CSS does', () => {
   // the gamma-encoded input reports #D9DFF2 (CR 1.33) instead of #B0BCE3
   // (CR 1.88) - the conclusion survives, the number does not.
   assert.notEqual(rgbToHex(compositeAlpha('#1E40AF', 0.35, '#FFFFFF')), '#D9DFF2');
+  // Dark theme: the same brand border at 35% over the dark input surface
+  // (#1F222B) stays below 3:1 (CR 1.19); the ring tokens carry the requirement.
+  const darkComp = rgbToHex(compositeAlpha('#1E40AF', 0.35, '#1F222B'));
+  assert.equal(darkComp, '#1F2D59');
+  assert.ok(contrastRatio(darkComp, '#1F222B') < 3.0);
 });
 
 test('hue difference is undefined for achromatic colours, not a number', () => {

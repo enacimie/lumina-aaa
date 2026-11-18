@@ -220,7 +220,7 @@ lines.push('/* Focus indicator: the section 8 double ring.');
 lines.push(' * focus.ring contrasts with the page, focus.inner with the component fill.');
 lines.push(' * SC 2.4.13 measures the indicator, not the component fill. */');
 lines.push(':where(:focus-visible) {');
-lines.push('  outline: 3px solid var(--lum-focus-ring);');
+lines.push('  outline: 2px solid var(--lum-focus-ring);');
 lines.push('  outline-offset: 2px;');
 lines.push('  box-shadow: inset 0 0 0 2px var(--lum-focus-inner);');
 lines.push('}');

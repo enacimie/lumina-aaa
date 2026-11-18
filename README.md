@@ -41,7 +41,7 @@ exactly as returned by the verification APIs.
   role matrix and audits them at WCAG AAA (`npm run all`)
 - `tools/static-gallery/`: regenerates the gallery, its index and the axe-core
   results (`npm run all`, needs Chrome)
-- `tools/convergence/`: 16 controlled stimuli with oracle ground truth, judged
+- `tools/convergence/`: 19 controlled stimuli with oracle ground truth, judged
   by three pure vision-language models under a 3x3 protocol (3 runs per judge,
   majority verdicts, thinking enabled; `npm run all3x3`, needs API keys)
 - `archive/`: the original v0.2 chat export, kept as evidence

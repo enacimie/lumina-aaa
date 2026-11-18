@@ -62,7 +62,8 @@ variant (`judge.py` / `analyze.py`), kept for reference; the paper uses 3x3.
 - Intra-judge disagreement: DeepSeek 4/19, LongCat 5/19, Qwen 0/19; each majority
   absorbs the outliers.
 - Pairwise agreement: 78.9-89.5%.
-- Cross-judge majority matches the oracle on 16/19; unanimous on 13/19.
+- Cross-judge majority matches the oracle on 16/19; unanimous on 14/19 (13 match
+  the oracle).
 - Errors cluster at the thresholds (text-6.5/7/7.5 around 7:1; focus near 3:1).
   Majority misses: text-6.5 (6.48:1), text-7.5 (7.46:1), focus-1 (1.00:1).
 - focus-1 (white ring on a white page, invisible): Qwen estimates 1.0; DeepSeek
