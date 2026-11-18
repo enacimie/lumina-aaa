@@ -4,7 +4,7 @@ Deterministic generator and verifier for WCAG 2.2 AAA colour systems.
 Everything the specification promises is enforced by code and tested.
 
 Repository: https://github.com/enacimie/lumina-aaa
-Release snapshot: https://doi.org/10.5281/zenodo.24248311 (Zenodo)
+Release snapshot: https://doi.org/10.5281/zenodo.24248310 (Zenodo concept DOI, resolves to the latest version)
 
 The demo works on GitHub Pages as-is: the app is static, uses relative paths,
 and the module worker resolves `../lib/index.js` from any subdirectory. Once
