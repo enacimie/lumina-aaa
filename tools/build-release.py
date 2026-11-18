@@ -18,12 +18,13 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import re
 import shutil
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEST_DEFAULT = ROOT / "release" / "lumina-aaa-v0.4.0"
+DEST_DEFAULT = ROOT / "release" / "lumina-aaa-v0.5.0"
 
 # Explicit inclusion: only these paths enter the snapshot.
 INCLUIR = [
@@ -60,9 +61,16 @@ EXCLUIR_PATRONES = [
     "env.txt",
     ".env",
     "*.token",
+    "node_modules",
+    "convergence/work",
 ]
 
-SECRETOS = ["API_KEY", "SECRET", "PASSWORD", "sshpass", "kaggle.json", "BEGIN PRIVATE KEY"]
+# Detect hardcoded credential VALUES (VAR = "longliteral"), not env-var
+# references such as os.environ['QWEN_API_KEY'] or 'export QWEN_API_KEY=...'.
+ASIGNACION_SECRETO = re.compile(
+    r"(API_KEY|APIKEY|SECRET|PASSWORD|TOKEN|ACCESS_KEY)\s*[:=]\s*[\"'][A-Za-z0-9_\-./+]{16,}[\"']",
+    re.IGNORECASE)
+MARCADORES_PELIGROSOS = ["BEGIN PRIVATE KEY", "kaggle.json", "sshpass"]
 
 
 def sha256(ruta: Path) -> str:
@@ -100,16 +108,18 @@ def recoger() -> list[Path]:
 def escanear_secretos(rutas: list[Path]) -> list[str]:
     hallazgos = []
     for r in rutas:
-        # El propio escaneer contiene la lista de patrones; no se escanea a si mismo.
+        # El propio escaneer contiene los patrones; no se escanea a si mismo.
         if r.name == "build-release.py":
             continue
-        if r.suffix.lower() in {".png", ".pdf", ".zip", ".json"}:
+        if r.suffix.lower() in {".png", ".pdf", ".zip"}:
             continue
         try:
             texto = r.read_text(encoding="utf-8", errors="ignore")
         except Exception:
             continue
-        for s in SECRETOS:
+        for m in ASIGNACION_SECRETO.finditer(texto):
+            hallazgos.append(f"{r.relative_to(ROOT)}: credencial hardcodeada ({m.group(1)})")
+        for s in MARCADORES_PELIGROSOS:
             if s in texto:
                 hallazgos.append(f"{r.relative_to(ROOT)}: {s}")
     return hallazgos
@@ -158,7 +168,7 @@ def main(argv: list[str]) -> int:
     sums = [f"{sha256(dest / r.relative_to(ROOT))}  {r.relative_to(ROOT).as_posix()}" for r in rutas]
     (dest / "SHA256SUMS").write_text("\n".join(sums) + "\n", encoding="utf-8")
 
-    readme = f"""# LUMINA-AAA v0.4.0: release snapshot
+    readme = f"""# LUMINA-AAA v0.5.0: release snapshot
 
 Codigo, tokens, informes y datos del sistema LUMINA-AAA, con la
 especificacion normativa y el archivo v0.2 como prueba.

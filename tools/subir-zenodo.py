@@ -25,7 +25,7 @@ from pathlib import Path
 API = "https://zenodo.org/api"
 RUTA_TOKEN = Path.home() / ".config" / "zenodo" / "token"
 RAIZ = Path(__file__).resolve().parent.parent
-SNAPSHOT = RAIZ / "release" / "lumina-aaa-v0.4.0"
+SNAPSHOT = RAIZ / "release" / "lumina-aaa-v0.5.0"
 METADATOS = RAIZ / "release" / "zenodo-metadata.json"
 
 
